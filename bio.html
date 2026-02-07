@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Wegehaupt — 오상진</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #050505;
+            --dark: #0a0a0a;
+            --dark-surface: #111111;
+            --dark-border: #1a1a1a;
+            --warm-gray: #8a8078;
+            --light-gray: #b0a99f;
+            --cream: #e8e0d4;
+            --white: #f0ece6;
+            --amber: #c8a45c;
+            --amber-dim: #9a7d3a;
+            --font-display: 'Bebas Neue', sans-serif;
+            --font-body: 'Source Serif 4', Georgia, serif;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background: var(--black);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--black);
+            color: var(--cream);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        ::selection {
+            background: var(--amber);
+            color: var(--black);
+        }
+
+        /* ---- BACK LINK ---- */
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 3vw;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--warm-gray);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            z-index: 100;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--amber);
+        }
+
+        /* ---- LAYOUT ---- */
+        .bio {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            min-height: 100vh;
+            gap: 0;
+        }
+
+        /* ---- LEFT: PHOTO + NAME ---- */
+        .bio__photo-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6vh 4vw 6vh 8vw;
+            position: relative;
+        }
+
+        .bio__photo-col::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            width: 1px;
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                var(--dark-border) 20%,
+                var(--amber-dim) 50%,
+                var(--dark-border) 80%,
+                transparent
+            );
+        }
+
+        .bio__photo-wrapper {
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .bio__photo-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid var(--dark-border);
+            pointer-events: none;
+        }
+
+        .bio__photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 15%;
+            filter: grayscale(0.15) contrast(1.05);
+        }
+
+        .bio__name {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4vw, 3.5rem);
+            line-height: 1;
+            color: var(--white);
+            margin-bottom: 0.4rem;
+        }
+
+        .bio__name-kr {
+            font-family: var(--font-body);
+            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+            font-weight: 300;
+            color: var(--amber);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .bio__role {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            line-height: 1.5;
+        }
+
+        /* ---- RIGHT: BIO CONTENT ---- */
+        .bio__content-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6vh 8vw 6vh 4vw;
+        }
+
+        .bio__section {
+            margin-bottom: 3rem;
+        }
+
+        .bio__section:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio__section-label {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--amber-dim);
+            margin-bottom: 1rem;
+        }
+
+        .bio__text {
+            font-family: var(--font-body);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--cream);
+            max-width: 50ch;
+        }
+
+        .bio__text + .bio__text {
+            margin-top: 1rem;
+        }
+
+        /* ---- CREDENTIALS LIST ---- */
+        .bio__credentials {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .bio__credentials li {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            padding-left: 1.2rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .bio__credentials li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 5px;
+            height: 5px;
+            background: var(--amber-dim);
+            border-radius: 50%;
+        }
+
+        /* ---- PUBLICATIONS ---- */
+        .bio__pub {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            border-left: 2px solid var(--dark-border);
+        }
+
+        .bio__pub em {
+            color: var(--cream);
+        }
+
+        /* ---- CONTACT ---- */
+        .bio__contact {
+            display: flex;
+            gap: 2rem;
+            align-items: baseline;
+        }
+
+        .bio__contact a {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--amber);
+            text-decoration: none;
+            border-bottom: 1px solid var(--amber-dim);
+            transition: border-color 0.3s;
+        }
+
+        .bio__contact a:hover {
+            border-color: var(--amber);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 900px) {
+            .bio {
+                grid-template-columns: 1fr;
+            }
+
+            .bio__photo-col {
+                padding: 4vh 6vw;
+                align-items: flex-start;
+            }
+
+            .bio__photo-col::after {
+                display: none;
+            }
+
+            .bio__photo-wrapper {
+                max-width: 280px;
+            }
+
+            .bio__content-col {
+                padding: 2vh 6vw 6vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">&larr; Back to Presentation</a>
+
+    <div class="bio">
+
+        <!-- LEFT COLUMN -->
+        <div class="bio__photo-col">
+            <div class="bio__photo-wrapper">
+                <img src="images/headshot.jpg" alt="Matthew Wegehaupt" class="bio__photo">
+            </div>
+            <h1 class="bio__name">Matthew Wegehaupt</h1>
+            <p class="bio__name-kr">오상진 (Oh Sangjin)</p>
+            <p class="bio__role">
+                Instructor, East Asian Studies<br>
+                Lawrence University &middot; Appleton, WI
+            </p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="bio__content-col">
+
+            <div class="bio__section">
+                <p class="bio__section-label">About</p>
+                <p class="bio__text">
+                    Matthew Wegehaupt has spent over two decades working inside Korean language and culture — not observing from the outside, but translating Buddhist masters, editing academic journals, and teaching the next generation about East Asia.
+                </p>
+                <p class="bio__text">
+                    A former U.S. Air Force Academy cadet turned Fulbright Fellow in South Korea, he has taught East Asian Studies at Lawrence University since 2007, covering courses from Chinese cinema to Korean history in literature and film.
+                </p>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Education</p>
+                <ul class="bio__credentials">
+                    <li>MA, Asian Studies — University of Michigan, Ann Arbor</li>
+                    <li>MA, Asian Studies — University of California, Berkeley <em>(with honors)</em></li>
+                    <li>BA, Political Science — University of Wisconsin, Madison <em>(with honors)</em></li>
+                    <li>United States Air Force Academy (1989–1991)</li>
+                </ul>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Selected Translations</p>
+                <p class="bio__pub">
+                    Beopjeong Sunim. <em>Pure and Fragrant.</em> Seoul: Jogye Order of Korean Buddhism, 2021.
+                </p>
+                <p class="bio__pub">
+                    Hyecho. <em>Memoir of the Pilgrimage to the Five Kingdoms of India.</em> In Collected History of Korean Buddhist Thought. Seoul: Jogye Order, 2010.
+                </p>
+                <p class="bio__pub">
+                    Beopjeong Sunim. <em>May All Beings Be Happy.</em> Seoul: Johwaroun Salm, 2006.
+                </p>
+                <p class="bio__pub">
+                    Korean Massive Open Online Courses (2022–2025): Buddhism and Business, Buddhism and Literature, Buddhism and Ethics, and more.
+                </p>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Selected Service</p>
+                <ul class="bio__credentials">
+                    <li>Managing Editor, <em>Journal of Korean Religion</em> (2008–2018)</li>
+                    <li>Managing Editor, <em>Seoul Journal of Korean Studies</em> (2007–2008)</li>
+                    <li>United States Fulbright Fellow, South Korea (2006–2007)</li>
+                </ul>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Contact</p>
+                <div class="bio__contact">
+                    <a href="mailto:omatty@gmail.com">omatty@gmail.com</a>
+                    <a href="https://banglangdang.vercel.app" target="_blank" rel="noopener">banglangdang.vercel.app</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
