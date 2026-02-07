@@ -393,6 +393,88 @@ a:hover {
     border-top: 1px solid var(--dark-border);
 }
 
+/* ---- SECTION: SOUTH KOREA ---- */
+
+.slide--south-korea {
+    background:
+        radial-gradient(ellipse at 70% 40%, rgba(200, 164, 92, 0.04) 0%, transparent 50%),
+        var(--black);
+    border-top: 1px solid var(--dark-border);
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide--south-korea .slide__content {
+    max-width: 35%;
+    flex-shrink: 0;
+}
+
+/* ---- STATS GRID ---- */
+
+.slide__stats-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    padding: 4vh 4vw;
+    align-self: center;
+}
+
+.stat-card {
+    background: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide.in-view .stat-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide.in-view .stat-card:nth-child(1) { transition-delay: 0.1s; }
+.slide.in-view .stat-card:nth-child(2) { transition-delay: 0.2s; }
+.slide.in-view .stat-card:nth-child(3) { transition-delay: 0.3s; }
+.slide.in-view .stat-card:nth-child(4) { transition-delay: 0.4s; }
+.slide.in-view .stat-card:nth-child(5) { transition-delay: 0.5s; }
+.slide.in-view .stat-card:nth-child(6) { transition-delay: 0.6s; }
+
+.stat-card__number {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+    color: var(--amber);
+}
+
+.stat-card__label {
+    font-family: var(--font-body);
+    font-size: clamp(0.85rem, 1.1vw, 1rem);
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+.stat-card__detail {
+    font-family: var(--font-body);
+    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+    font-weight: 300;
+    color: var(--warm-gray);
+}
+
+/* ---- SECTION: FUTURE ---- */
+
+.slide--future {
+    background:
+        radial-gradient(ellipse at 60% 50%, rgba(200, 164, 92, 0.05) 0%, transparent 50%),
+        var(--black);
+    border-top: 1px solid var(--dark-border);
+}
+
 /* ---- SECTION: SOURCES ---- */
 
 .slide--sources {
@@ -515,6 +597,27 @@ a:hover {
 
     .slide__date-watermark {
         font-size: 8rem;
+    }
+
+    .slide--south-korea {
+        flex-direction: column;
+    }
+
+    .slide--south-korea .slide__content {
+        max-width: 90%;
+    }
+
+    .slide__stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2vh 4vw;
+    }
+
+    .slide--opening {
+        flex-direction: column;
+    }
+
+    .slide--opening .slide__content {
+        max-width: 90%;
     }
 
     .section-nav {
