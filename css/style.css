@@ -261,12 +261,49 @@ a:hover {
     top: 1.75rem;
 }
 
+/* ---- SUBTITLE LARGE (for two-line subtitle) ---- */
+
+.slide__subtitle-large {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    color: var(--amber);
+    margin-bottom: 1.5rem;
+}
+
 /* ---- SECTION: OPENING ---- */
 
 .slide--opening {
     background:
         radial-gradient(ellipse at 80% 60%, rgba(200, 164, 92, 0.03) 0%, transparent 60%),
         var(--black);
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide--opening .slide__content {
+    max-width: 45%;
+    flex-shrink: 0;
+}
+
+.slide__image-frame--opening {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 4vw;
+}
+
+.slide__img--screenshot {
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: contain;
+    border: 1px solid var(--dark-border);
+    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
 }
 
 /* ---- SECTION: THE IMAGE ---- */
