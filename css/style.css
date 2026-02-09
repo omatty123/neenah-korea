@@ -156,6 +156,12 @@ img {
     transition: filter 0.6s ease;
 }
 
+.collage-cell--cha img {
+    object-fit: cover;
+    object-position: top left;
+    filter: brightness(0.95) saturate(1);
+}
+
 .collage-cell--tall {
     grid-row: 1 / -1;
 }
