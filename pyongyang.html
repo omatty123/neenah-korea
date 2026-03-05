@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --black: #0A0A0A;
-            --gray-800: #1A1A1A;
-            --gray-600: #666;
-            --gray-400: #999;
-            --white: #F5F5F5;
-            --amber: #C8A45C;
-            --amber-dim: #9A7D3A;
+            --black: #111;
+            --gray-900: #222;
+            --gray-700: #444;
+            --gray-500: #777;
+            --gray-300: #bbb;
+            --gray-100: #eee;
+            --surface: #f7f7f5;
+            --white: #fff;
+            --amber: #b8913a;
+            --amber-light: #d4af5b;
             --font-display: 'DM Serif Display', serif;
             --font-body: 'Inter', sans-serif;
         }
@@ -24,15 +27,15 @@
 
         body {
             font-family: var(--font-body);
-            background: var(--black);
-            color: var(--white);
+            background: var(--white);
+            color: var(--black);
             -webkit-font-smoothing: antialiased;
         }
 
         img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
         a { color: var(--amber); text-decoration: none; }
-        a:hover { color: var(--white); }
+        a:hover { text-decoration: underline; }
 
         /* ---- BREADCRUMB ---- */
 
@@ -41,21 +44,25 @@
             top: 0;
             left: 0;
             right: 0;
-            padding: 12px 24px;
-            font-size: 12px;
-            font-weight: 500;
+            padding: 10px 24px;
+            font-size: 11px;
+            font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
-            background: rgba(10, 10, 10, 0.9);
+            background: rgba(255,255,255,0.95);
             backdrop-filter: blur(8px);
             z-index: 100;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid var(--gray-100);
         }
 
+        .breadcrumb a { color: var(--gray-700); }
+        .breadcrumb a:hover { color: var(--black); }
+
         .breadcrumb__tag {
-            color: var(--gray-400);
+            color: var(--gray-500);
             font-size: 10px;
             letter-spacing: 2px;
         }
@@ -64,17 +71,15 @@
 
         .hero {
             position: relative;
-            height: 70vh;
+            height: 56vh;
             overflow: hidden;
+            margin-top: 37px;
         }
 
         .hero img {
             position: absolute;
             inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.65);
+            filter: brightness(0.55);
         }
 
         .hero__overlay {
@@ -84,110 +89,131 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 0 48px 48px;
+            padding: 0 32px 28px;
         }
 
         .hero__gdp {
             font-family: var(--font-display);
-            font-size: clamp(5rem, 12vw, 10rem);
+            font-size: clamp(4rem, 10vw, 8rem);
             line-height: 0.85;
-            letter-spacing: -6px;
-            color: var(--white);
+            letter-spacing: -4px;
+            color: #fff;
+        }
+
+        .hero__sub {
+            display: flex;
+            gap: 24px;
+            align-items: baseline;
+            margin-top: 8px;
         }
 
         .hero__label {
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            color: var(--amber);
-            margin-top: 12px;
+            color: var(--amber-light);
         }
 
         .hero__city {
-            font-family: var(--font-display);
-            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-            color: rgba(255,255,255,0.7);
-            margin-top: 4px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.6);
         }
 
-        /* ---- SECTION ---- */
-
-        section {
-            padding: 64px 48px;
-        }
-
-        .section-label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--amber);
-            margin-bottom: 24px;
-        }
-
-        /* ---- COMPARE GRID ---- */
+        /* ---- COMPARE ---- */
 
         .compare {
-            padding: 48px;
-            background: var(--gray-800);
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .compare__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            padding: 0 4px;
+        }
+
+        .compare__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .compare__note {
+            font-size: 10px;
+            color: var(--gray-500);
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .compare-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2px;
+            gap: 3px;
         }
 
         .compare-card {
-            position: relative;
+            background: var(--white);
             overflow: hidden;
         }
 
         .compare-card__image {
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 3 / 2;
             overflow: hidden;
         }
 
         .compare-card__info {
-            padding: 16px 20px;
-            background: var(--black);
+            padding: 12px 16px 14px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .compare-card__left {
+            display: flex;
+            flex-direction: column;
         }
 
         .compare-card__city {
             font-family: var(--font-display);
-            font-size: 1.3rem;
-            color: var(--white);
-            margin-bottom: 2px;
+            font-size: 1.15rem;
+            color: var(--black);
+            line-height: 1.2;
         }
 
         .compare-card__country {
-            font-size: 11px;
-            color: var(--gray-400);
+            font-size: 10px;
+            color: var(--gray-500);
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 12px;
+        }
+
+        .compare-card__right {
+            text-align: right;
         }
 
         .compare-card__gdp {
             font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3rem);
-            color: var(--gray-400);
-            letter-spacing: -2px;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            color: var(--gray-700);
+            letter-spacing: -1px;
             line-height: 1;
         }
 
         .compare-card__gdp-label {
-            font-size: 10px;
-            color: var(--gray-600);
+            font-size: 9px;
+            color: var(--gray-500);
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin-top: 4px;
         }
 
-        .compare-card--highlight .compare-card__info {
-            background: rgba(200, 164, 92, 0.08);
-            border-bottom: 2px solid var(--amber);
+        .compare-card--highlight {
+            outline: 2px solid var(--amber);
+            outline-offset: -2px;
         }
 
         .compare-card--highlight .compare-card__gdp {
@@ -203,41 +229,69 @@
         .verdict {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: start;
-            padding: 64px 48px;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .verdict__text {
+            padding: 28px 32px;
+            background: var(--white);
         }
 
         .verdict__text h2 {
             font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            line-height: 1.0;
-            letter-spacing: -2px;
-            color: var(--white);
-            margin-bottom: 20px;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            line-height: 1.1;
+            letter-spacing: -1px;
+            color: var(--black);
+            margin-bottom: 14px;
         }
 
         .verdict__text p {
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: var(--gray-400);
-            max-width: 50ch;
-            margin-bottom: 12px;
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+            margin-bottom: 8px;
         }
 
-        .verdict__text p strong {
-            color: var(--white);
+        .verdict__text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .verdict__text strong {
+            color: var(--black);
             font-weight: 600;
         }
 
-        /* ---- PYONGYANG GRID ---- */
+        .verdict__image {
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .verdict__image img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ---- GALLERY ---- */
+
+        .gallery-label {
+            padding: 20px 24px 0;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--amber);
+            background: var(--surface);
+        }
 
         .py-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
-            gap: 2px;
-            padding: 0 48px;
+            gap: 3px;
+            padding: 8px 24px 24px;
+            background: var(--surface);
         }
 
         .py-grid__cell {
@@ -246,9 +300,6 @@
         }
 
         .py-grid__cell img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             transition: transform 0.6s ease;
         }
 
@@ -256,40 +307,37 @@
             transform: scale(1.03);
         }
 
-        .py-grid__cell--wide {
-            grid-column: span 2;
-        }
-
-        .py-grid__cell--tall {
-            grid-row: span 2;
-        }
+        .py-grid__cell--wide { grid-column: span 2; }
+        .py-grid__cell--tall { grid-row: span 2; }
 
         .py-grid__caption {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 8px 12px;
-            font-size: 10px;
-            font-weight: 500;
+            padding: 6px 10px;
+            font-size: 9px;
+            font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.8);
-            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: rgba(255,255,255,0.85);
+            background: linear-gradient(transparent, rgba(0,0,0,0.65));
         }
 
-        /* ---- FLOOD RECOVERY ---- */
+        /* ---- RECOVERY ---- */
 
         .recovery {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-            padding: 64px 48px;
+            gap: 3px;
+            background: var(--gray-100);
         }
 
         .recovery__image {
-            overflow: hidden;
+            background: var(--white);
+            padding: 16px;
+            display: flex;
+            align-items: center;
         }
 
         .recovery__image img {
@@ -297,57 +345,73 @@
             height: auto;
         }
 
+        .recovery__text {
+            padding: 28px 32px;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .recovery__text .section-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 10px;
+        }
+
         .recovery__text h3 {
             font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2.5rem);
-            line-height: 1.1;
-            letter-spacing: -1px;
-            color: var(--white);
-            margin-bottom: 16px;
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            margin-bottom: 10px;
         }
 
         .recovery__text p {
-            font-size: 0.9rem;
-            line-height: 1.7;
-            color: var(--gray-400);
-            max-width: 45ch;
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
         }
 
         /* ---- BOTTOM LINE ---- */
 
         .bottomline {
-            padding: 48px 48px 80px;
-            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 28px 32px 48px;
+            background: var(--black);
         }
 
         .bottomline p {
             font-family: var(--font-display);
-            font-size: clamp(1.8rem, 3.5vw, 3rem);
-            line-height: 1.15;
-            letter-spacing: -1px;
-            color: var(--white);
-            max-width: 40ch;
+            font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            color: #ddd;
+            max-width: 50ch;
         }
 
-        .bottomline p em {
-            color: var(--amber);
+        .bottomline em {
+            color: var(--amber-light);
             font-style: italic;
         }
 
         /* ---- RESPONSIVE ---- */
 
         @media (max-width: 900px) {
-            section { padding: 32px 20px; }
-            .compare { padding: 20px; }
-            .compare-row { grid-template-columns: 1fr; }
-            .verdict { grid-template-columns: 1fr; gap: 24px; }
-            .py-grid { grid-template-columns: 1fr 1fr; padding: 0 20px; }
-            .py-grid__cell--wide { grid-column: span 2; }
-            .recovery { grid-template-columns: 1fr; gap: 24px; padding: 32px 20px; }
-            .hero { height: 50vh; }
-            .hero__overlay { padding: 0 20px 32px; }
-            .hero__gdp { letter-spacing: -3px; }
-            .bottomline { padding: 32px 20px 60px; }
+            .compare { padding: 16px; }
+            .compare-row { grid-template-columns: 1fr; gap: 2px; }
+            .compare-card__image { aspect-ratio: 16 / 9; }
+            .verdict { grid-template-columns: 1fr; }
+            .py-grid { grid-template-columns: 1fr 1fr; padding: 8px 16px 16px; }
+            .gallery-label { padding: 16px 16px 0; }
+            .recovery { grid-template-columns: 1fr; }
+            .hero { height: 44vh; }
+            .hero__overlay { padding: 0 16px 20px; }
+            .hero__gdp { letter-spacing: -2px; }
+            .bottomline { padding: 20px 16px 40px; }
         }
     </style>
 </head>
@@ -358,29 +422,36 @@
         <span class="breadcrumb__tag">Neenah Club &middot; March 16, 2026</span>
     </nav>
 
-    <!-- HERO: Hwasong district boulevard -->
     <header class="hero">
         <img src="images/hwasong-apartments.jpg" alt="Hwasong district boulevard, Pyongyang, 2025">
         <div class="hero__overlay">
             <span class="hero__gdp">$1,700</span>
-            <span class="hero__label">GDP per capita (PPP)</span>
-            <span class="hero__city">Pyongyang, DPRK &middot; March 2025</span>
+            <div class="hero__sub">
+                <span class="hero__label">GDP per capita (PPP)</span>
+                <span class="hero__city">Pyongyang, DPRK &middot; March 2025</span>
+            </div>
         </div>
     </header>
 
-    <!-- THE COMPARISON -->
     <div class="compare">
-        <p class="section-label">The comparison</p>
+        <div class="compare__header">
+            <span class="compare__title">Three capitals</span>
+            <span class="compare__note">All GDP figures: PPP, current international $</span>
+        </div>
         <div class="compare-row">
             <div class="compare-card">
                 <div class="compare-card__image">
                     <img src="images/havana-decay.jpg" alt="Crumbling buildings on Calle Industria, Havana">
                 </div>
                 <div class="compare-card__info">
-                    <p class="compare-card__city">Havana</p>
-                    <p class="compare-card__country">Cuba</p>
-                    <p class="compare-card__gdp">$12,300</p>
-                    <p class="compare-card__gdp-label">GDP per capita (PPP)</p>
+                    <div class="compare-card__left">
+                        <p class="compare-card__city">Havana</p>
+                        <p class="compare-card__country">Cuba</p>
+                    </div>
+                    <div class="compare-card__right">
+                        <p class="compare-card__gdp">$12,300</p>
+                        <p class="compare-card__gdp-label">GDP / capita</p>
+                    </div>
                 </div>
             </div>
             <div class="compare-card">
@@ -388,71 +459,74 @@
                     <img src="images/dhaka-karail.jpg" alt="Karail slum aerial, Dhaka">
                 </div>
                 <div class="compare-card__info">
-                    <p class="compare-card__city">Dhaka</p>
-                    <p class="compare-card__country">Bangladesh</p>
-                    <p class="compare-card__gdp">$7,500</p>
-                    <p class="compare-card__gdp-label">GDP per capita (PPP)</p>
+                    <div class="compare-card__left">
+                        <p class="compare-card__city">Dhaka</p>
+                        <p class="compare-card__country">Bangladesh</p>
+                    </div>
+                    <div class="compare-card__right">
+                        <p class="compare-card__gdp">$7,500</p>
+                        <p class="compare-card__gdp-label">GDP / capita</p>
+                    </div>
                 </div>
             </div>
             <div class="compare-card compare-card--highlight">
                 <div class="compare-card__image">
-                    <img src="images/hwasong-apartments.jpg" alt="Hwasong district boulevard, Pyongyang, 2025">
+                    <img src="images/hwasong-skyline.jpg" alt="Hwasong district skyline, 2025">
                 </div>
                 <div class="compare-card__info">
-                    <p class="compare-card__city">Pyongyang</p>
-                    <p class="compare-card__country">DPRK</p>
-                    <p class="compare-card__gdp">$1,700</p>
-                    <p class="compare-card__gdp-label">GDP per capita (PPP)</p>
+                    <div class="compare-card__left">
+                        <p class="compare-card__city">Pyongyang</p>
+                        <p class="compare-card__country">DPRK</p>
+                    </div>
+                    <div class="compare-card__right">
+                        <p class="compare-card__gdp">$1,700</p>
+                        <p class="compare-card__gdp-label">GDP / capita</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VERDICT -->
     <div class="verdict">
         <div class="verdict__text">
             <h2>The poorest capital looks the best</h2>
-            <p><strong>Cuba has 7x the GDP per capita of North Korea.</strong> Havana's buildings collapse regularly. Officials estimate 28,000 people live in structures that could fall at any moment.</p>
-            <p><strong>Bangladesh has 4x the GDP per capita.</strong> The Karail slum in Dhaka houses hundreds of thousands in corrugated tin stretching to the horizon.</p>
-            <p><strong>Pyongyang's GDP is the lowest of the three.</strong> In March 2025, it opened its third 10,000-unit housing district in four years, with towers connected by skybridges. That's not prosperity. That's a command economy concentrating everything it has into one showcase.</p>
+            <p><strong>Cuba has 7x the GDP per capita.</strong> Havana's buildings collapse regularly. Officials estimate 28,000 people live in structures that could fall at any moment.</p>
+            <p><strong>Bangladesh has 4x the GDP per capita.</strong> The Karail slum houses hundreds of thousands in corrugated tin stretching to the horizon.</p>
+            <p><strong>Pyongyang is the poorest of the three.</strong> In March 2025, it opened its third 10,000-unit housing district in four years, with towers connected by skybridges. That's not prosperity. That's a command economy concentrating everything into one showcase.</p>
         </div>
         <div class="verdict__image">
-            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street towers close-up" style="object-fit: cover; height: auto;">
+            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street towers">
         </div>
     </div>
 
-    <!-- PYONGYANG UP CLOSE -->
-    <section style="padding-bottom: 0;">
-        <p class="section-label">Pyongyang up close</p>
-    </section>
+    <p class="gallery-label">Pyongyang up close</p>
     <div class="py-grid">
         <div class="py-grid__cell py-grid__cell--wide">
-            <img src="images/hwasong-skyline.jpg" alt="Hwasong district aerial, 10,000 apartments, 2025">
-            <span class="py-grid__caption">Hwasong district, 10,000 units, opened 2025</span>
+            <img src="images/dprk-housing-aerial-1.png" alt="New housing development, aerial">
+            <span class="py-grid__caption">10,000-unit residential district</span>
         </div>
         <div class="py-grid__cell py-grid__cell--tall">
             <img src="images/pyongyang-ryomyong.jpg" alt="Ryomyong Street tower">
-            <span class="py-grid__caption">Ryomyong Condominium, 82 floors</span>
+            <span class="py-grid__caption">Ryomyong, 82 floors</span>
         </div>
         <div class="py-grid__cell">
-            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street close-up">
+            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street">
             <span class="py-grid__caption">Mirae Scientists Street</span>
         </div>
         <div class="py-grid__cell">
-            <img src="images/hwasong-overview.jpg" alt="Hwasong district towers under construction">
-            <span class="py-grid__caption">Hwasong towers, site inspection</span>
+            <img src="images/hwasong-overview.jpg" alt="Hwasong towers under construction">
+            <span class="py-grid__caption">Hwasong, March 2025</span>
         </div>
         <div class="py-grid__cell">
-            <img src="images/dprk-housing-aerial-1.png" alt="New housing development aerial">
-            <span class="py-grid__caption">Rimhung Street residential</span>
+            <img src="images/dprk-housing-aerial-2.jpeg" alt="Rimhung Street housing">
+            <span class="py-grid__caption">Rimhung Street</span>
         </div>
         <div class="py-grid__cell">
-            <img src="images/pyongyang-mirae-skyline.jpg" alt="Mirae Scientists Street skyline across Taedong River">
-            <span class="py-grid__caption">Mirae Scientists Street from the Taedong</span>
+            <img src="images/pyongyang-mirae-skyline.jpg" alt="Mirae skyline from Taedong River">
+            <span class="py-grid__caption">From the Taedong River</span>
         </div>
     </div>
 
-    <!-- FLOOD RECOVERY -->
     <div class="recovery">
         <div class="recovery__image">
             <img src="images/dprk-flood-recovery-2024-2026.png" alt="DPRK flood recovery: 2024 vs 2026">
@@ -464,7 +538,6 @@
         </div>
     </div>
 
-    <!-- BOTTOM LINE -->
     <div class="bottomline">
         <p>GDP measures aggregate output. It does not measure what a city <em>looks like</em>, what a state <em>can do</em>, or how dangerous it <em>actually is</em>.</p>
     </div>
