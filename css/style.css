@@ -499,6 +499,128 @@ img {
 }
 
 /* ============================================
+   COMPARE SLIDE (GDP comparison grid)
+   ============================================ */
+
+.slide--compare {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 48px 64px;
+    gap: 32px;
+}
+
+.slide--compare .slide__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.slide--compare .strip__title {
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: -2px;
+    line-height: 1.0;
+}
+
+.compare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    flex: 1;
+    align-content: center;
+}
+
+.compare-cell {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide.in-view .compare-cell { opacity: 1; transform: translateY(0); }
+.slide.in-view .compare-cell:nth-child(1) { transition-delay: 0.1s; }
+.slide.in-view .compare-cell:nth-child(2) { transition-delay: 0.3s; }
+.slide.in-view .compare-cell:nth-child(3) { transition-delay: 0.5s; }
+
+.compare-cell__image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+}
+
+.compare-cell__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.compare-cell__info {
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.compare-cell__city {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--white);
+    letter-spacing: -1px;
+}
+
+.compare-cell__gdp {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--amber);
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.compare-cell__detail {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.compare-cell--highlight .compare-cell__image {
+    box-shadow: 0 0 0 2px var(--amber);
+}
+
+.compare-cell--highlight .compare-cell__city {
+    color: var(--amber);
+}
+
+.compare-punchline {
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #AAAAAA;
+    max-width: 65ch;
+}
+
+@media (max-width: 900px) {
+    .slide--compare {
+        padding: 32px 24px;
+    }
+
+    .compare-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .compare-cell__image {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* ============================================
    SOURCES SLIDE
    ============================================ */
 
@@ -576,7 +698,9 @@ img {
 
 .slide__text > *,
 .title-overlay > *,
-.slide--sources > * {
+.slide--sources > *,
+.slide--compare > .slide__header,
+.slide--compare > .compare-punchline {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -584,10 +708,15 @@ img {
 
 .slide.in-view .slide__text > *,
 .slide.in-view .title-overlay > *,
-.slide.in-view.slide--sources > * {
+.slide.in-view.slide--sources > *,
+.slide.in-view.slide--compare > .slide__header,
+.slide.in-view.slide--compare > .compare-punchline {
     opacity: 1;
     transform: translateY(0);
 }
+
+.slide.in-view.slide--compare > .slide__header { transition-delay: 0.05s; }
+.slide.in-view.slide--compare > .compare-punchline { transition-delay: 0.7s; }
 
 .slide.in-view .slide__text > *:nth-child(1),
 .slide.in-view .title-overlay > *:nth-child(1) { transition-delay: 0.05s; }

@@ -3,36 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neenah Club — March 16, 2026</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: #f8f7f5;
-            color: #2a2520;
-        }
-        .placeholder {
-            text-align: center;
-        }
-        h1 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 0.95rem;
-            color: #6b6560;
-        }
-    </style>
+    <title>Getting Korea Right - Neenah Club - March 16, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="placeholder">
-        <h1>Coming Soon</h1>
-        <p>Neenah Club &middot; March 16, 2026</p>
-    </div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="section-nav" aria-label="Slide navigation">
+        <button class="nav-dot active" data-section="0" aria-label="Slide 1"></button>
+        <button class="nav-dot" data-section="1" aria-label="Slide 2"></button>
+        <button class="nav-dot" data-section="2" aria-label="Slide 3"></button>
+        <button class="nav-dot" data-section="3" aria-label="Slide 4"></button>
+        <button class="nav-dot" data-section="4" aria-label="Slide 5"></button>
+        <button class="nav-dot" data-section="5" aria-label="Slide 6"></button>
+        <button class="nav-dot" data-section="6" aria-label="Slide 7"></button>
+        <button class="nav-dot" data-section="7" aria-label="Slide 8"></button>
+        <button class="nav-dot" data-section="8" aria-label="Slide 9"></button>
+        <button class="nav-dot" data-section="9" aria-label="Slide 10"></button>
+        <button class="nav-dot" data-section="10" aria-label="Slide 11"></button>
+        <button class="nav-dot" data-section="11" aria-label="Slide 12"></button>
+        <button class="nav-dot" data-section="12" aria-label="Slide 13"></button>
+        <button class="nav-dot" data-section="13" aria-label="Slide 14"></button>
+        <button class="nav-dot" data-section="14" aria-label="Slide 15"></button>
+        <button class="nav-dot" data-section="15" aria-label="Slide 16"></button>
+        <button class="nav-dot" data-section="16" aria-label="Slide 17"></button>
+        <button class="nav-dot" data-section="17" aria-label="Slide 18"></button>
+        <button class="nav-dot" data-section="18" aria-label="Slide 19"></button>
+        <button class="nav-dot" data-section="19" aria-label="Slide 20"></button>
+    </nav>
+
+    <main>
+        <section class="slide slide--title">
+            <div class="title-collage">
+                <div class="collage-cell"><img src="images/satellite-korea-night.jpg" alt="Korean peninsula at night"></div>
+                <div class="collage-cell"><img src="images/fishing-party-bigot.png" alt="Historical cartoon of powers fishing for Korea"></div>
+                <div class="collage-cell"><img src="images/armistice-signing.jpg" alt="Korean Armistice signing"></div>
+                <div class="collage-cell collage-cell--tall"><img src="images/pyongyang-mirae-skyline.jpg" alt="Pyongyang skyline"></div>
+                <div class="collage-cell collage-cell--wide"><img src="images/refugees-soldiers.jpg" alt="Korean War refugees and soldiers"></div>
+            </div>
+            <div class="title-overlay">
+                <p class="strip__kicker">Neenah Club · Monday, March 16, 2026 · 12:15 PM</p>
+                <h1 class="strip__title">Getting Korea Right</h1>
+                <p class="strip__sub">A Wisconsin conversation about a badly misread country</p>
+                <div class="title-overlay__footer">
+                    <p class="strip__credit">Matty Wegehaupt</p>
+                    <p class="strip__role">Target: 33 minutes talk + 12 minutes Q&A</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image slide__image--warm slide__image--contain">
+                <img src="images/satellite-korea-night.jpg" alt="Satellite image of Korea at night">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">1. The Problem</p>
+                <h2 class="strip__title strip__title--md">Most Americans see Korea through two pictures</h2>
+                <p class="strip__body">MASH and missiles. That frame is understandable, but too thin to explain what Korea is now or why it matters to Wisconsin.</p>
+                <p class="strip__caption">Timing: ~2:00</p>
+            </div>
+        </section>
+
+        <section class="slide slide--stats">
+            <header class="slide__header">
+                <p class="strip__kicker">2. Start Local</p>
+                <h2 class="strip__title strip__title--md">Korea is already part of Wisconsin</h2>
+            </header>
+            <div class="slide__stats-grid">
+                <article class="stat-card">
+                    <p class="stat-card__number">132,000</p>
+                    <p class="stat-card__label">Wisconsinites who served in the Korean War</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">$700M</p>
+                    <p class="stat-card__label">Wisconsin exports to South Korea (2024)</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">12,287</p>
+                    <p class="stat-card__label">Korean-Americans in Wisconsin</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide slide--stats">
+            <header class="slide__header">
+                <p class="strip__kicker">3. Blood</p>
+                <h2 class="strip__title strip__title--md">The Korean War is Wisconsin history</h2>
+            </header>
+            <div class="slide__stats-grid">
+                <article class="stat-card">
+                    <p class="stat-card__number">801</p>
+                    <p class="stat-card__label">Wisconsinites killed</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">84</p>
+                    <p class="stat-card__label">Still missing in action</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">Fox Valley</p>
+                    <p class="stat-card__label">30+ dead across Winnebago and Outagamie counties</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/refugees-soldiers.jpg" alt="Korean War refugees and soldiers">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">4. One Person</p>
+                <h2 class="strip__title strip__title--md">Mitchell Red Cloud Jr. makes this real</h2>
+                <p class="strip__body">Ho-Chunk Nation, Hatfield, Wisconsin. Shot repeatedly, kept firing, Medal of Honor. Replace with his portrait before final.</p>
+                <p class="strip__caption">Asset placeholder: use Red Cloud public-domain photo.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--stats">
+            <header class="slide__header">
+                <p class="strip__kicker">5. Business</p>
+                <h2 class="strip__title strip__title--md">Korea is not peripheral to Wisconsin industry</h2>
+            </header>
+            <div class="slide__stats-grid">
+                <article class="stat-card">
+                    <p class="stat-card__number">55 years</p>
+                    <p class="stat-card__label">Kimberly-Clark / Yuhan-Kimberly joint venture</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">$1B+</p>
+                    <p class="stat-card__label">Annual JV revenue scale</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">#9</p>
+                    <p class="stat-card__label">South Korea among Wisconsin trade partners</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image slide__image--warm">
+                <img src="images/headshot.jpg" alt="Placeholder for local Wisconsin-Korea culture collage">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">6. Culture</p>
+                <h2 class="strip__title strip__title--md">Adoption, restaurants, taekwondo, family ties</h2>
+                <p class="strip__body">Korea appears in ordinary Wisconsin life more often than people think. This is not only foreign policy.</p>
+                <p class="strip__caption">Replace with local collage (Appleton restaurants, Camp Choson, etc.).</p>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/fishing-party-bigot.png" alt="Bigot cartoon, powers fishing for Korea">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">7. Why Misreading Is Old</p>
+                <h2 class="strip__title strip__title--md">Great powers treated Korea as an object</h2>
+                <p class="strip__body">For over a century, external powers framed Korea as a prize. Many Western narratives still repeat that habit.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/korea-crushed-1904.png" alt="1904 postcard of Korea crushed between empires">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">8. Strategic Geography</p>
+                <h2 class="strip__title strip__title--md">Pressure on Korea is structural, not temporary</h2>
+                <p class="strip__body">Korea’s location has repeatedly made it a high-friction zone between larger states.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/armistice-signing.jpg" alt="Armistice signing at Panmunjom">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">9. One Crucial Fact</p>
+                <h2 class="strip__title strip__title--md">South Korea did not sign the 1953 armistice</h2>
+                <p class="strip__body">The war paused but never fully ended in legal-political terms. That still shapes risk and policy in Northeast Asia.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--split slide--inverted">
+            <div class="slide__text">
+                <p class="strip__kicker">10. Misread #1</p>
+                <h2 class="strip__title strip__title--md">North Korea is not a simple collapse story</h2>
+                <p class="strip__body">DPRK is brittle, coercive, and dangerous, but capable in selective state functions. Better diagnosis produces better policy judgment.</p>
+            </div>
+            <div class="slide__image">
+                <img src="images/pyongyang-mirae-skyline.jpg" alt="Pyongyang skyline at Mirae Scientists Street">
+            </div>
+        </section>
+
+        <section class="slide slide--compare">
+            <header class="slide__header">
+                <p class="strip__kicker">11. GDP Is a Bad Map</p>
+                <h2 class="strip__title strip__title--md">Three capitals. Same question.</h2>
+            </header>
+            <div class="compare-grid">
+                <div class="compare-cell">
+                    <div class="compare-cell__image">
+                        <img src="images/havana-decay.jpg" alt="Crumbling buildings on Calle Industria, Havana">
+                    </div>
+                    <div class="compare-cell__info">
+                        <p class="compare-cell__city">Havana</p>
+                        <p class="compare-cell__gdp">$12,300</p>
+                        <p class="compare-cell__detail">GDP per capita (PPP)</p>
+                    </div>
+                </div>
+                <div class="compare-cell">
+                    <div class="compare-cell__image">
+                        <img src="images/dhaka-karail.jpg" alt="Karail slum aerial view, Dhaka">
+                    </div>
+                    <div class="compare-cell__info">
+                        <p class="compare-cell__city">Dhaka</p>
+                        <p class="compare-cell__gdp">$7,500</p>
+                        <p class="compare-cell__detail">GDP per capita (PPP)</p>
+                    </div>
+                </div>
+                <div class="compare-cell compare-cell--highlight">
+                    <div class="compare-cell__image">
+                        <img src="images/pyongyang-ryomyong.jpg" alt="Ryomyong Street towers, Pyongyang">
+                    </div>
+                    <div class="compare-cell__info">
+                        <p class="compare-cell__city">Pyongyang</p>
+                        <p class="compare-cell__gdp">$1,700</p>
+                        <p class="compare-cell__detail">GDP per capita (PPP)</p>
+                    </div>
+                </div>
+            </div>
+            <p class="compare-punchline">The lowest GDP produces the most impressive-looking capital. A command economy can concentrate everything into one showcase city. GDP measures aggregate output, not visible reality.</p>
+        </section>
+
+        <section class="slide slide--split slide--inverted">
+            <div class="slide__text">
+                <p class="strip__kicker">12. Capabilities Matter</p>
+                <h2 class="strip__title strip__title--md">Danger comes from capacity, not chaos</h2>
+                <p class="strip__body">The regime can still mobilize resources at scale for strategic priorities, including missile and military systems.</p>
+            </div>
+            <div class="slide__image">
+                <img src="images/kju-hwasong17-icbm.jpg" alt="Kim Jong-un with Hwasong-17 missile">
+            </div>
+        </section>
+
+        <section class="slide slide--stats">
+            <header class="slide__header">
+                <p class="strip__kicker">13. Misread #2</p>
+                <h2 class="strip__title strip__title--md">South Korea is a major industrial power</h2>
+            </header>
+            <div class="slide__stats-grid">
+                <article class="stat-card">
+                    <p class="stat-card__number">70%</p>
+                    <p class="stat-card__label">Global memory chip production share (approx.)</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">#1</p>
+                    <p class="stat-card__label">Industrial robot density</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">Top Tier</p>
+                    <p class="stat-card__label">Defense production and export capacity</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/us-flag-beijing-museum.jpg" alt="Captured US 31st Infantry Regiment flag in Beijing museum">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">14. Memory Is Strategic</p>
+                <h2 class="strip__title strip__title--md">History in East Asia is still operational</h2>
+                <p class="strip__body">Symbols of unresolved conflict are still displayed, taught, and mobilized in contemporary politics.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--stats">
+            <header class="slide__header">
+                <p class="strip__kicker">15. Misread #3</p>
+                <h2 class="strip__title strip__title--md">This is not far from Neenah</h2>
+            </header>
+            <div class="slide__stats-grid">
+                <article class="stat-card">
+                    <p class="stat-card__number">$172M</p>
+                    <p class="stat-card__label">Wisconsin food exports to South Korea</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">OMFV</p>
+                    <p class="stat-card__label">Oshkosh Defense + Hanwha collaboration context</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-card__number">Daily</p>
+                    <p class="stat-card__label">Korean cars, products, and local institutions in Fox Valley life</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide slide--cha">
+            <div class="cha-landing">
+                <img src="images/cha-nyt-highlighted.png" alt="Victor Cha New York Times excerpt">
+            </div>
+            <p class="cha-landing__label strip__caption">16. Expert certainty can fail. Stay humble.</p>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image slide__image--warm">
+                <img src="images/dprk-flood-recovery-2024-2026.png" alt="North Korea construction and flood recovery image">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">17. Working Model</p>
+                <h2 class="strip__title strip__title--md">Read Korea through three lenses</h2>
+                <p class="strip__body"><strong>Security:</strong> unresolved war and deterrence.<br><strong>Industry:</strong> advanced capacity and supply chains.<br><strong>Society:</strong> local ties and lived culture.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--split">
+            <div class="slide__image">
+                <img src="images/satellite-korea-night.jpg" alt="Korean peninsula at night">
+            </div>
+            <div class="slide__text">
+                <p class="strip__kicker">18. Closing</p>
+                <h2 class="strip__title strip__title--md">Korea is not distant. It is already part of Wisconsin.</h2>
+                <p class="strip__body">Getting Korea right is less about memorizing facts and more about updating assumptions inherited from another era.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--sources">
+            <p class="strip__kicker">19. Q&A</p>
+            <h2 class="strip__title strip__title--md">Questions</h2>
+            <ul class="sources-list">
+                <li><span class="source-type">Data</span><span>Wisconsin Korean War service and casualty figures</span></li>
+                <li><span class="source-type">Data</span><span>Wisconsin-South Korea trade and food export figures (2024)</span></li>
+                <li><span class="source-type">Data</span><span>Korea industrial and defense capability indicators</span></li>
+                <li><span class="source-type">Asset</span><span>Replace 2 placeholders: Red Cloud portrait, KC/Yuhan visual</span></li>
+            </ul>
+            <div class="presenter-card">
+                <p class="presenter-card__name">Matty Wegehaupt</p>
+                <p class="presenter-card__role">Neenah Club · March 16, 2026</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
