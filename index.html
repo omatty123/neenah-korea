@@ -107,6 +107,37 @@
             max-width: 52ch;
         }
 
+        /* ---- EXPERT ---- */
+
+        .expert {
+            background: var(--white);
+            padding: 24px;
+        }
+
+        .expert__image {
+            max-height: 480px;
+            overflow: hidden;
+        }
+
+        .expert__image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            max-height: 480px;
+        }
+
+        .expert__caption {
+            padding: 12px 4px 0;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--gray-700);
+        }
+
+        .expert__caption strong {
+            color: var(--black);
+            font-weight: 600;
+        }
+
         /* ---- HISTORY GRID ---- */
 
         .history {
@@ -270,6 +301,13 @@
             </div>
         </div>
     </header>
+
+    <div class="expert">
+        <div class="expert__image">
+            <img src="images/cha-nyt-highlighted.png" alt="Victor Cha quoted in the New York Times, highlighted passage">
+        </div>
+        <p class="expert__caption"><strong>This is what getting it wrong looks like.</strong> Experts, newspapers, governments. The confidence is the problem.</p>
+    </div>
 
     <div class="frame">
         <p>Most Americans know two things about Korea: MASH and missiles. That frame made sense in 1953. It is now dangerously incomplete.</p>
