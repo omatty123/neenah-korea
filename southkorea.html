@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Korea: The Invisible Power - Neenah Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #111;
+            --gray-900: #222;
+            --gray-700: #444;
+            --gray-500: #777;
+            --gray-300: #bbb;
+            --gray-100: #eee;
+            --surface: #f7f7f5;
+            --white: #fff;
+            --amber: #b8913a;
+            --amber-light: #d4af5b;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--black);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+        a { color: var(--amber); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ---- BREADCRUMB ---- */
+
+        .breadcrumb {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 24px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .breadcrumb a { color: var(--gray-700); }
+        .breadcrumb a:hover { color: var(--black); }
+
+        .breadcrumb__tag {
+            color: var(--gray-500);
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* ---- HERO ---- */
+
+        .hero {
+            margin-top: 37px;
+            padding: 28px 32px;
+            background: var(--surface);
+        }
+
+        .hero__number {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 700;
+            line-height: 0.9;
+            letter-spacing: -3px;
+            color: var(--black);
+        }
+
+        .hero__label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-top: 8px;
+        }
+
+        .hero__sub {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--gray-700);
+            margin-top: 6px;
+        }
+
+        /* ---- STATS GRID ---- */
+
+        .stats {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .stats__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 20px 20px 18px;
+        }
+
+        .stat-card__number {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -1px;
+            color: var(--black);
+        }
+
+        .stat-card__label {
+            font-size: 0.78rem;
+            line-height: 1.4;
+            color: var(--gray-700);
+            margin-top: 6px;
+        }
+
+        /* ---- CROSSOVER ---- */
+
+        .crossover {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .crossover__text {
+            padding: 28px 32px;
+            background: var(--white);
+        }
+
+        .crossover__text h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            line-height: 1.1;
+            letter-spacing: -1px;
+            color: var(--black);
+            margin-bottom: 14px;
+        }
+
+        .crossover__text p {
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+        }
+
+        .crossover__accent {
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crossover__accent-block {
+            width: 60%;
+            height: 60%;
+            background: linear-gradient(135deg, var(--amber), var(--amber-light));
+            opacity: 0.35;
+        }
+
+        /* ---- WISCONSIN ---- */
+
+        .wisconsin {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .wisconsin__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            padding: 0 4px;
+        }
+
+        .wisconsin__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .wisconsin__note {
+            font-size: 10px;
+            color: var(--gray-500);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .wisconsin__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+        }
+
+        /* ---- EXPERT CERTAINTY ---- */
+
+        .expert {
+            background: var(--white);
+            padding: 24px;
+        }
+
+        .expert__image {
+            max-height: 520px;
+            overflow: hidden;
+        }
+
+        .expert__image img {
+            object-fit: contain;
+            height: auto;
+            max-height: 520px;
+        }
+
+        .expert__caption {
+            padding: 12px 4px 0;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--gray-700);
+        }
+
+        .expert__caption strong {
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        /* ---- MEMORY ---- */
+
+        .memory {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .memory__image {
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .memory__image img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .memory__text {
+            padding: 28px 32px;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .memory__text .section-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 10px;
+        }
+
+        .memory__text p {
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+        }
+
+        /* ---- THREE LENSES ---- */
+
+        .lenses {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .lenses__header {
+            padding: 0 4px;
+            margin-bottom: 16px;
+        }
+
+        .lenses__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .lenses__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+        }
+
+        .lens-card {
+            background: var(--white);
+            padding: 20px 20px 18px;
+        }
+
+        .lens-card__name {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 4px;
+        }
+
+        .lens-card__desc {
+            font-size: 0.78rem;
+            line-height: 1.45;
+            color: var(--gray-700);
+        }
+
+        /* ---- BOTTOM LINE ---- */
+
+        .bottomline {
+            padding: 28px 32px 20px;
+            background: var(--black);
+        }
+
+        .bottomline p {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            color: #ddd;
+            max-width: 50ch;
+        }
+
+        .bottomline em {
+            color: var(--amber-light);
+            font-style: italic;
+        }
+
+        .bottomline__presenter {
+            margin-top: 24px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gray-500);
+        }
+
+        .bottomline__questions {
+            margin-top: 28px;
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--amber-light);
+            padding-bottom: 20px;
+        }
+
+        /* ---- RESPONSIVE ---- */
+
+        @media (max-width: 900px) {
+            .stats { padding: 16px; }
+            .stats__grid { grid-template-columns: 1fr 1fr; }
+            .crossover { grid-template-columns: 1fr; }
+            .crossover__accent { display: none; }
+            .wisconsin { padding: 16px; }
+            .wisconsin__grid { grid-template-columns: 1fr; gap: 2px; }
+            .expert { padding: 16px; }
+            .memory { grid-template-columns: 1fr; }
+            .lenses { padding: 16px; }
+            .lenses__grid { grid-template-columns: 1fr; gap: 2px; }
+            .bottomline { padding: 20px 16px 16px; }
+            .hero { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="breadcrumb">
+        <a href="index.html">&larr; Back to Presentation</a>
+        <span class="breadcrumb__tag">Neenah Club &middot; March 16, 2026</span>
+    </nav>
+
+    <!-- HERO -->
+
+    <header class="hero">
+        <span class="hero__number">#10</span>
+        <p class="hero__label">Global economy by GDP</p>
+        <p class="hero__sub">South Korea. Smaller than Indiana.</p>
+    </header>
+
+    <!-- STATS GRID -->
+
+    <section class="stats">
+        <div class="stats__grid">
+            <div class="stat-card">
+                <p class="stat-card__number">70%</p>
+                <p class="stat-card__label">Global memory chip production</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">#1</p>
+                <p class="stat-card__label">Industrial robot density</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">#1</p>
+                <p class="stat-card__label">High-value shipbuilding</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">#2</p>
+                <p class="stat-card__label">NATO arms exporter (non-NATO)</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">#5</p>
+                <p class="stat-card__label">Global military by firepower</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">#1</p>
+                <p class="stat-card__label">Cosmetics exporter to US</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE CROSSOVER -->
+
+    <section class="crossover">
+        <div class="crossover__text">
+            <h2>North Korea was richer until 1974</h2>
+            <p>South Korea's GDP per capita has now passed Japan's. In one generation, it went from receiving aid to competing with the country that colonized it.</p>
+        </div>
+        <div class="crossover__accent">
+            <div class="crossover__accent-block"></div>
+        </div>
+    </section>
+
+    <!-- WISCONSIN CONNECTION -->
+
+    <section class="wisconsin">
+        <div class="wisconsin__header">
+            <span class="wisconsin__title">Wisconsin connection</span>
+            <span class="wisconsin__note">Trade &amp; defense</span>
+        </div>
+        <div class="wisconsin__grid">
+            <div class="stat-card">
+                <p class="stat-card__number">$700M</p>
+                <p class="stat-card__label">Wisconsin exports to South Korea (2024)</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">55 years</p>
+                <p class="stat-card__label">Kimberly-Clark / Yuhan-Kimberly joint venture</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-card__number">OMFV</p>
+                <p class="stat-card__label">Oshkosh Defense + Hanwha collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERT CERTAINTY -->
+
+    <section class="expert">
+        <div class="expert__image">
+            <img src="images/cha-nyt-highlighted.png" alt="Victor Cha quoted in the New York Times, highlighted passage">
+        </div>
+        <p class="expert__caption"><strong>Expert certainty can fail.</strong> Stay humble.</p>
+    </section>
+
+    <!-- MEMORY IS STRATEGIC -->
+
+    <section class="memory">
+        <div class="memory__image">
+            <img src="images/us-flag-beijing-museum.jpg" alt="American flag displayed in a Beijing military museum">
+        </div>
+        <div class="memory__text">
+            <p class="section-label">Memory is strategic</p>
+            <p>History in East Asia is still operational. Symbols of unresolved conflict are displayed, taught, and mobilized in contemporary politics.</p>
+        </div>
+    </section>
+
+    <!-- THREE LENSES -->
+
+    <section class="lenses">
+        <div class="lenses__header">
+            <span class="lenses__title">Read Korea through three lenses</span>
+        </div>
+        <div class="lenses__grid">
+            <div class="lens-card">
+                <p class="lens-card__name">Security</p>
+                <p class="lens-card__desc">Unresolved war and deterrence</p>
+            </div>
+            <div class="lens-card">
+                <p class="lens-card__name">Industry</p>
+                <p class="lens-card__desc">Advanced capacity and supply chains</p>
+            </div>
+            <div class="lens-card">
+                <p class="lens-card__name">Society</p>
+                <p class="lens-card__desc">Local ties and lived culture</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTTOM LINE -->
+
+    <footer class="bottomline">
+        <p>Getting Korea right is not about memorizing facts. It is about <em>updating assumptions</em> inherited from another era.</p>
+        <p class="bottomline__presenter">Matty Wegehaupt &middot; Neenah Club &middot; March 16, 2026</p>
+        <p class="bottomline__questions">Questions?</p>
+    </footer>
+
+</body>
+</html>
