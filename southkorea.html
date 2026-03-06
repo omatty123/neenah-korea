@@ -134,6 +134,80 @@
             margin-top: 6px;
         }
 
+        /* ---- POWER RANKING ---- */
+
+        .ranking {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .ranking__header {
+            padding: 0 4px;
+            margin-bottom: 16px;
+        }
+
+        .ranking__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .ranking__source {
+            font-size: 10px;
+            color: var(--gray-500);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .ranking__list {
+            display: grid;
+            gap: 3px;
+        }
+
+        .ranking__row {
+            display: grid;
+            grid-template-columns: 48px 1fr auto;
+            align-items: center;
+            background: var(--white);
+            padding: 14px 20px;
+        }
+
+        .ranking__row--highlight {
+            background: var(--black);
+        }
+
+        .ranking__pos {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gray-500);
+        }
+
+        .ranking__row--highlight .ranking__pos {
+            color: var(--amber-light);
+        }
+
+        .ranking__country {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .ranking__row--highlight .ranking__country {
+            color: #fff;
+        }
+
+        .ranking__index {
+            font-size: 0.78rem;
+            color: var(--gray-500);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .ranking__row--highlight .ranking__index {
+            color: var(--gray-300);
+        }
+
         /* ---- CROSSOVER ---- */
 
         .crossover {
@@ -420,12 +494,44 @@
                 <p class="stat-card__label">NATO arms exporter (non-NATO)</p>
             </div>
             <div class="stat-card">
-                <p class="stat-card__number">#5</p>
-                <p class="stat-card__label">Global military by firepower</p>
-            </div>
-            <div class="stat-card">
                 <p class="stat-card__number">#1</p>
                 <p class="stat-card__label">Cosmetics exporter to US</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILITARY POWER RANKING -->
+
+    <section class="ranking">
+        <div class="ranking__header">
+            <span class="ranking__title">Global military power ranking</span>
+            <span class="ranking__source"> — GlobalFirepower 2026</span>
+        </div>
+        <div class="ranking__list">
+            <div class="ranking__row">
+                <span class="ranking__pos">1</span>
+                <span class="ranking__country">United States</span>
+                <span class="ranking__index">0.0741</span>
+            </div>
+            <div class="ranking__row">
+                <span class="ranking__pos">2</span>
+                <span class="ranking__country">Russia</span>
+                <span class="ranking__index">0.0791</span>
+            </div>
+            <div class="ranking__row">
+                <span class="ranking__pos">3</span>
+                <span class="ranking__country">China</span>
+                <span class="ranking__index">0.0919</span>
+            </div>
+            <div class="ranking__row">
+                <span class="ranking__pos">4</span>
+                <span class="ranking__country">India</span>
+                <span class="ranking__index">0.1346</span>
+            </div>
+            <div class="ranking__row ranking__row--highlight">
+                <span class="ranking__pos">5</span>
+                <span class="ranking__country">South Korea</span>
+                <span class="ranking__index">0.1642</span>
             </div>
         </div>
     </section>
