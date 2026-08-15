@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin & Korea - Neenah Club</title>
+
+    <meta name="description" content="The whole Korean peninsula is only 30% larger than Wisconsin, with thirteen times the people.">
+
+    <meta property="og:title" content="Wisconsin & Korea">
+    <meta property="og:description" content="The whole Korean peninsula is only 30% larger than Wisconsin, with thirteen times the people.">
+    <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/truesize-southkorea.png">
+    <meta property="og:url" content="https://omatty123.github.io/neenah-korea/size.html">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wisconsin & Korea">
+    <meta name="twitter:description" content="The whole Korean peninsula is only 30% larger than Wisconsin, with thirteen times the people.">
+    <meta name="twitter:image" content="https://omatty123.github.io/neenah-korea/images/truesize-southkorea.png">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23555'/%3E%3Crect x='16' width='16' height='32' fill='%23b8913a'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #111;
+            --gray-900: #222;
+            --gray-700: #444;
+            --gray-500: #777;
+            --gray-300: #bbb;
+            --gray-100: #eee;
+            --surface: #f7f7f5;
+            --white: #fff;
+            --amber: #b8913a;
+            --amber-light: #d4af5b;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--black);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+        a { color: var(--amber); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ---- BREADCRUMB ---- */
+
+        .breadcrumb {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 24px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .breadcrumb a { color: var(--gray-700); }
+        .breadcrumb a:hover { color: var(--black); }
+
+        .breadcrumb__tag {
+            color: var(--gray-500);
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* ---- HERO ---- */
+
+        .hero {
+            margin-top: 37px;
+            padding: 32px 40px 24px;
+            background: var(--black);
+        }
+
+        .hero__punch {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            color: #fff;
+            max-width: 22ch;
+        }
+
+        .hero__punch em {
+            color: var(--amber-light);
+            font-style: normal;
+        }
+
+        .hero__sub {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            margin-top: 12px;
+            line-height: 1.5;
+        }
+
+        /* ---- MAP COMPARISON ---- */
+
+        .maps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .maps__cell {
+            background: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .maps__cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .maps__label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 6px 10px;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.9);
+            background: linear-gradient(transparent, rgba(0,0,0,0.6));
+        }
+
+        .maps__flag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(4px);
+            padding: 5px 10px;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--black);
+            letter-spacing: -0.3px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        }
+
+        .maps__flag-icon {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        /* ---- LATITUDE NOTE ---- */
+
+        .latnote {
+            padding: 10px 24px;
+            background: var(--white);
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            color: var(--gray-700);
+        }
+
+        .latnote strong {
+            color: var(--black);
+            font-weight: 700;
+        }
+
+        .latnote em {
+            color: var(--amber);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        /* ---- DUAL BAR CHARTS (Size + Population) ---- */
+
+        .dualchart {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .chart {
+            background: var(--white);
+            padding: 14px 20px 16px;
+        }
+
+        .chart__title {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gray-500);
+            margin-bottom: 10px;
+        }
+
+        .chart__area {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            height: 200px;
+            justify-content: center;
+        }
+
+        .chart__col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+
+        .chart__value {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 3px;
+        }
+
+        .chart__value--amber {
+            color: var(--amber);
+        }
+
+        .chart__bar {
+            width: 72px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart__seg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .chart__seg--wi {
+            background: #1a3a5c;
+        }
+
+        .chart__seg--sk {
+            background: var(--amber);
+        }
+
+        .chart__seg--nk {
+            background: #c25a4a;
+        }
+
+        .chart__label {
+            font-size: 0.7rem;
+            color: var(--gray-500);
+            margin-top: 6px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .chart__flag-img {
+            width: 24px;
+            height: auto;
+            object-fit: contain;
+            margin-top: 4px;
+        }
+
+        /* ---- SIMILARITIES ---- */
+
+        .similar {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .similar__header {
+            padding: 0 4px;
+            margin-bottom: 16px;
+        }
+
+        .similar__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .similar__sub {
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            margin-top: 2px;
+        }
+
+        .similar__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+        }
+
+        .similar__card {
+            background: var(--white);
+            padding: 22px 20px;
+        }
+
+        .similar__card-pair {
+            display: flex;
+            gap: 8px;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .similar__card-wi {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .similar__card-slash {
+            color: var(--gray-300);
+            font-size: 0.85rem;
+        }
+
+        .similar__card-kr {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--amber);
+        }
+
+        .similar__card-wi-detail {
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--gray-700);
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .similar__card-kr-detail {
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--gray-700);
+        }
+
+        /* ---- HISTORY ---- */
+
+        .history {
+            background: var(--white);
+            padding: 24px;
+        }
+
+        .history__header {
+            padding: 0 4px;
+            margin-bottom: 16px;
+        }
+
+        .history__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .history__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+        }
+
+        .history__cell {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .history__cell img {
+            aspect-ratio: 4 / 3;
+        }
+
+        .history__caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 6px 10px;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            background: linear-gradient(transparent, rgba(0,0,0,0.65));
+        }
+
+        .history__line {
+            margin-top: 14px;
+            padding: 0 4px;
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+        }
+
+        /* ---- NEXT ---- */
+
+        .next {
+            display: block;
+            padding: 22px 24px;
+            background: var(--surface);
+            border-top: 1px solid var(--gray-100);
+            transition: background 0.2s ease;
+        }
+
+        .next:hover {
+            background: var(--gray-100);
+            text-decoration: none;
+        }
+
+        .next__label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--amber);
+        }
+
+        .next__title {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--black);
+            margin-top: 2px;
+        }
+
+        /* ---- RESPONSIVE ---- */
+
+        @media (max-width: 900px) {
+            .hero { padding: 24px 20px 20px; }
+            .maps { grid-template-columns: 1fr; }
+            .stats-strip { grid-template-columns: repeat(3, 1fr); }
+            .pop-bar { padding: 12px 16px; }
+            .similar { padding: 16px; }
+            .similar__grid { grid-template-columns: 1fr; gap: 2px; }
+            .history { padding: 16px; }
+            .history__grid { grid-template-columns: 1fr; gap: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="breadcrumb">
+        <a href="index.html">&larr; Back to Presentation</a>
+        <span class="breadcrumb__tag">01 of 04</span>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero__punch">The whole peninsula is only <em>30% larger</em> than Wisconsin. 13 times the people.</h1>
+        <p class="hero__sub">86,269 square miles. 78 million people. Two countries, packed into a space barely bigger than this state.</p>
+    </header>
+
+    <!-- SIZE COMPARISON — thetruesize.com screenshots -->
+
+    <div class="maps">
+        <div class="maps__cell">
+            <img src="images/truesize-southkorea.png" alt="South Korea overlaid on Wisconsin — thetruesize.com">
+            <span class="maps__flag">&#x1F1F0;&#x1F1F7; ROK over Wisconsin</span>
+            <span class="maps__label">South Korea overlaid on Wisconsin</span>
+        </div>
+        <div class="maps__cell">
+            <img src="images/truesize-northkorea.png" alt="North Korea overlaid on Wisconsin — thetruesize.com">
+            <span class="maps__flag">&#x1F1F0;&#x1F1F5; DPRK over Wisconsin</span>
+            <span class="maps__label">North Korea overlaid on Wisconsin</span>
+        </div>
+    </div>
+
+
+    <!-- LATITUDE NOTE -->
+    <div class="latnote">
+        <strong>Madison</strong> 43°N. <em>Pyongyang</em> 39°N. Same latitude band, opposite sides of the Pacific.
+    </div>
+
+    <!-- DUAL BAR CHARTS — Size + Population -->
+    <!--
+        SIZE: max = 86,269 (peninsula) = 240px
+          WI 65,496 = 75.9% → 182px
+          SK 38,696 = 44.8% → 108px
+          NK 47,573 = 55.1% → 132px
+
+        POP: max = 77.7M (peninsula) = 240px
+          WI 5.9M = 7.6% → 24px (min)
+          SK 51.7M = 66.5% → 160px
+          NK 26M = 33.5% → 80px
+    -->
+
+    <!--
+        SIZE: max 86,269 = 200px. WI 65,496=76%=152px. NK 47,573=55%=110px. SK 38,696=45%=90px.
+        POP: max 77.7M = 200px. WI 5.9M=7.6%=18px. NK 26M=33%=67px. SK 51.7M=67%=133px.
+        GDP: max $1.71T (SK) = 200px. WI $380B=22%=44px. SK $1.71T=100%=200px. NK $30B=1.8%=10px min.
+    -->
+    <div class="dualchart">
+        <!-- SIZE -->
+        <div class="chart">
+            <p class="chart__title">Area (sq mi)</p>
+            <div class="chart__area">
+                <div class="chart__col">
+                    <span class="chart__value">65,496</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--wi" style="height:152px;"></div>
+                    </div>
+                    <img src="images/wi-flag.png" class="chart__flag-img" alt="WI">
+                    <span class="chart__label">Wisconsin</span>
+                </div>
+                <div class="chart__col">
+                    <span class="chart__value chart__value--amber">86,269</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--nk" style="height:110px;">NK 47,573</div>
+                        <div class="chart__seg chart__seg--sk" style="height:90px;">SK 38,696</div>
+                    </div>
+                    <span class="chart__label">Korean<br>Peninsula</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- POPULATION -->
+        <div class="chart">
+            <p class="chart__title">Population</p>
+            <div class="chart__area">
+                <div class="chart__col">
+                    <span class="chart__value">5.9M</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--wi" style="height:18px;"></div>
+                    </div>
+                    <img src="images/wi-flag.png" class="chart__flag-img" alt="WI">
+                    <span class="chart__label">Wisconsin</span>
+                </div>
+                <div class="chart__col">
+                    <span class="chart__value chart__value--amber">77.7M</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--nk" style="height:67px;">NK 26M</div>
+                        <div class="chart__seg chart__seg--sk" style="height:133px;">SK 51.7M</div>
+                    </div>
+                    <span class="chart__label">Korean<br>Peninsula</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GDP -->
+        <div class="chart">
+            <p class="chart__title">GDP</p>
+            <div class="chart__area">
+                <div class="chart__col">
+                    <span class="chart__value">$380B</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--wi" style="height:44px;"></div>
+                    </div>
+                    <img src="images/wi-flag.png" class="chart__flag-img" alt="WI">
+                    <span class="chart__label">Wisconsin</span>
+                </div>
+                <div class="chart__col">
+                    <span class="chart__value chart__value--amber">$1.74T</span>
+                    <div class="chart__bar">
+                        <div class="chart__seg chart__seg--nk" style="height:10px;"></div>
+                        <div class="chart__seg chart__seg--sk" style="height:190px;">SK $1.71T</div>
+                    </div>
+                    <span class="chart__label">Korean<br>Peninsula</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIMILARITIES -->
+
+    <section class="similar">
+        <div class="similar__header">
+            <span class="similar__title">Where the parallels run</span>
+            <p class="similar__sub">Different histories, familiar instincts</p>
+        </div>
+        <div class="similar__grid" style="grid-template-columns:1fr 1fr;">
+            <div class="similar__card">
+                <div class="similar__card-pair">
+                    <span class="similar__card-wi">Water / Nature / 4 Seasons</span>
+                </div>
+                <p class="similar__card-wi-detail">Wisconsin: 15,000+ lakes. Fishing, ice shanties, lake cabins. Brutal winters, lush summers. Water and weather shape the calendar and the identity.</p>
+                <p class="similar__card-kr-detail">Korea: 70% mountains, watersheds everywhere. Sea on three sides. Four sharp seasons deeply embedded in culture, food, and holidays. Nature is not backdrop, it is structure.</p>
+            </div>
+            <div class="similar__card">
+                <div class="similar__card-pair">
+                    <span class="similar__card-wi">Gem&uuml;tlichkeit</span>
+                    <span class="similar__card-slash">/</span>
+                    <span class="similar__card-kr">Jeong (정)</span>
+                </div>
+                <p class="similar__card-wi-detail">German-heritage word for cozy communal warmth. Untranslatable. You feel it at a supper club, a fish boil, a Packers tailgate. Highest binge-drinking rate in the US. The tavern is a social institution.</p>
+                <p class="similar__card-kr-detail">Korean word for deep emotional bonds built through shared time. Untranslatable. You feel it at a family meal, a late night with coworkers. Soju is the best-selling spirit on Earth. 건배 means "dry the glass."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEXT -->
+
+    <a class="next" href="memorial.html">
+        <span class="next__label">Next</span>
+        <p class="next__title">Wisconsin's War Dead &rarr;</p>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin's War Dead - Neenah Club</title>
+
+    <meta name="description" content="801 Wisconsin residents were killed in the Korean War. The war has still not formally ended.">
+
+    <meta property="og:title" content="Wisconsin's War Dead">
+    <meta property="og:description" content="801 Wisconsin residents were killed in the Korean War. The war has still not formally ended.">
+    <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/plover-memorial-flag.jpg">
+    <meta property="og:url" content="https://omatty123.github.io/neenah-korea/memorial.html">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wisconsin's War Dead">
+    <meta name="twitter:description" content="801 Wisconsin residents were killed in the Korean War. The war has still not formally ended.">
+    <meta name="twitter:image" content="https://omatty123.github.io/neenah-korea/images/plover-memorial-flag.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23555'/%3E%3Crect x='16' width='16' height='32' fill='%23b8913a'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #111;
+            --gray-900: #222;
+            --gray-700: #444;
+            --gray-500: #777;
+            --gray-300: #bbb;
+            --gray-100: #eee;
+            --surface: #f7f7f5;
+            --white: #fff;
+            --amber: #b8913a;
+            --amber-light: #d4af5b;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--black);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+        a { color: var(--amber); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ---- BREADCRUMB ---- */
+
+        .breadcrumb {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 24px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .breadcrumb a { color: var(--gray-700); }
+        .breadcrumb a:hover { color: var(--black); }
+
+        .breadcrumb__tag {
+            color: var(--gray-500);
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* ---- HERO ---- */
+
+        .hero {
+            margin-top: 37px;
+            padding: 32px 40px 28px;
+            background: var(--black);
+        }
+
+        .hero__number {
+            font-family: var(--font-display);
+            font-size: clamp(6rem, 16vw, 12rem);
+            font-weight: 700;
+            line-height: 0.85;
+            letter-spacing: -6px;
+            color: #fff;
+        }
+
+        .hero__label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--amber-light);
+            margin-top: 16px;
+        }
+
+        .hero__sub {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--gray-500);
+            margin-top: 6px;
+            max-width: 40ch;
+        }
+
+        /* ---- SERVICE STATS ---- */
+
+        .service {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .service__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3px;
+        }
+
+        .service__card {
+            background: var(--white);
+            padding: 20px 20px 18px;
+        }
+
+        .service__number {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -1px;
+            color: var(--black);
+        }
+
+        .service__label {
+            font-size: 0.78rem;
+            line-height: 1.4;
+            color: var(--gray-700);
+            margin-top: 6px;
+        }
+
+        /* ---- ARMISTICE ---- */
+
+        .armistice {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .armistice__image {
+            overflow: hidden;
+        }
+
+        .armistice__text {
+            padding: 28px 32px;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .armistice__text-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 10px;
+        }
+
+        .armistice__text h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 2.8vw, 2rem);
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            margin-bottom: 12px;
+        }
+
+        .armistice__text p {
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+        }
+
+        /* ---- MEDAL OF HONOR ---- */
+
+        .medals {
+            padding: 24px;
+            background: var(--surface);
+        }
+
+        .medals__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            padding: 0 4px;
+        }
+
+        .medals__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .medals__note {
+            font-size: 10px;
+            color: var(--gray-500);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .medals__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+        }
+
+        .medal-card {
+            background: var(--white);
+            padding: 24px;
+        }
+
+        .medal-card__name {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 2px;
+        }
+
+        .medal-card__detail {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 12px;
+        }
+
+        .medal-card__story {
+            font-size: 0.82rem;
+            line-height: 1.6;
+            color: var(--gray-700);
+        }
+
+        .medal-card__story strong {
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        /* ---- NATIONAL CONTEXT ---- */
+
+        .national {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .national__stat {
+            background: var(--white);
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .national__number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -2px;
+            color: var(--black);
+        }
+
+        .national__label {
+            font-size: 0.82rem;
+            color: var(--gray-700);
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        .national__text {
+            background: var(--white);
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .national__text p {
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--gray-700);
+        }
+
+        .national__text strong {
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        /* ---- MEMORIAL IMAGES ---- */
+
+        .memorial-imgs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3px;
+            background: var(--gray-100);
+        }
+
+        .memorial-imgs__photo {
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .memorial-imgs__photo img {
+            height: 100%;
+            min-height: 320px;
+            object-fit: cover;
+        }
+
+        .memorial-imgs__caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 8px 12px;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            background: linear-gradient(transparent, rgba(0,0,0,0.65));
+        }
+
+        .memorial-imgs__photo {
+            position: relative;
+        }
+
+        /* ---- BOTTOM LINE ---- */
+
+        .bottomline {
+            padding: 32px 40px 28px;
+            background: var(--black);
+        }
+
+        .bottomline p {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            color: #ddd;
+            max-width: 40ch;
+        }
+
+        .bottomline em {
+            color: var(--amber-light);
+            font-style: normal;
+        }
+
+        /* ---- NEXT ---- */
+
+        .next {
+            display: block;
+            padding: 22px 24px;
+            background: var(--surface);
+            border-top: 1px solid var(--gray-100);
+            transition: background 0.2s ease;
+        }
+
+        .next:hover {
+            background: var(--gray-100);
+            text-decoration: none;
+        }
+
+        .next__label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--amber);
+        }
+
+        .next__title {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--black);
+            margin-top: 2px;
+        }
+
+        /* ---- RESPONSIVE ---- */
+
+        @media (max-width: 900px) {
+            .hero { padding: 24px 20px 20px; }
+            .service { padding: 16px; }
+            .service__grid { grid-template-columns: 1fr 1fr; }
+            .armistice { grid-template-columns: 1fr; }
+            .medals { padding: 16px; }
+            .medals__grid { grid-template-columns: 1fr; gap: 2px; }
+            .national { grid-template-columns: 1fr; }
+            .bottomline { padding: 24px 20px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="breadcrumb">
+        <a href="index.html">&larr; Back to Presentation</a>
+        <span class="breadcrumb__tag">02 of 04</span>
+    </nav>
+
+    <!-- HERO -->
+
+    <header class="hero">
+        <p class="hero__number">801</p>
+        <p class="hero__label">Wisconsin residents killed in the Korean War</p>
+        <p class="hero__sub">1950 &ndash; 1953</p>
+    </header>
+
+    <!-- SERVICE STATS -->
+
+    <section class="service">
+        <div class="service__grid">
+            <div class="service__card">
+                <p class="service__number">132,000</p>
+                <p class="service__label">Wisconsinites who served</p>
+            </div>
+            <div class="service__card">
+                <p class="service__number">4,286</p>
+                <p class="service__label">Wounded in action</p>
+            </div>
+            <div class="service__card">
+                <p class="service__number">111</p>
+                <p class="service__label">Prisoners of war</p>
+            </div>
+            <div class="service__card">
+                <p class="service__number">84</p>
+                <p class="service__label">Still missing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARMISTICE -->
+
+    <section class="armistice">
+        <div class="armistice__image">
+            <img src="images/armistice-signing.jpg" alt="Armistice signing at Panmunjom, 1953">
+        </div>
+        <div class="armistice__text">
+            <p class="armistice__text-label">One fact</p>
+            <h2>South Korea did not sign the 1953 armistice.</h2>
+            <p>The war paused. It never ended. There is no peace treaty. The Korean War is technically still ongoing, 73 years later.</p>
+        </div>
+    </section>
+
+    <!-- MEDAL OF HONOR -->
+
+    <section class="medals">
+        <div class="medals__header">
+            <span class="medals__title">Wisconsin Medal of Honor recipients</span>
+            <span class="medals__note">Korean War</span>
+        </div>
+        <div class="medals__grid">
+            <div class="medal-card">
+                <p class="medal-card__name">Cpl. Mitchell Red Cloud Jr.</p>
+                <p class="medal-card__detail">Ho-Chunk Nation &middot; Hatfield, WI &middot; Nov. 5, 1950</p>
+                <p class="medal-card__story">Detected roughly 1,000 Chinese troops approaching his hilltop position at 3:20 AM. Sounded the alarm and engaged them alone with his BAR at point-blank range. <strong>Shot multiple times in the chest, he refused evacuation, had himself propped against a tree, and kept firing until he was killed.</strong> His stand gave his company time to consolidate and repel the attack. He was 25.</p>
+            </div>
+            <div class="medal-card">
+                <p class="medal-card__name">Sgt. Einar H. Ingman Jr.</p>
+                <p class="medal-card__detail">Milwaukee / Tomahawk, WI &middot; Feb. 26, 1951</p>
+                <p class="medal-card__story">Took command of two squads during the Third Battle of Wonju. Charged an enemy machine-gun position and destroyed it, then attacked a second. <strong>Hit by grenade fragments and gunfire that tore through his face and neck, he still killed the entire gun crew before falling unconscious.</strong> Returned to Tomahawk and worked 32 years at a paper company.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NATIONAL CONTEXT -->
+
+    <section class="national">
+        <div class="national__stat">
+            <p class="national__number">36,574</p>
+            <p class="national__label">Total U.S. service members killed in Korea</p>
+        </div>
+        <div class="national__text">
+            <p>The Korean War is called "The Forgotten War." Wisconsin remembers. The state memorial in Plover features five bronze statues facing east, toward Korea. <strong>U.S. Highway 51 across Wisconsin is the Korean War Veterans Memorial Highway.</strong></p>
+        </div>
+    </section>
+
+    <!-- MEMORIAL IMAGES -->
+
+    <section class="memorial-imgs">
+        <div class="memorial-imgs__photo">
+            <img src="images/plover-memorial-statues.jpg" alt="Five bronze statues at the Wisconsin Korean War Veterans Memorial, Plover, WI">
+            <span class="memorial-imgs__caption">Wisconsin Korean War Veterans Memorial, Plover</span>
+        </div>
+        <div class="memorial-imgs__photo">
+            <img src="images/plover-memorial-wide.jpg" alt="Granite wall and bronze statues among tall pines, Wisconsin Korean War Veterans Memorial">
+            <span class="memorial-imgs__caption">Five statues facing east, toward Korea</span>
+        </div>
+    </section>
+
+    <!-- BOTTOM LINE -->
+
+    <div class="bottomline">
+        <p>The war <em>paused</em>. It never <em>ended</em>. Korea is not ancient history. It is <em>unfinished</em> business.</p>
+    </div>
+
+    <!-- NEXT -->
+
+    <a class="next" href="southkorea.html">
+        <span class="next__label">Next</span>
+        <p class="next__title">South Korea: The Invisible Power &rarr;</p>
+    </a>
+
+</body>
+</html>
