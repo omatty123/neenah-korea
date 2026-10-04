@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T17:02:35.356650+00:00",
+  "title": "Design System: Korea, ahead.",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(0.15 0.0321 240.37)",
+          "oklch(0.26 0.0321 240.37)",
+          "oklch(0.38 0.0321 240.37)",
+          "oklch(0.49 0.0321 240.37)",
+          "oklch(0.61 0.0321 240.37)",
+          "oklch(0.72 0.0321 240.37)",
+          "oklch(0.84 0.0321 240.37)",
+          "oklch(0.95 0.0321 240.37)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(0.15 0.0082 91.48)",
+          "oklch(0.26 0.0082 91.48)",
+          "oklch(0.38 0.0082 91.48)",
+          "oklch(0.49 0.0082 91.48)",
+          "oklch(0.61 0.0082 91.48)",
+          "oklch(0.72 0.0082 91.48)",
+          "oklch(0.84 0.0082 91.48)",
+          "oklch(0.95 0.0082 91.48)"
+        ]
+      },
+      "red": {
+        "role": "primary",
+        "displayName": "Red",
+        "tonalRamp": [
+          "oklch(0.15 0.1725 26.85)",
+          "oklch(0.26 0.1725 26.85)",
+          "oklch(0.38 0.1725 26.85)",
+          "oklch(0.49 0.1725 26.85)",
+          "oklch(0.61 0.1725 26.85)",
+          "oklch(0.72 0.1725 26.85)",
+          "oklch(0.84 0.1725 26.85)",
+          "oklch(0.95 0.1725 26.85)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(0.15 0.0236 239.10)",
+          "oklch(0.26 0.0236 239.10)",
+          "oklch(0.38 0.0236 239.10)",
+          "oklch(0.49 0.0236 239.10)",
+          "oklch(0.61 0.0236 239.10)",
+          "oklch(0.72 0.0236 239.10)",
+          "oklch(0.84 0.0236 239.10)",
+          "oklch(0.95 0.0236 239.10)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "tonalRamp": [
+          "oklch(0.15 0.0063 137.78)",
+          "oklch(0.26 0.0063 137.78)",
+          "oklch(0.38 0.0063 137.78)",
+          "oklch(0.49 0.0063 137.78)",
+          "oklch(0.61 0.0063 137.78)",
+          "oklch(0.72 0.0063 137.78)",
+          "oklch(0.84 0.0063 137.78)",
+          "oklch(0.95 0.0063 137.78)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home headline",
+        "purpose": "The exact user headline."
+      },
+      "page-title": {
+        "displayName": "Supporting title",
+        "purpose": "Titles on the five supporting pages."
+      },
+      "reading-body": {
+        "displayName": "Reading body",
+        "purpose": "Supporting-page paragraphs and lists."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "link-arrow",
+        "value": "transform .2s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Move text-link arrows 3px only when reduced motion is not requested."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "smooth",
+        "purpose": "Anchor scrolling only when reduced motion is not requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-home",
+        "value": "360px"
+      },
+      {
+        "name": "supporting-stack",
+        "value": "700px"
+      },
+      {
+        "name": "shared-mobile",
+        "value": "760px"
+      },
+      {
+        "name": "home-compact",
+        "value": "1100px"
+      },
+      {
+        "name": "home-wide",
+        "value": "1480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Rectangular home link to the arguments.",
+      "html": "<a class=\"ds-action\" href=\"#the-talk\">Explore the talk</a>",
+      "css": ".ds-action{display:inline-flex;gap:26px;align-items:center;min-height:46px;padding:9px 18px;color:var(--paper,#f7f5ef);background:var(--ink,#152632);text-decoration:none;font-family:var(--font-body,Manrope,sans-serif);font-size:.88rem;font-weight:700}.ds-action:hover{background:var(--red,#b8312d);color:var(--paper,#f7f5ef)}a:focus-visible,summary:focus-visible{outline:3px solid var(--red,#b8312d);outline-offset:5px}"
+    },
+    {
+      "name": "Primary action hover",
+      "kind": "button",
+      "refersTo": "button-primary-hover",
+      "description": "Red hover appearance with the same paper text.",
+      "html": "<a class=\"ds-action ds-action-hover\" href=\"#the-talk\">Explore the talk</a>",
+      "css": ".ds-action{display:inline-flex;gap:26px;align-items:center;min-height:46px;padding:9px 18px;color:var(--paper,#f7f5ef);background:var(--ink,#152632);text-decoration:none;font-family:var(--font-body,Manrope,sans-serif);font-size:.88rem;font-weight:700}.ds-action:hover{background:var(--red,#b8312d);color:var(--paper,#f7f5ef)}a:focus-visible,summary:focus-visible{outline:3px solid var(--red,#b8312d);outline-offset:5px}.ds-action-hover{background:var(--red,#b8312d)}"
+    },
+    {
+      "name": "Text link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Underlined evidence or topic link with a small arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"southkorea.html\">AI, factories &amp; ships <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:10px;color:var(--ink,#152632);font-family:var(--font-body,Manrope,sans-serif);font-size:.9rem;font-weight:700;text-underline-offset:.23em;text-decoration-thickness:1px}.ds-text-link:hover{color:var(--red,#b8312d)}.ds-text-link svg{flex-shrink:0}a:focus-visible,summary:focus-visible{outline:3px solid var(--red,#b8312d);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-text-link svg{transition:transform .2s cubic-bezier(.2,.8,.2,1)}.ds-text-link:hover svg{transform:translateX(3px)}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Two-link navigation with an underlined current page.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"index.html\" aria-current=\"page\">The talk</a><a href=\"bio.html\">The speaker</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;align-items:center;font-family:var(--font-body,Manrope,sans-serif);font-size:.88rem}.ds-nav a{padding:12px 0;color:var(--ink,#152632);text-decoration:none}.ds-nav a:hover{color:var(--red,#b8312d);text-decoration:underline}.ds-nav a[aria-current=page]{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:3px solid var(--red,#b8312d);outline-offset:5px}@media(max-width:760px){.ds-nav{gap:18px}}"
+    },
+    {
+      "name": "Preparation disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure",
+      "description": "Native keyboard-operable preparation disclosure with red plus/minus.",
+      "html": "<details class=\"ds-preparation\"><summary>Education</summary><div class=\"ds-details-content\">Additional preparation remains available here.</div></details>",
+      "css": ".ds-preparation{color:var(--ink,#152632);font-family:var(--font-body,Manrope,sans-serif);border-top:1px solid var(--rule,#d4d7d3);border-bottom:1px solid var(--rule,#d4d7d3)}.ds-preparation summary{cursor:pointer;padding:20px 32px 20px 0;position:relative;list-style:none;font-size:1.08rem;font-weight:700}.ds-preparation summary::-webkit-details-marker{display:none}.ds-preparation summary::after{content:\"+\";font-size:1.5rem;line-height:1;position:absolute;right:3px;top:20px;color:var(--red,#b8312d)}.ds-preparation[open]>summary::after{content:\"−\"}.ds-preparation[open]>summary{padding-bottom:16px}.ds-details-content{padding:0 0 24px;max-width:76ch;font-size:1.0625rem;line-height:1.7}a:focus-visible,summary:focus-visible{outline:3px solid var(--red,#b8312d);outline-offset:5px}"
+    },
+    {
+      "name": "Fact row",
+      "kind": "custom",
+      "refersTo": "fact-row",
+      "description": "A display value beside its dated explanation.",
+      "html": "<dl class=\"ds-facts\"><div class=\"ds-fact\"><dt>HBM4</dt><dd>High-bandwidth memory supplies data to AI processors.</dd></div></dl>",
+      "css": ".ds-facts{margin:0;color:var(--ink,#152632)}.ds-fact{display:grid;grid-template-columns:minmax(160px,.7fr) 1.3fr;gap:28px;padding:20px 0;border-top:1px solid var(--rule,#d4d7d3)}.ds-fact:last-child{border-bottom:1px solid var(--rule,#d4d7d3)}.ds-fact dt{font-family:var(--font-display,\"Bricolage Grotesque\",sans-serif);font-size:1.75rem;font-weight:700;line-height:1.15;letter-spacing:-.025em}.ds-fact dd{margin:0;font-family:var(--font-body,Manrope,sans-serif);font-size:1.0625rem;line-height:1.65}@media(max-width:700px){.ds-fact{grid-template-columns:1fr;gap:10px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Bold headline, readable evidence",
+    "overview": "The implemented system pairs large, tightly spaced headlines with a light paper surface, dark ink, one red accent, and documentary photographs. Compact navigation and ruled content rows support reading. The user’s exact headline, “When you follow Korea, you're ahead of the world”, is a durable identity commitment.",
+    "keyCharacteristics": [
+      "Bold, sentence-case headlines.",
+      "Flat surfaces and fine dividers.",
+      "Documentary images with visible captions.",
+      "Native disclosures for deeper preparation.",
+      "Dated sources next to the claims they support."
+    ],
+    "rules": [],
+    "dos": [
+      "Preserve the exact headline and its red “Korea” emphasis.",
+      "Reuse the shared styles and native HTML controls across current pages.",
+      "Keep source dates, qualifications, and image captions visible beside the relevant evidence.",
+      "Preserve existing page addresses, original images, and the dated preparation in `archive/2026-10-04/`.",
+      "Check actual computed type, focus, hover, and mobile wrapping when extending the system."
+    ],
+    "donts": [
+      "Replace documentary images with invented evidence.",
+      "Present construction photographs as proof of household welfare or undated rankings as current facts.",
+      "Delete deeper preparation to shorten the current pages.",
+      "Add carousels, hidden headlines, decorative shadows, or JavaScript-dependent reading controls.",
+      "Publish private Desktop research files with the public website."
+    ]
+  }
+}
