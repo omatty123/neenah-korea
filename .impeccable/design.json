@@ -188,6 +188,7 @@
     "rules": [],
     "dos": [
       "Preserve the exact headline and its red “Korea” emphasis.",
+      "Keep both Seoul and Pyongyang in the home opening, with visible city and country labels.",
       "Reuse the shared styles and native HTML controls across current pages.",
       "Keep source dates, qualifications, and image captions visible beside the relevant evidence.",
       "Preserve existing page addresses, original images, and the dated preparation in `archive/2026-10-04/`.",

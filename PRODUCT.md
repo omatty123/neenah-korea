@@ -24,7 +24,7 @@ Preserve the prepared Wisconsin comparison, Korean War memorial material, South 
 
 ## Brand Commitments
 
-The user's exact headline is: “When you follow Korea, you're ahead of the world”. The user requested a bold headline approach and a simpler website.
+The user's exact headline is: “When you follow Korea, you're ahead of the world”. The user requested a bold headline approach and a simpler website. Seoul and Pyongyang must both appear in the front-page opening, with visible city and country labels.
 
 ## Evidence on Hand
 

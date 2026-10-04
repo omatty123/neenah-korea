@@ -110,7 +110,7 @@ Supporting titles balance lines within 18ch; at widths up to 700px they use `cla
 
 The shared content width is `min(1248px, calc(100% - 80px))`. At widths up to 760px the side gutters become 20px. The header is a compact horizontal brand/navigation row; its minimum height changes from 85px to 72px at that breakpoint.
 
-The home opening is a text/photo grid (1.65fr / 1fr, 54px gap), followed by a dated evidence strip and three ruled argument rows. The opening narrows its gap to 32px at 1100px and stacks at 760px. The mobile photograph is 190px high. Argument rows use equal columns with a 70px gap, reduce the gap to 40px at 1100px, and stack at 760px.
+The home opening is a text/photo grid (1.65fr / 1fr, 54px gap), followed by a dated evidence strip and three ruled argument rows. Seoul and Pyongyang receive equal photo space, stacked beside the headline with an 18px gap. Their city and country captions remain visible and link to their supporting pages. The opening narrows its gap to 32px at 1100px and stacks at 760px. The mobile photographs appear side by side with a 14px gap and 16:10 crops. Argument rows use equal columns with a 70px gap, reduce the gap to 40px at 1100px, and stack at 760px.
 
 Supporting pages use readable text sections, image pairs, facts, and disclosures. At 700px, feature splits, paired stories, biography columns, photo pairs, and three-image comparisons stack. The two-column construction gallery remains two columns, with a smaller gap. Tables retain their columns in a horizontal overflow wrapper. Geography comparison images keep their full aspect ratio; ordinary gallery photographs use 4:3 crops. The biography uses a 3:4 portrait, limited to 280px wide on mobile.
 
@@ -140,6 +140,7 @@ Motion is limited to smooth anchor scrolling and a 3px horizontal arrow movement
 ### Do:
 
 - Preserve the exact headline and its red “Korea” emphasis.
+- Keep both Seoul and Pyongyang in the home opening, with visible city and country labels.
 - Reuse the shared styles and native HTML controls across current pages.
 - Keep source dates, qualifications, and image captions visible beside the relevant evidence.
 - Preserve existing page addresses, original images, and the dated preparation in `archive/2026-10-04/`.

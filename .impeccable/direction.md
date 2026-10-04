@@ -4,7 +4,7 @@ User-pinned direction: a bold headline page led by the exact statement “When y
 
 Mode: Read. Build directly in HTML and CSS for this session. No lasting build-path preference is recorded; the optional workflow question was unanswered.
 
-First viewport: the full headline is the dominant element, with Korea in red, a documentary Seoul photograph, the existing event date and speaker, and a direct link to the three arguments. Light paper surface, dark ink, red emphasis, self-hosted Bricolage Grotesque and Manrope. No carousel or hidden headline.
+First viewport: the full headline is the dominant element, with Korea in red, equally sized documentary photographs of Seoul and Pyongyang, the existing event date and speaker, and a direct link to the three arguments. Each city and country label stays visible and links to its supporting page. The photographs stack beside the headline on desktop and appear side by side below it on mobile. Light paper surface, dark ink, red emphasis, self-hosted Bricolage Grotesque and Manrope. No carousel or hidden headline.
 
 Visitor path: headline → recent verified evidence → three arguments → supporting pages. Supporting pages retain existing addresses and use native disclosures for deeper preparation. The opening's older cartoons, MASH image, satellite image, and Victor Cha passage remain available. Exact prior public pages are archived.
 
