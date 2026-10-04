@@ -118,6 +118,8 @@ The expanded Pyongyang page uses visible Russia, 20×10 and consumer-life sectio
 
 The 20×10 section adds a square chart of ten annual 20-location cohorts, a province comparison with two labeled bar segments, and three documentary photographs. Completed, construction and future-target cohorts use filled, red outline and dashed outline squares with explicit text labels. Cohorts wrap into two rows at 1000px. The province chart changes from two reading columns to one at that width; photographs stack at 700px and preserve their natural proportions and full KCTV montages. Native HTML labels expose chart data without a chart library or JavaScript. Photo links open the original images.
 
+The geographic map now leads the regional-development section. It shows sourced selected city/county areas with national and neighboring-country context. Separate desktop and phone SVGs preserve label readability. Three native buttons select both rounds, 2024, or 2025; the default map remains visible when JavaScript is unavailable. The province comparison is retained in a disclosure. A visible brands-and-markets section pairs product photographs with sourced examples, followed by a clear ownership/market conclusion. Product photographs keep complete original frames and link to full-size versions.
+
 Print rules hide navigation, use 11pt body text and 32pt page titles, and request visible disclosure content. Print behavior is CSS-defined; the recorded review covered screen layouts.
 
 ## Elevation & Depth

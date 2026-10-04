@@ -22,7 +22,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check website
-        run: python tools/check_site.py
+        run: |
+          python tools/check_site.py
+          node --check js/regional-development-map.js
       - name: Package public files
         run: python tools/package_site.py
       - name: Check deployment package

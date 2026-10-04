@@ -24,6 +24,8 @@ Preserve the prepared Wisconsin comparison, Korean War memorial material, South 
 
 North Korea's current account includes Russia's strategic partnership and practical benefits, the Regional Development 20×10 Policy, and videos documenting consumer and traffic changes. Distinguish documented transfers, construction milestones and selected views of daily life.
 
+Geography takes priority over province totals in the 20×10 section. Brands and markets are a central part of the argument: public or state-linked ownership can coexist with product differentiation, retail sales and competition. Do not treat visible commercial activity as proof of privatization.
+
 ## Brand Commitments
 
 The user's exact headline is: “When you follow Korea, you're ahead of the world”. The user requested a bold headline approach and a simpler website. Seoul and Pyongyang must both appear in the front-page opening, with visible city and country labels.

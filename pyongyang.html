@@ -15,6 +15,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/site.css">
   <link rel="stylesheet" href="css/pages.css">
+  <script src="js/regional-development-map.js" defer></script>
 </head>
 <body class="pyongyang-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,10 +29,11 @@
   <main id="main" class="container page-content">
     <a class="breadcrumb" href="index.html">← Back to the talk</a>
     <h1 class="page-title">Poor does not mean powerless.</h1>
-    <p class="page-lead">New towers. A strategic partnership with Russia. Regional factories, shops and even traffic jams. North Korea is changing in ways that GDP alone cannot explain.</p>
+    <p class="page-lead">New towers. A strategic partnership with Russia. Regional factories, growing brands, shops and even traffic jams. State ownership and market activity can develop together. North Korea is changing in ways that GDP alone cannot explain.</p>
     <nav class="page-jump" aria-label="Explore North Korea’s changes">
       <a href="#russia">Russia partnership</a>
       <a href="#regional-development">20×10 development</a>
+      <a href="#brands-and-markets">Brands &amp; markets</a>
       <a href="#consumer-life">Shops, leisure &amp; traffic</a>
     </nav>
 
@@ -75,6 +77,29 @@
       <h2 id="regional-heading">20×10: development beyond the capital.</h2>
       <p>The name is <strong>Regional Development 20×10 Policy</strong>: modern facilities in <strong>20 cities and counties each year for ten years</strong>. Launched in January 2024, it began with factories for food, clothing and everyday household goods. <a href="https://www.globalsecurity.org/wmd/library/news/dprk/2025/dprk-250213-kcna01.htm">KCNA’s policy account</a>.</p>
 
+      <figure id="regional-spread" class="regional-map" aria-labelledby="map-heading">
+        <h3 id="map-heading">Where the first 40 locations were built.</h3>
+        <p class="chart-key">Two rounds spread new industry across selected cities and counties.</p>
+        <div id="map-year-controls" class="map-controls" role="group" aria-label="Choose a construction round" hidden>
+          <button type="button" aria-pressed="true" aria-controls="regional-map-image" data-map-src="images/20x10-map/both-rounds.svg" data-mobile-src="images/20x10-map/both-rounds-mobile.svg" data-map-alt="Map of North Korea showing the 20 selected city and county areas in the 2024 round and the 20 areas in the 2025 round" data-map-status="Both rounds: 40 selected cities and counties.">Both rounds</button>
+          <button type="button" aria-pressed="false" aria-controls="regional-map-image" data-map-src="images/20x10-map/round-2024.svg" data-mobile-src="images/20x10-map/round-2024-mobile.svg" data-map-alt="Map of North Korea showing the 20 selected city and county areas in the 2024 regional-development round" data-map-status="2024 round: 20 selected cities and counties.">2024 round</button>
+          <button type="button" aria-pressed="false" aria-controls="regional-map-image" data-map-src="images/20x10-map/round-2025.svg" data-mobile-src="images/20x10-map/round-2025-mobile.svg" data-map-alt="Map of North Korea showing the 20 selected city and county areas in the 2025 regional-development round" data-map-status="2025 round: 20 selected cities and counties.">2025 round</button>
+        </div>
+        <a id="regional-map-fullsize" href="images/20x10-map/both-rounds.svg" aria-label="Open the complete regional-development map"><picture><source id="regional-map-mobile" media="(max-width: 700px)" srcset="images/20x10-map/both-rounds-mobile.svg"><img id="regional-map-image" src="images/20x10-map/both-rounds.svg" alt="Map of North Korea showing the 20 selected city and county areas in the 2024 round and the 20 areas in the 2025 round" width="960" height="720" loading="lazy"></picture></a>
+        <figcaption><strong id="regional-map-status" class="map-status" role="status" aria-live="polite">Both rounds: 40 selected cities and counties.</strong> Colored areas show selected administrative areas, rather than exact factory sites. Source: <a href="https://www.38north.org/2026/01/north-korea-completes-the-second-year-of-the-20x10-project/">38 North, January 15, 2026</a> · <a href="https://datawrapper.dwcdn.net/5XMpW/1/">published geographic data</a> · <a href="images/20x10-map/README.md">map sources</a>. Select the map to open it at full size.</figcaption>
+      </figure>
+
+      <details class="preparation map-place-list">
+        <summary>List the selected cities and counties</summary>
+        <div class="details-content wide">
+          <h4>2024 round · 20 places</h4>
+          <p>Songchon, Jaeryong, Sukchon, Unpha, Kyongsong, Unchon, Yonthan, Hamju, Onchon, Kujang, Usi, Kosan, Kusong, Orang, Jangphung, Kumya, Tongsin, Unsan, Ichon and Kim Hyong Jik.</p>
+          <h4>2025 round · 20 places</h4>
+          <p>Kangdong, Puryong, Taegwan, Sinyang, Rangnim, Hwangju, Jangyon, Pukchang, Janggang, Cholwon, Sinpho, Kim Jong Suk, Sepho, Koksan, Paechon, Kilju, Jongphyong, Yomju, Kaephung and Ryonggang.</p>
+          <p class="page-note">Names follow 38 North’s published opening tables: <a href="https://www.38north.org/2025/02/kim-jong-uns-20x10-project-achieves-year-one-successes/">2024 round</a> · <a href="https://www.38north.org/2026/01/north-korea-completes-the-second-year-of-the-20x10-project/">2025 round</a> · <a href="images/20x10-map/selected-place-list.json">source list</a>. A round identifies the construction year; some 2024-round openings occurred in early 2025.</p>
+        </div>
+      </details>
+
       <figure id="regional-schedule" class="development-chart" aria-labelledby="schedule-heading">
         <h3 id="schedule-heading">20 places a year. 200 over ten years.</h3>
         <p class="chart-key">Each square represents one location in an annual construction round.</p>
@@ -115,7 +140,10 @@
       </div>
       <p class="page-note regional-photo-note">These are state-media views of the facilities. Select a photograph to open the complete image.</p>
 
-      <figure id="regional-spread" class="development-chart" aria-labelledby="spread-heading">
+      <details class="preparation province-detail">
+        <summary>Province counts for the first two rounds</summary>
+        <div class="details-content wide">
+      <figure id="province-counts" class="development-chart" aria-labelledby="spread-heading">
         <h3 id="spread-heading">Where the first 40 locations were built.</h3>
         <p class="chart-key">Cities and counties within each province-level unit. Numbers count locations, not individual factories.</p>
         <ul class="chart-legend" aria-label="Construction rounds">
@@ -139,6 +167,8 @@
         </ul>
         <figcaption>Each bar combines the two annual rounds; the number at right is their total. Source: <a href="https://www.38north.org/2026/01/north-korea-completes-the-second-year-of-the-20x10-project/">38 North, January 15, 2026</a> · <a href="https://datawrapper.dwcdn.net/z8CJA/1/dataset.csv">published chart data</a>.</figcaption>
       </figure>
+        </div>
+      </details>
 
       <div class="development-milestones">
         <div>
@@ -159,6 +189,38 @@
       </div>
       <p class="section-conclusion"><strong>A concrete example:</strong> Jongphyong’s new service complex includes a cinema, swimming pool, library, shops and a restaurant. These changes extend beyond Pyongyang’s skyline. <a href="https://www.38north.org/2026/01/north-korea-completes-the-second-year-of-the-20x10-project/">December 2025 opening and photographs</a>.</p>
       <p class="page-note">Keeping these facilities operating requires dependable power, materials and staff. <a href="https://www.38north.org/2026/09/north-koreas-recent-economic-recovery-and-the-sustainability-of-the-regional-development-policy/">38 North’s September 2026 assessment</a>.</p>
+    </section>
+
+    <section id="brands-and-markets" class="page-section" aria-labelledby="brands-heading">
+      <h2 id="brands-heading">A state market is not an oxymoron.</h2>
+      <p class="market-argument"><strong>Ownership and market activity are separate questions.</strong> State enterprises can develop brands, differentiate products, compete for customers and sell through shops. North Korea’s new regional factories are part of this commercial development.</p>
+      <p>DPRK economic journals describe enterprise initiative within public ownership and state guidance. <a href="https://www.38north.org/2022/02/understanding-kim-jong-uns-economic-policymaking-management-system-discourse/">38 North’s translations of the management debate</a>.</p>
+      <div class="brand-photos">
+        <figure>
+          <a href="images/dprk-brands/kujang-soap-display.jpg" aria-label="Open the full-size Kujang soap display photograph"><picture><source srcset="images/dprk-brands/kujang-soap-display.webp" type="image/webp"><img src="images/dprk-brands/kujang-soap-display.jpg" alt="Visitors inspect differently colored soap packages at Kujang Daily Necessities Factory, with signs naming four scents" width="1280" height="720" loading="lazy"></picture></a>
+          <figcaption><strong>Kujang: product choice and packaging.</strong> Rose, honeysuckle, mugwort and citrus soaps. <a href="https://www.38north.org/2025/06/20x10-factories-different-locations-similar-products/">KCTV, via 38 North’s June 2025 review</a>.</figcaption>
+        </figure>
+        <figure>
+          <a href="images/dprk-brands/onchon-apple-drink.jpg" aria-label="Open the full-size Onchon apple-drink photograph"><picture><source srcset="images/dprk-brands/onchon-apple-drink-display.webp" type="image/webp"><img src="images/dprk-brands/onchon-apple-drink.jpg" alt="Labeled apple-drink bottles move along a production line at Onchon Foodstuff Factory" width="1280" height="720" loading="lazy"></picture></a>
+          <figcaption><strong>Onchon: packaged consumer goods.</strong> Labeled apple-drink bottles on a production line. <a href="https://www.38north.org/2025/06/20x10-factories-different-locations-similar-products/">KCTV, via 38 North’s June 2025 review</a>.</figcaption>
+        </figure>
+      </div>
+      <dl class="fact-list brand-evidence">
+        <div class="fact-row">
+          <dt>New regional brands</dt>
+          <dd>Naenara reported in September 2025 that the new regional factories’ own brands were reaching township and village shops. Examples included Songchon’s chestnut products and Jaeryong’s juices and soybean oil. <a class="source-link" href="https://kcnawatch.org/newstream/1756980128-10523090/%E2%80%9Cour-own-products-are-the-best/">Naenara, September 4, 2025</a>.</dd>
+        </div>
+        <div class="fact-row">
+          <dt>Competition within the state sector</dt>
+          <dd>At Jangyon’s December 2025 factory opening, KCNA described locally branded beer and called for competition among regional factories to develop new products and improve quality. The state is organizing product competition within its own industrial program. <a class="source-link" href="https://kcnawatch.org/newstream/1766124103-329436138/regional-industry-factories-in-jangyon-county-inaugurated-with-splendor/">KCNA, December 19, 2025</a>.</dd>
+        </div>
+        <div class="fact-row">
+          <dt>Recognizable brands</dt>
+          <dd><strong>Ryuwon</strong> footwear and Wonsan’s <strong>Maebongsan</strong> leather shoes appeared alongside <strong>Songdo</strong> at the April 2025 footwear exhibition. Reporting on Ryuwon describes designs guided by consumer demand and product assessments. These established brands show a longer history of commercial differentiation. <a class="source-link" href="https://assets.korearisk.com/uploads/sites/5/2025/04/pyongyang-times-2025-0412.pdf">Pyongyang Times, April 12, 2025</a> · <a href="https://assets.korearisk.com/uploads/sites/5/2025/04/pyongyang-times-2025-0419.pdf">April 19, 2025, p. 9</a>.</dd>
+        </div>
+      </dl>
+      <p class="section-conclusion">Shops, factory showrooms and product exhibitions connect producers with buyers. Government-authorized vendor markets, often called <em>jangmadang</em>, are another channel: vendors can pay licenses and rents to state authorities. <a href="https://beyondparallel.csis.org/markets-private-economy-capitalism-north-korea/">CSIS’s 2018 market study</a> documents that arrangement.</p>
+      <p class="market-conclusion"><strong>Brands and markets belong in the account of North Korea’s development—even when ownership remains public or state-linked.</strong></p>
     </section>
 
     <section id="consumer-life" class="page-section" aria-labelledby="consumer-heading">

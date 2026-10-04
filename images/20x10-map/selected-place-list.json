@@ -1,0 +1,217 @@
+{
+  "scope": "Selected cities and counties; names from 38 North opening tables. County areas are not precise facility locations.",
+  "rounds": [
+    {
+      "year": 2024,
+      "source_table": "https://datawrapper.dwcdn.net/kzBuJ/2/dataset.csv",
+      "places": [
+        {
+          "name": "Songchon",
+          "province": "South Phyongan",
+          "first_reported_opening": "20-Dec-24"
+        },
+        {
+          "name": "Jaeryong",
+          "province": "South Hwanghae",
+          "first_reported_opening": "07-Jan-25"
+        },
+        {
+          "name": "Sukchon",
+          "province": "South Phyongan",
+          "first_reported_opening": "08-Jan-25"
+        },
+        {
+          "name": "Unpha",
+          "province": "North Hwanghae",
+          "first_reported_opening": "10-Jan-25"
+        },
+        {
+          "name": "Kyongsong",
+          "province": "North Hamgyong",
+          "first_reported_opening": "12-Jan-25"
+        },
+        {
+          "name": "Unchon",
+          "province": "South Hwanghae",
+          "first_reported_opening": "14-Jan-25"
+        },
+        {
+          "name": "Yonthan",
+          "province": "North Hwanghae",
+          "first_reported_opening": "16-Jan-25"
+        },
+        {
+          "name": "Hamju",
+          "province": "South Hamgyong",
+          "first_reported_opening": "18-Jan-25"
+        },
+        {
+          "name": "Onchon",
+          "province": "Nampho",
+          "first_reported_opening": "20-Jan-25"
+        },
+        {
+          "name": "Kujang",
+          "province": "North Phyongan",
+          "first_reported_opening": "24-Jan-25"
+        },
+        {
+          "name": "Usi",
+          "province": "Jagang",
+          "first_reported_opening": "25-Jan-25"
+        },
+        {
+          "name": "Kosan",
+          "province": "Kangwon",
+          "first_reported_opening": "29-Jan-25"
+        },
+        {
+          "name": "Kusong",
+          "province": "North Phyongan",
+          "first_reported_opening": "30-Jan-25"
+        },
+        {
+          "name": "Orang",
+          "province": "North Hamgyong",
+          "first_reported_opening": "31-Jan-25"
+        },
+        {
+          "name": "Jangphung",
+          "province": "Kaesong",
+          "first_reported_opening": "01-Feb-25"
+        },
+        {
+          "name": "Kumya",
+          "province": "South Hamgyong",
+          "first_reported_opening": "03-Feb-25"
+        },
+        {
+          "name": "Tongsin",
+          "province": "Jagang",
+          "first_reported_opening": "04-Feb-25"
+        },
+        {
+          "name": "Unsan",
+          "province": "North Phyongan",
+          "first_reported_opening": "07-Feb-25"
+        },
+        {
+          "name": "Ichon",
+          "province": "Kangwon",
+          "first_reported_opening": "09-Feb-25"
+        },
+        {
+          "name": "Kim Hyong Jik",
+          "province": "Ryanggang",
+          "first_reported_opening": "11-Feb-25"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "source_table": "https://datawrapper.dwcdn.net/L5NoE/2/dataset.csv",
+      "places": [
+        {
+          "name": "Kangdong",
+          "province": "Pyongyang",
+          "first_reported_opening": "November 19, 2025"
+        },
+        {
+          "name": "Puryong",
+          "province": "North Hamgyong",
+          "first_reported_opening": "December 15, 2025"
+        },
+        {
+          "name": "Taegwan",
+          "province": "North Phyongan",
+          "first_reported_opening": "December 15, 2025"
+        },
+        {
+          "name": "Sinyang",
+          "province": "South Phyongan",
+          "first_reported_opening": "December 15, 2025"
+        },
+        {
+          "name": "Rangnim",
+          "province": "Jagang",
+          "first_reported_opening": "December 15, 2025"
+        },
+        {
+          "name": "Hwangju",
+          "province": "North Hwanghae",
+          "first_reported_opening": "December 16, 2025"
+        },
+        {
+          "name": "Jangyon",
+          "province": "South Hwanghae",
+          "first_reported_opening": "December 18, 2025"
+        },
+        {
+          "name": "Pukchang",
+          "province": "South Pyongan",
+          "first_reported_opening": "December 18, 2025"
+        },
+        {
+          "name": "Janggang",
+          "province": "Jagang",
+          "first_reported_opening": "December 18, 2025"
+        },
+        {
+          "name": "Cholwon",
+          "province": "Kangwon",
+          "first_reported_opening": "December 18, 2025"
+        },
+        {
+          "name": "Sinpho",
+          "province": "South Hamgyong",
+          "first_reported_opening": "December 19, 2025"
+        },
+        {
+          "name": "Kim Jong Suk",
+          "province": "Ryanggang",
+          "first_reported_opening": "December 20, 2025"
+        },
+        {
+          "name": "Sepho",
+          "province": "Kangwon",
+          "first_reported_opening": "December 20, 2025"
+        },
+        {
+          "name": "Koksan",
+          "province": "North Hwanghae",
+          "first_reported_opening": "December 20, 2025"
+        },
+        {
+          "name": "Paechon",
+          "province": "South Hwanghae",
+          "first_reported_opening": "December 20, 2025"
+        },
+        {
+          "name": "Kilju",
+          "province": "North Hamgyong",
+          "first_reported_opening": "December 23, 2025"
+        },
+        {
+          "name": "Jongphyong",
+          "province": "South Hamgyong",
+          "first_reported_opening": "December 24, 2025"
+        },
+        {
+          "name": "Yomju",
+          "province": "North Phyongan",
+          "first_reported_opening": "December 26, 2025"
+        },
+        {
+          "name": "Kaephung",
+          "province": "Kaesong",
+          "first_reported_opening": "December 26, 2025"
+        },
+        {
+          "name": "Ryonggang",
+          "province": "Nampho",
+          "first_reported_opening": "December 29, 2025"
+        }
+      ]
+    }
+  ]
+}
