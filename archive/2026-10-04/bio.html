@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matty Wegehaupt — 오상진</title>
+
+    <meta name="description" content="About the speaker: Korea historian, Neenah Club, October 19, 2026.">
+
+    <meta property="og:title" content="Matty Wegehaupt">
+    <meta property="og:description" content="About the speaker: Korea historian, Neenah Club, October 19, 2026.">
+    <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/headshot.jpg">
+    <meta property="og:url" content="https://omatty123.github.io/neenah-korea/bio.html">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Matty Wegehaupt">
+    <meta name="twitter:description" content="About the speaker: Korea historian, Neenah Club, October 19, 2026.">
+    <meta name="twitter:image" content="https://omatty123.github.io/neenah-korea/images/headshot.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23555'/%3E%3Crect x='16' width='16' height='32' fill='%23b8913a'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #ffffff;
+            --dark: #f8f7f5;
+            --dark-surface: #f0eeeb;
+            --dark-border: #d4d0c8;
+            --warm-gray: #6b6560;
+            --light-gray: #4a453f;
+            --cream: #2a2520;
+            --white: #1a1510;
+            --amber: #8b6914;
+            --amber-dim: #a68530;
+            --font-display: 'Bebas Neue', sans-serif;
+            --font-body: 'Source Serif 4', Georgia, serif;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background: var(--black);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--black);
+            color: var(--cream);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        ::selection {
+            background: var(--amber);
+            color: var(--black);
+        }
+
+        /* ---- BACK LINK ---- */
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 3vw;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--warm-gray);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            z-index: 100;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--amber);
+        }
+
+        /* ---- LAYOUT ---- */
+        .bio {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            min-height: 100vh;
+            gap: 0;
+        }
+
+        /* ---- LEFT: PHOTO + NAME ---- */
+        .bio__photo-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6vh 4vw 6vh 8vw;
+            position: relative;
+        }
+
+        .bio__photo-col::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            width: 1px;
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                var(--dark-border) 20%,
+                var(--amber-dim) 50%,
+                var(--dark-border) 80%,
+                transparent
+            );
+        }
+
+        .bio__photo-wrapper {
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .bio__photo-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid var(--dark-border);
+            pointer-events: none;
+        }
+
+        .bio__photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 15%;
+            filter: grayscale(0.15) contrast(1.05);
+        }
+
+        .bio__name {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4vw, 3.5rem);
+            line-height: 1;
+            color: var(--white);
+            margin-bottom: 0.4rem;
+        }
+
+        .bio__name-kr {
+            font-family: var(--font-body);
+            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+            font-weight: 300;
+            color: var(--amber);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .bio__role {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            line-height: 1.5;
+        }
+
+        /* ---- RIGHT: BIO CONTENT ---- */
+        .bio__content-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6vh 8vw 6vh 4vw;
+        }
+
+        .bio__section {
+            margin-bottom: 3rem;
+        }
+
+        .bio__section:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio__section-label {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--amber-dim);
+            margin-bottom: 1rem;
+        }
+
+        .bio__text {
+            font-family: var(--font-body);
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--cream);
+            max-width: 50ch;
+        }
+
+        .bio__text + .bio__text {
+            margin-top: 1rem;
+        }
+
+        /* ---- CREDENTIALS LIST ---- */
+        .bio__credentials {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .bio__credentials li {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            padding-left: 1.2rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .bio__credentials li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 5px;
+            height: 5px;
+            background: var(--amber-dim);
+            border-radius: 50%;
+        }
+
+        /* ---- PUBLICATIONS ---- */
+        .bio__pub {
+            font-family: var(--font-body);
+            font-size: clamp(0.9rem, 1.2vw, 1rem);
+            font-weight: 300;
+            color: var(--light-gray);
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            border-left: 2px solid var(--dark-border);
+        }
+
+        .bio__pub em {
+            color: var(--cream);
+        }
+
+        .bio__pub a {
+            color: var(--amber);
+            text-decoration: none;
+            border-bottom: 1px solid var(--amber-dim);
+            transition: border-color 0.3s;
+        }
+
+        .bio__pub a:hover {
+            border-color: var(--amber);
+        }
+
+        .bio__pub a em {
+            color: var(--amber);
+        }
+
+        /* ---- CONTACT ---- */
+        .bio__contact {
+            display: flex;
+            gap: 2rem;
+            align-items: baseline;
+        }
+
+        .bio__contact a {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--amber);
+            text-decoration: none;
+            border-bottom: 1px solid var(--amber-dim);
+            transition: border-color 0.3s;
+        }
+
+        .bio__contact a:hover {
+            border-color: var(--amber);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 900px) {
+            .bio {
+                grid-template-columns: 1fr;
+            }
+
+            .bio__photo-col {
+                padding: 4vh 6vw;
+                align-items: flex-start;
+            }
+
+            .bio__photo-col::after {
+                display: none;
+            }
+
+            .bio__photo-wrapper {
+                max-width: 280px;
+            }
+
+            .bio__content-col {
+                padding: 2vh 6vw 6vh;
+            }
+        }
+    </style>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+<aside style="padding:16px 24px;background:#f7f5ef;color:#152632;font:16px/1.6 sans-serif;border-bottom:1px solid #d4d7d3;">Saved preparation before the October 4, 2026 redesign. Some figures have since been corrected. <a style="color:#b8312d;text-decoration:underline" href="../../index.html">Read the current talk.</a></aside>
+
+    <div class="bio">
+
+        <!-- LEFT COLUMN -->
+        <div class="bio__photo-col">
+            <div class="bio__photo-wrapper">
+                <img src="../../images/headshot.jpg" alt="Matty Wegehaupt" class="bio__photo">
+            </div>
+            <h1 class="bio__name">Matty Wegehaupt</h1>
+            <p class="bio__name-kr">오상진 (Oh Sangjin)</p>
+            <p class="bio__role">
+                Instructor, East Asian Studies<br>
+                Lawrence University &middot; Appleton, WI
+            </p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="bio__content-col">
+
+            <div class="bio__section">
+                <p class="bio__section-label">About</p>
+                <p class="bio__text">
+                    Matty Wegehaupt has spent over two decades working inside Korean language and culture — not observing from the outside, but translating Buddhist masters, editing academic journals, and teaching the next generation about East Asia.
+                </p>
+                <p class="bio__text">
+                    A former U.S. Air Force Academy cadet turned Fulbright Fellow in South Korea, he has taught East Asian Studies at Lawrence University since 2007, covering courses from Chinese cinema to Korean history in literature and film.
+                </p>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Education</p>
+                <ul class="bio__credentials">
+                    <li>MA, Asian Studies — University of Michigan, Ann Arbor</li>
+                    <li>MA, Asian Studies — University of California, Berkeley <em>(with honors)</em></li>
+                    <li>BA, Political Science — University of Wisconsin, Madison <em>(with honors)</em></li>
+                    <li>United States Air Force Academy (1989–1991)</li>
+                </ul>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Selected Translations</p>
+                <p class="bio__pub">
+                    Beopjeong Sunim. <a href="https://books.google.com/books/about/Pure_and_Fragrant.html?id=qQ_qEAAAQBAJ" target="_blank" rel="noopener"><em>Pure and Fragrant.</em></a> Seoul: Jogye Order of Korean Buddhism, 2021.
+                </p>
+                <p class="bio__pub">
+                    Hyecho. <a href="https://www.buddhistelibrary.org/en/albums/central/Dhamma_books/10_Culture_web.pdf#page=35" target="_blank" rel="noopener"><em>Memoir of the Pilgrimage to the Five Kingdoms of India.</em></a> In Collected History of Korean Buddhist Thought. Seoul: Jogye Order, 2010.
+                </p>
+                <p class="bio__pub">
+                    Beopjeong Sunim. <a href="https://www.amazon.com/May-All-Beings-Happy-English/dp/8995757736" target="_blank" rel="noopener"><em>May All Beings Be Happy.</em></a> Seoul: Johwaroun Salm, 2006.
+                </p>
+                <p class="bio__pub">
+                    Korean Massive Open Online Courses (2022–2025): Buddhism and Business, Buddhism and Literature, Buddhism and Ethics, and more.
+                </p>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Selected Service</p>
+                <ul class="bio__credentials">
+                    <li>Managing Editor, <em>Journal of Korean Religion</em> (2008–2018)</li>
+                    <li>Managing Editor, <em>Seoul Journal of Korean Studies</em> (2007–2008)</li>
+                    <li>United States Fulbright Fellow, South Korea (2006–2007)</li>
+                </ul>
+            </div>
+
+            <div class="bio__section">
+                <p class="bio__section-label">Contact</p>
+                <div class="bio__contact">
+                    <a href="mailto:wegehaum@lawrence.edu">wegehaum@lawrence.edu</a>
+                    <a href="mailto:omatty@gmail.com">omatty@gmail.com</a>
+                    <a href="https://banglangdang.vercel.app" target="_blank" rel="noopener">banglangdang.vercel.app</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

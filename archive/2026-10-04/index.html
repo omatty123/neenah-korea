@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Korea Right - Neenah Club - October 19, 2026</title>
+
+    <meta name="description" content="Getting Korea Right. A talk by Matty Wegehaupt at the Neenah Club, October 19, 2026.">
+
+    <meta property="og:title" content="Getting Korea Right">
+    <meta property="og:description" content="Most Americans know two things about Korea: MASH and missiles. That frame made sense in 1953.">
+    <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/satellite-korea-night.jpg">
+    <meta property="og:url" content="https://omatty123.github.io/neenah-korea/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Getting Korea Right">
+    <meta name="twitter:description" content="Most Americans know two things about Korea: MASH and missiles. That frame made sense in 1953.">
+    <meta name="twitter:image" content="https://omatty123.github.io/neenah-korea/images/satellite-korea-night.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23555'/%3E%3Crect x='16' width='16' height='32' fill='%23b8913a'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #111;
+            --gray-900: #222;
+            --gray-700: #444;
+            --gray-500: #777;
+            --gray-300: #bbb;
+            --gray-100: #eee;
+            --surface: #f7f7f5;
+            --white: #fff;
+            --amber: #b8913a;
+            --amber-light: #d4af5b;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--black);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+        a { color: var(--amber); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ---- HERO SLIDESHOW ---- */
+
+        .show {
+            position: relative;
+            height: 68vh;
+            min-height: 440px;
+            overflow: hidden;
+            background: #000;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .show__slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.55s ease;
+        }
+
+        .show__slide.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .show__slide > img { filter: brightness(0.62); }
+
+        /* opening slide is dimmer so the title reads */
+        .show__slide--open > img { filter: brightness(0.38); }
+
+        /* the op-ed screenshot must stay legible, so no crop */
+        .show__slide--doc {
+            background: #0d0d0d;
+            padding: 26px 26px 84px;
+        }
+
+        .show__slide--doc > img {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            object-fit: contain;
+            filter: none;
+        }
+
+        .show__scrim {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent 45%, rgba(0,0,0,0.8));
+            pointer-events: none;
+        }
+
+        /* the screenshot sits on its own black field, so no scrim over it */
+        .show__slide--doc .show__scrim { display: none; }
+
+        .show__body {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            padding: 32px 32px 30px;
+            pointer-events: none;
+        }
+
+        .show__title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 0.92;
+            letter-spacing: -3px;
+            color: #fff;
+        }
+
+        .show__meta {
+            display: flex;
+            gap: 20px;
+            align-items: baseline;
+            margin-top: 10px;
+        }
+
+        .show__meta span {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .show__meta span:first-child { color: var(--amber-light); }
+        .show__meta span:last-child { color: rgba(255,255,255,0.5); }
+
+        .show__caption {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.8px;
+            color: #fff;
+            max-width: 30ch;
+        }
+
+        .show__sub {
+            margin-top: 8px;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.72);
+            max-width: 46ch;
+        }
+
+        /* ---- CONTROLS ---- */
+
+        .show__controls {
+            position: absolute;
+            right: 24px;
+            bottom: 26px;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .show__dots {
+            display: flex;
+            gap: 9px;
+        }
+
+        .show__dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.75);
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.25s ease, transform 0.25s ease;
+        }
+
+        .show__dot:hover { transform: scale(1.25); }
+        .show__dot.is-active { background: var(--amber-light); border-color: var(--amber-light); }
+
+        .show__next {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.45);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 19px;
+            line-height: 1;
+            cursor: pointer;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .show__next:hover { background: rgba(0,0,0,0.6); border-color: var(--amber-light); }
+
+        .show__count {
+            font-family: var(--font-display);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.55);
+        }
+
+        /* ---- FRAME ---- */
+
+        .frame {
+            padding: 20px 32px;
+            background: var(--white);
+        }
+
+        .frame p {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            max-width: 52ch;
+        }
+
+        /* ---- PAGE NAV ---- */
+
+        .page-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3px;
+            padding: 3px;
+            background: var(--surface);
+        }
+
+        .page-nav__card {
+            background: var(--white);
+            padding: 16px 16px;
+            transition: outline 0.2s ease;
+        }
+
+        .page-nav__card:hover {
+            outline: 2px solid var(--amber);
+            outline-offset: -2px;
+            text-decoration: none;
+        }
+
+        .page-nav__num {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -1px;
+            color: var(--gray-300);
+            margin-bottom: 6px;
+        }
+
+        .page-nav__card:hover .page-nav__num { color: var(--amber); }
+
+        .page-nav__title {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--black);
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .page-nav__desc {
+            font-size: 0.72rem;
+            color: var(--gray-500);
+            line-height: 1.3;
+        }
+
+        /* ---- RESPONSIVE ---- */
+
+        @media (max-width: 900px) {
+            .show { height: 58vh; min-height: 360px; }
+            .show__body { padding: 20px 20px 26px; }
+            .show__controls { right: 16px; bottom: 18px; gap: 12px; }
+            .show__count { display: none; }
+            .show__slide--doc { padding: 16px 16px 70px; }
+            .page-nav { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .show__slide { transition: none; }
+        }
+    </style>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+<aside style="padding:16px 24px;background:#f7f5ef;color:#152632;font:16px/1.6 sans-serif;border-bottom:1px solid #d4d7d3;">Saved preparation before the October 4, 2026 redesign. Some figures have since been corrected. <a style="color:#b8312d;text-decoration:underline" href="../../index.html">Read the current talk.</a></aside>
+
+    <div class="show" id="show" aria-roledescription="carousel" aria-label="Opening images">
+
+        <!-- 1 -->
+        <div class="show__slide show__slide--open is-active">
+            <img src="../../images/satellite-korea-night.jpg" alt="Satellite image of the Korean peninsula at night">
+            <div class="show__scrim"></div>
+            <div class="show__body">
+                <h1 class="show__title">Getting<br>Korea<br>Right</h1>
+                <div class="show__meta">
+                    <span>Neenah Club &middot; October 19, 2026</span>
+                    <span>Matty Wegehaupt</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="show__slide">
+            <img src="../../images/mash-title-screen.jpg" alt="M*A*S*H TV title screen">
+            <div class="show__scrim"></div>
+            <div class="show__body">
+                <p class="show__caption">Most Americans know Korea from this.</p>
+                <p class="show__sub">A sitcom that went off the air in 1983.</p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="show__slide">
+            <img src="../../images/fishing-party-bigot.png" alt="1887 cartoon: great powers fishing for Korea">
+            <div class="show__scrim"></div>
+            <div class="show__body">
+                <p class="show__caption">1887: Great powers &ldquo;fishing&rdquo; for Korea.</p>
+                <p class="show__sub">China and Japan angle for the catch. Russia waits on the bridge to take it.</p>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="show__slide">
+            <img src="../../images/korea-crushed-1904.png" alt="1904 postcard: Korea crushed between empires">
+            <div class="show__scrim"></div>
+            <div class="show__body">
+                <p class="show__caption">1904: Korea crushed between empires.</p>
+                <p class="show__sub">Same pattern, different empire. In every one of these pictures, Korea is something other people do things to.</p>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="show__slide show__slide--doc">
+            <img src="../../images/cha-nyt-highlighted.png" alt="Victor Cha quoted in the New York Times, highlighted passage">
+            <div class="show__scrim"></div>
+            <div class="show__body">
+                <p class="show__caption">This is what getting it wrong looks like.</p>
+                <p class="show__sub">Experts, newspapers, governments. The confidence is the problem.</p>
+            </div>
+        </div>
+
+        <div class="show__controls">
+            <span class="show__count" id="showCount">01 / 05</span>
+            <div class="show__dots" id="showDots"></div>
+            <button class="show__next" id="showNext" aria-label="Next image">&rsaquo;</button>
+        </div>
+
+    </div>
+
+    <div class="frame">
+        <p>Most Americans know two things about Korea: MASH and missiles. That frame made sense in 1953. It is now dangerously incomplete.</p>
+    </div>
+
+    <nav class="page-nav">
+        <a class="page-nav__card" href="size.html">
+            <p class="page-nav__num">01</p>
+            <p class="page-nav__title">Wisconsin &amp; Korea</p>
+            <p class="page-nav__desc">Size, scale, and shared parallels</p>
+        </a>
+        <a class="page-nav__card" href="memorial.html">
+            <p class="page-nav__num">02</p>
+            <p class="page-nav__title">Wisconsin's War Dead</p>
+            <p class="page-nav__desc">801 didn't come home</p>
+        </a>
+        <a class="page-nav__card" href="southkorea.html">
+            <p class="page-nav__num">03</p>
+            <p class="page-nav__title">South Korea</p>
+            <p class="page-nav__desc">The invisible power</p>
+        </a>
+        <a class="page-nav__card" href="pyongyang.html">
+            <p class="page-nav__num">04</p>
+            <p class="page-nav__title">North Korea</p>
+            <p class="page-nav__desc">GDP is a bad map</p>
+        </a>
+    </nav>
+
+    <script>
+    (function () {
+        'use strict';
+
+        var show   = document.getElementById('show');
+        var slides = Array.prototype.slice.call(show.querySelectorAll('.show__slide'));
+        var dotBox = document.getElementById('showDots');
+        var next   = document.getElementById('showNext');
+        var count  = document.getElementById('showCount');
+        var i      = 0;
+
+        function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+        // build one dot per slide
+        var dots = slides.map(function (_, n) {
+            var b = document.createElement('button');
+            b.className = 'show__dot' + (n === 0 ? ' is-active' : '');
+            b.setAttribute('aria-label', 'Image ' + (n + 1));
+            b.addEventListener('click', function (e) { e.stopPropagation(); go(n); });
+            dotBox.appendChild(b);
+            return b;
+        });
+
+        function go(n) {
+            i = (n + slides.length) % slides.length;
+            slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
+            dots.forEach(function (d, k) { d.classList.toggle('is-active', k === i); });
+            count.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+        }
+
+        show.addEventListener('click', function () { go(i + 1); });
+
+        next.addEventListener('click', function (e) { e.stopPropagation(); go(i + 1); });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); go(i + 1); }
+            else if (e.key === 'ArrowLeft') { e.preventDefault(); go(i - 1); }
+        });
+
+        go(0);
+    })();
+    </script>
+
+</body>
+</html>

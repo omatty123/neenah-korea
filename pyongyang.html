@@ -1,603 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDP Is a Bad Map - Pyongyang</title>
-
-    <meta name="description" content="Why GDP per capita tells you almost nothing about what a city looks like or what a state can do.">
-
-    <meta property="og:title" content="GDP Is a Bad Map">
-    <meta property="og:description" content="Why GDP per capita tells you almost nothing about what a city looks like or what a state can do.">
-    <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/pyongyang-ceremony-aerial.png">
-    <meta property="og:url" content="https://omatty123.github.io/neenah-korea/pyongyang.html">
-    <meta property="og:type" content="article">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GDP Is a Bad Map">
-    <meta name="twitter:description" content="Why GDP per capita tells you almost nothing about what a city looks like or what a state can do.">
-    <meta name="twitter:image" content="https://omatty123.github.io/neenah-korea/images/pyongyang-ceremony-aerial.png">
-
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='16' height='32' fill='%23555'/%3E%3Crect x='16' width='16' height='32' fill='%23b8913a'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --black: #111;
-            --gray-900: #222;
-            --gray-700: #444;
-            --gray-500: #777;
-            --gray-300: #bbb;
-            --gray-100: #eee;
-            --surface: #f7f7f5;
-            --white: #fff;
-            --amber: #b8913a;
-            --amber-light: #d4af5b;
-            --font-display: 'Space Grotesk', sans-serif;
-            --font-body: 'Inter', sans-serif;
-        }
-
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: var(--font-body);
-            background: var(--white);
-            color: var(--black);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        img { display: block; width: 100%; height: 100%; object-fit: cover; }
-
-        a { color: var(--amber); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        /* ---- BREADCRUMB ---- */
-
-        .breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 10px 24px;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(8px);
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--gray-100);
-        }
-
-        .breadcrumb a { color: var(--gray-700); }
-        .breadcrumb a:hover { color: var(--black); }
-
-        .breadcrumb__tag {
-            color: var(--gray-500);
-            font-size: 10px;
-            letter-spacing: 2px;
-        }
-
-        /* ---- HERO ---- */
-
-        .hero {
-            position: relative;
-            height: 52vh;
-            overflow: hidden;
-            margin-top: 37px;
-        }
-
-        .hero img {
-            position: absolute;
-            inset: 0;
-            filter: brightness(0.55);
-        }
-
-        .hero__overlay {
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 0 32px 28px;
-        }
-
-        .hero__gdp {
-            font-family: var(--font-display);
-            font-size: clamp(4rem, 10vw, 8rem);
-            font-weight: 700;
-            line-height: 0.9;
-            letter-spacing: -3px;
-            color: #fff;
-        }
-
-        .hero__sub {
-            display: flex;
-            gap: 24px;
-            align-items: baseline;
-            margin-top: 8px;
-        }
-
-        .hero__label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--amber-light);
-        }
-
-        .hero__city {
-            font-size: 13px;
-            font-weight: 400;
-            color: rgba(255,255,255,0.6);
-        }
-
-        /* ---- COMPARE ---- */
-
-        .compare {
-            padding: 24px;
-            background: var(--surface);
-        }
-
-        .compare__header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 16px;
-            padding: 0 4px;
-        }
-
-        .compare__title {
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            color: var(--black);
-        }
-
-        .compare__note {
-            font-size: 10px;
-            color: var(--gray-500);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .compare-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3px;
-        }
-
-        .compare-card {
-            background: var(--white);
-            overflow: hidden;
-        }
-
-        .compare-card__image {
-            aspect-ratio: 3 / 2;
-            overflow: hidden;
-        }
-
-        .compare-card__info {
-            padding: 12px 16px 14px;
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 8px;
-        }
-
-        .compare-card__left {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .compare-card__city {
-            font-family: var(--font-display);
-            font-size: 1.15rem;
-            color: var(--black);
-            line-height: 1.2;
-        }
-
-        .compare-card__country {
-            font-size: 10px;
-            color: var(--gray-500);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .compare-card__right {
-            text-align: right;
-        }
-
-        .compare-card__gdp {
-            font-family: var(--font-display);
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-            color: var(--gray-700);
-            letter-spacing: -1px;
-            line-height: 1;
-        }
-
-        .compare-card__gdp-label {
-            font-size: 9px;
-            color: var(--gray-500);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .compare-card--highlight {
-            outline: 2px solid var(--amber);
-            outline-offset: -2px;
-        }
-
-        .compare-card--highlight .compare-card__gdp {
-            color: var(--amber);
-        }
-
-        .compare-card--highlight .compare-card__city {
-            color: var(--amber);
-        }
-
-        /* ---- VERDICT ---- */
-
-        .verdict {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3px;
-            background: var(--gray-100);
-        }
-
-        .verdict__text {
-            padding: 28px 32px;
-            background: var(--white);
-        }
-
-        .verdict__text h2 {
-            font-family: var(--font-display);
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-            line-height: 1.1;
-            letter-spacing: -1px;
-            color: var(--black);
-            margin-bottom: 14px;
-        }
-
-        .verdict__text p {
-            font-size: 0.85rem;
-            line-height: 1.65;
-            color: var(--gray-700);
-            margin-bottom: 8px;
-        }
-
-        .verdict__text p:last-child {
-            margin-bottom: 0;
-        }
-
-        .verdict__text strong {
-            color: var(--black);
-            font-weight: 600;
-        }
-
-        .verdict__image {
-            overflow: hidden;
-            background: var(--white);
-        }
-
-        .verdict__image img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* ---- GALLERY ---- */
-
-        .gallery-label {
-            padding: 20px 24px 0;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--amber);
-            background: var(--surface);
-        }
-
-        .py-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto auto;
-            gap: 3px;
-            padding: 8px 24px 24px;
-            background: var(--surface);
-        }
-
-        .py-grid__cell {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .py-grid__cell img {
-            transition: transform 0.6s ease;
-        }
-
-        .py-grid__cell:hover img {
-            transform: scale(1.03);
-        }
-
-        .py-grid__cell--wide { grid-column: span 2; }
-        .py-grid__cell--tall { grid-row: span 2; }
-
-        .py-grid__caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 6px 10px;
-            font-size: 9px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.85);
-            background: linear-gradient(transparent, rgba(0,0,0,0.65));
-        }
-
-        /* ---- RECOVERY ---- */
-
-        .recovery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3px;
-            background: var(--gray-100);
-        }
-
-        .recovery__image {
-            background: var(--white);
-            padding: 16px;
-            display: flex;
-            align-items: center;
-        }
-
-        .recovery__image img {
-            object-fit: contain;
-            height: auto;
-        }
-
-        .recovery__text {
-            padding: 28px 32px;
-            background: var(--white);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .recovery__text .section-label {
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--amber);
-            margin-bottom: 10px;
-        }
-
-        .recovery__text h3 {
-            font-family: var(--font-display);
-            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-            line-height: 1.15;
-            letter-spacing: -0.5px;
-            color: var(--black);
-            margin-bottom: 10px;
-        }
-
-        .recovery__text p {
-            font-size: 0.85rem;
-            line-height: 1.65;
-            color: var(--gray-700);
-        }
-
-        /* ---- EXPERT ---- */
-
-        .expert {
-            background: var(--white);
-            padding: 24px;
-        }
-
-        .expert__image {
-            max-height: 520px;
-            overflow: hidden;
-        }
-
-        .expert__image img {
-            object-fit: contain;
-            height: auto;
-            max-height: 520px;
-        }
-
-        .expert__caption {
-            padding: 12px 4px 0;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            color: var(--gray-700);
-        }
-
-        .expert__caption strong {
-            color: var(--black);
-            font-weight: 600;
-        }
-
-        /* ---- BOTTOM LINE ---- */
-
-        .bottomline {
-            padding: 28px 32px 48px;
-            background: var(--black);
-        }
-
-        .bottomline p {
-            font-family: var(--font-display);
-            font-size: clamp(1.4rem, 2.8vw, 2.2rem);
-            line-height: 1.2;
-            letter-spacing: -0.5px;
-            color: #ddd;
-            max-width: 50ch;
-        }
-
-        .bottomline em {
-            color: var(--amber-light);
-            font-style: italic;
-        }
-
-        /* ---- RESPONSIVE ---- */
-
-        @media (max-width: 900px) {
-            .compare { padding: 16px; }
-            .compare-row { grid-template-columns: 1fr; gap: 2px; }
-            .compare-card__image { aspect-ratio: 16 / 9; }
-            .verdict { grid-template-columns: 1fr; }
-            .py-grid { grid-template-columns: 1fr 1fr; padding: 8px 16px 16px; }
-            .gallery-label { padding: 16px 16px 0; }
-            .recovery { grid-template-columns: 1fr; }
-            .hero { height: 44vh; }
-            .hero__overlay { padding: 0 16px 20px; }
-            .hero__gdp { letter-spacing: -2px; }
-            .bottomline { padding: 20px 16px 40px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poor does not mean powerless. · Korea, ahead. · Neenah Club</title>
+  <meta name="description" content="Pyongyang’s new towers show what North Korea can build. GDP alone does not explain a state’s capacity—or its choices.">
+  <meta property="og:title" content="Poor does not mean powerless. · Korea, ahead.">
+  <meta property="og:description" content="Pyongyang’s new towers show what North Korea can build. GDP alone does not explain a state’s capacity—or its choices.">
+  <meta property="og:image" content="https://omatty123.github.io/neenah-korea/images/hwasong-complete-aerial.jpg">
+  <meta property="og:url" content="https://omatty123.github.io/neenah-korea/pyongyang.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23152632'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23b8312d'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
-
-    <nav class="breadcrumb">
-        <a href="index.html">&larr; Back to Presentation</a>
-        <span class="breadcrumb__tag">04 of 04</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-brand" href="index.html">Korea, ahead.</a>
+    <nav aria-label="Main navigation" class="site-nav">
+      <a href="index.html">The talk</a>
+      <a href="bio.html">The speaker</a>
     </nav>
+  </header>
+  <main id="main" class="container page-content">
+    <a class="breadcrumb" href="index.html">← Back to the talk</a>
+    <h1 class="page-title">Poor does not mean powerless.</h1>
+    <p class="page-lead">Pyongyang’s new towers show what North Korea can build. GDP alone does not explain a state’s capacity—or its choices.</p>
 
-    <header class="hero">
-        <img src="images/pyongyang-ceremony-aerial.png" alt="Pyongyang Ryomyong Street ceremony with massive crowds and towers">
-        <div class="hero__overlay">
-            <span class="hero__gdp">$1,700</span>
-            <div class="hero__sub">
-                <span class="hero__label">GDP per capita (PPP)</span>
-                <span class="hero__city">Pyongyang, DPRK &middot; 50,000 apartments completed February 2026</span>
-            </div>
-        </div>
-    </header>
+    <figure class="feature-photo">
+      <picture><source srcset="images/hwasong-complete-aerial-display.webp" type="image/webp"><img src="images/hwasong-complete-aerial.jpg" alt="Aerial view of new apartment towers in Pyongyang's Hwasong district" width="1280" height="853"></picture>
+      <figcaption>Hwasong district, February 2026. A North Korean state image from the preparation.</figcaption>
+    </figure>
 
-    <div class="compare">
-        <div class="compare__header">
-            <span class="compare__title">Three capitals</span>
-            <span class="compare__note">All GDP figures: PPP, current international $</span>
+    <section class="page-section" aria-labelledby="capacity-heading">
+      <h2 id="capacity-heading">The building has not stopped.</h2>
+      <p>North Korea <strong>announced the completion of 50,000 Pyongyang apartments</strong> in February 2026, concluding a five-year construction program. <a href="https://en.yna.co.kr/view/AEN20260217000751315">Yonhap's report</a>.</p>
+      <p>The Bank of Korea <strong>estimated North Korean economic growth at 3.5% in 2025</strong>, after 3.1% in 2023 and 3.7% in 2024. <a href="https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&amp;nttId=11063397">Bank of Korea's July 2026 estimates</a>.</p>
+      <p class="page-note">Construction and output growth do not establish better living conditions.</p>
+    </section>
+
+    <details class="preparation">
+      <summary>Pyongyang up close: the construction photographs</summary>
+      <div class="details-content wide">
+        <p>These photographs establish visible buildings and ceremonies. They do not show maintenance, occupancy, allocation, or conditions outside the capital.</p>
+        <p>The apartment total is a North Korean state announcement, reported by Yonhap. It is evidence of the government's claims and priorities; it is not an independent assessment of housing quality or access.</p>
+        <p>The Bank of Korea uses South Korean prices and value-added ratios to estimate North Korean output. Its figures describe estimated production trends and cannot be used directly for international per-capita income or welfare comparisons.</p>
+        <div class="gallery-grid">
+          <figure><picture><source srcset="images/pyongyang-ryomyong-display.webp" type="image/webp"><img src="images/pyongyang-ryomyong.jpg" alt="A tall residential tower on Pyongyang's Ryomyong Street" width="592" height="1120" loading="lazy"></picture><figcaption>Ryomyong Street.</figcaption></figure>
+          <figure><picture><source srcset="images/hwasong-complete-ceremony-display.webp" type="image/webp"><img src="images/hwasong-complete-ceremony.jpg" alt="Crowds at the February 2026 Hwasong housing inauguration" width="1280" height="848" loading="lazy"></picture><figcaption>Hwasong inauguration, February 2026.</figcaption></figure>
+          <figure><picture><source srcset="images/hwasong-apartments-display.webp" type="image/webp"><img src="images/hwasong-apartments.jpg" alt="Apartment towers lining a boulevard in the Hwasong district" width="824" height="540" loading="lazy"></picture><figcaption>Hwasong boulevard.</figcaption></figure>
+          <figure><picture><source srcset="images/pyongyang-mirae-closeup-display.webp" type="image/webp"><img src="images/pyongyang-mirae-closeup.jpg" alt="Colorful residential towers on Mirae Scientists Street" width="1535" height="2048" loading="lazy"></picture><figcaption>Mirae Scientists Street.</figcaption></figure>
+          <figure><picture><source srcset="images/dprk-housing-aerial-1-display.webp" type="image/webp"><img src="images/dprk-housing-aerial-1.png" alt="Aerial view of a new North Korean residential development identified in the preparation as Rimhung Street" width="1994" height="1324" loading="lazy"></picture><figcaption>Rimhung Street residential development, as identified in the preparation.</figcaption></figure>
+          <figure><picture><source srcset="images/pyongyang-ceremony-aerial-display.webp" type="image/webp"><img src="images/pyongyang-ceremony-aerial.png" alt="Aerial view of a large public ceremony among Pyongyang's apartment towers" width="1658" height="932" loading="lazy"></picture><figcaption>A ceremony in Pyongyang. The scale of an event is different evidence from household welfare.</figcaption></figure>
         </div>
-        <div class="compare-row">
-            <div class="compare-card">
-                <div class="compare-card__image">
-                    <img src="images/havana-hotel-malecon.jpg" alt="Havana skyline with Hotel Nacional and Malecon waterfront">
-                </div>
-                <div class="compare-card__info">
-                    <div class="compare-card__left">
-                        <p class="compare-card__city">Havana</p>
-                        <p class="compare-card__country">Cuba</p>
-                    </div>
-                    <div class="compare-card__right">
-                        <p class="compare-card__gdp">$12,300</p>
-                        <p class="compare-card__gdp-label">GDP / capita</p>
-                    </div>
-                </div>
-            </div>
-            <div class="compare-card">
-                <div class="compare-card__image">
-                    <img src="images/dhaka-skyline.jpg" alt="Dhaka city skyline with mid-rise buildings">
-                </div>
-                <div class="compare-card__info">
-                    <div class="compare-card__left">
-                        <p class="compare-card__city">Dhaka</p>
-                        <p class="compare-card__country">Bangladesh</p>
-                    </div>
-                    <div class="compare-card__right">
-                        <p class="compare-card__gdp">$7,500</p>
-                        <p class="compare-card__gdp-label">GDP / capita</p>
-                    </div>
-                </div>
-            </div>
-            <div class="compare-card compare-card--highlight">
-                <div class="compare-card__image">
-                    <img src="images/hwasong-skyline.jpg" alt="Hwasong district skyline, 2025">
-                </div>
-                <div class="compare-card__info">
-                    <div class="compare-card__left">
-                        <p class="compare-card__city">Pyongyang</p>
-                        <p class="compare-card__country">DPRK</p>
-                    </div>
-                    <div class="compare-card__right">
-                        <p class="compare-card__gdp">$1,700</p>
-                        <p class="compare-card__gdp-label">GDP / capita</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </details>
+    <details class="preparation">
+      <summary>Havana, Dhaka, Pyongyang: what the images can compare</summary>
+      <div class="details-content wide">
+        <p>The original preparation placed three capital-city photographs beside national GDP-per-capita estimates. Country averages are not city incomes, and photographs are not comparable economic samples. The images remain useful for comparing architecture and urban form.</p>
+        <div class="gallery-three">
+          <figure><picture><source srcset="images/havana-hotel-malecon-display.webp" type="image/webp"><img src="images/havana-hotel-malecon.jpg" alt="Havana's waterfront and the Hotel Nacional" width="1400" height="1050" loading="lazy"></picture><figcaption><strong>Havana, Cuba</strong>The waterfront and Hotel Nacional.</figcaption></figure>
+          <figure><picture><source srcset="images/dhaka-skyline-display.webp" type="image/webp"><img src="images/dhaka-skyline.jpg" alt="Dense mid-rise and high-rise buildings in Dhaka" width="5068" height="3379" loading="lazy"></picture><figcaption><strong>Dhaka, Bangladesh</strong>A dense urban skyline.</figcaption></figure>
+          <figure><picture><source srcset="images/hwasong-skyline-display.webp" type="image/webp"><img src="images/hwasong-skyline.jpg" alt="New high-rise apartment buildings in Pyongyang's Hwasong district" width="2000" height="1333" loading="lazy"></picture><figcaption><strong>Pyongyang, DPRK</strong>New towers in the capital.</figcaption></figure>
         </div>
+        <p class="page-note">Different photographers, locations, and dates shape these views. They cannot rank the wealth or well-being of the three cities.</p>
+      </div>
+    </details>
+    <details class="preparation">
+      <summary>Beyond the capital: flood recovery and remaining questions</summary>
+      <div class="details-content">
+        <figure><picture><source srcset="images/dprk-flood-recovery-2024-2026-display.webp" type="image/webp"><img src="images/dprk-flood-recovery-2024-2026.png" alt="Prepared comparison of a flooded North Korean site in 2024 and greenhouse construction at the site in 2026" width="1218" height="1516" loading="lazy"></picture><figcaption>The preparation's 2024–2026 flood-recovery comparison. Images document a selected site, not nationwide recovery.</figcaption></figure>
+        <p>The original argument also considered rural housing and greenhouse construction. Those projects matter to the question of state capacity beyond Pyongyang. Its annual rural-house totals, currency depreciation estimate, and statements about doubled food and fuel prices need dated sources before they can support a current assessment.</p>
+        <p>North Korea announced another stage of the Pyongyang housing project beginning on February 18, 2026. Continued construction adds to the question; it does not settle how resources are distributed. <a href="https://en.yna.co.kr/view/AEN20260219003900315">Yonhap's report</a>.</p>
+        <p>GDP measures aggregate production. To understand North Korea, also ask what the state can mobilize, who receives those resources, and what daily life costs.</p>
+      </div>
+    </details>
+    <nav class="next-page" aria-label="Return to the talk"><span>Return to the main argument</span><a href="index.html">When you follow Korea, you're ahead of the world →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <p>Neenah Club · October 19, 2026 · <a href="index.html">The talk</a></p>
+      <a class="archive-link" href="archive/2026-10-04/pyongyang.html">Original preparation for this page</a>
     </div>
-
-    <div class="verdict">
-        <div class="verdict__text">
-            <h2>Same metric. Very different cities.</h2>
-            <p><strong>Cuba has 7x the GDP per capita.</strong> Havana has the Hotel Nacional, the Malecon, real charm. But even at its best angle, it is visibly aging. The state cannot maintain what it built decades ago.</p>
-            <p><strong>Bangladesh has 4x the GDP per capita.</strong> Dhaka is growing fast, with real commercial energy. But the built environment is uneven, crowded, improvised.</p>
-            <p><strong>Pyongyang has the lowest GDP of the three.</strong> In February 2026 it finished a five-year push of 50,000 new apartments, with towers connected by skybridges. The city looks like a rendering. That's not prosperity. That's a command economy concentrating everything into one showcase.</p>
-        </div>
-        <div class="verdict__image">
-            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street towers">
-        </div>
-    </div>
-
-    <p class="gallery-label">Pyongyang up close</p>
-    <div class="py-grid">
-        <div class="py-grid__cell py-grid__cell--wide">
-            <img src="images/hwasong-complete-aerial.jpg" alt="Hwasong district aerial, February 2026, KCNA">
-            <span class="py-grid__caption">Hwasong district, completed February 2026</span>
-        </div>
-        <div class="py-grid__cell py-grid__cell--tall">
-            <img src="images/pyongyang-ryomyong.jpg" alt="Ryomyong Street tower">
-            <span class="py-grid__caption">Ryomyong, 82 floors</span>
-        </div>
-        <div class="py-grid__cell">
-            <img src="images/hwasong-complete-ceremony.jpg" alt="Inauguration ceremony, February 2026">
-            <span class="py-grid__caption">Inauguration, Feb 16 2026</span>
-        </div>
-        <div class="py-grid__cell">
-            <img src="images/hwasong-apartments.jpg" alt="Hwasong boulevard aerial">
-            <span class="py-grid__caption">Hwasong boulevard</span>
-        </div>
-        <div class="py-grid__cell">
-            <img src="images/pyongyang-mirae-closeup.jpg" alt="Mirae Scientists Street">
-            <span class="py-grid__caption">Mirae Scientists Street</span>
-        </div>
-        <div class="py-grid__cell">
-            <img src="images/dprk-housing-aerial-1.png" alt="New housing development aerial">
-            <span class="py-grid__caption">Rimhung Street residential</span>
-        </div>
-    </div>
-
-    <div class="recovery">
-        <div class="recovery__image">
-            <img src="images/dprk-flood-recovery-2024-2026.png" alt="DPRK flood recovery: 2024 vs 2026">
-        </div>
-        <div class="recovery__text">
-            <p class="section-label">State capacity</p>
-            <h3>Flood to greenhouses in under two years</h3>
-            <p>The same site, devastated by flooding in 2024, rebuilt with industrial greenhouse facilities by 2026. Beyond Pyongyang, the state built 20,000 rural homes in 2023 and 25,000 more in 2024. This is not a country in free fall. It is a state that can mobilize resources at scale when it decides to.</p>
-            <p style="margin-top:14px;">Seoul's own central bank now says the same thing. The Bank of Korea put North Korean growth at <strong>3.1% in 2023, 3.7% in 2024, and 3.5% in 2025</strong>, the strongest stretch since sanctions tightened in 2017, driven by arms sales to Russia and trade with China. The building has not stopped either: the fifth stage of the Pyongyang housing project broke ground on <strong>February 18, 2026</strong>. None of which means life got easier. Over the same period the won lost roughly 90% against the dollar and food and fuel prices doubled. A state that can build is not the same as a system that works.</p>
-        </div>
-    </div>
-
-
-    <div class="bottomline">
-        <p>GDP measures aggregate output. It does not measure what a city <em>looks like</em>, what a state <em>can do</em>, or how dangerous it <em>actually is</em>.</p>
-    </div>
-
-    <!-- CLOSING -->
-
-    <div style="padding:32px 40px 28px;background:#1a1a1a;">
-        <p style="font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-1px;color:var(--amber-light);">Questions?</p>
-        <p style="margin-top:14px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray-500);">Matty Wegehaupt &middot; Neenah Club &middot; October 19, 2026</p>
-    </div>
-
+  </footer>
 </body>
 </html>
