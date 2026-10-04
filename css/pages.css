@@ -83,6 +83,40 @@ html:has(body.pyongyang-page) { scroll-behavior: auto; }
 .pyongyang-page .consumer-stories > div { padding-top: 18px; border-top: 1px solid var(--rule); }
 .pyongyang-page .consumer-stories .page-note { margin-top: 10px; }
 .pyongyang-page .consumer-audio { max-width: 74ch; }
+.pyongyang-page .development-chart { margin-top: 32px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.pyongyang-page .development-chart h3 { margin: 0 0 10px; font-size: clamp(1.35rem, 2.2vw, 1.7rem); }
+.pyongyang-page .chart-key { color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.pyongyang-page .chart-legend { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 0; margin: 16px 0 24px; list-style: none; }
+.pyongyang-page .chart-legend li { display: flex; align-items: center; gap: 8px; font-size: .9rem; line-height: 1.5; }
+.pyongyang-page .legend-square { flex: 0 0 14px; width: 14px; height: 14px; }
+.pyongyang-page .opened .cohort-cells span, .pyongyang-page .legend-square.opened { background: var(--ink); border: 1px solid var(--ink); }
+.pyongyang-page .building .cohort-cells span, .pyongyang-page .legend-square.building { border: 2px solid var(--red); }
+.pyongyang-page .planned .cohort-cells span, .pyongyang-page .legend-square.planned { border: 1px dashed var(--muted); }
+.pyongyang-page .legend-square.year-2025 { background: var(--red); }
+.pyongyang-page .cohort-chart { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 20px; margin: 0 0 24px; padding: 0; list-style: none; }
+.pyongyang-page .cohort { min-width: 0; }
+.pyongyang-page .cohort-year { display: block; margin-bottom: 10px; font-size: .95rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pyongyang-page .cohort-cells { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
+.pyongyang-page .cohort-cells span { display: block; aspect-ratio: 1; }
+.pyongyang-page .development-chart figcaption { max-width: 85ch; }
+.pyongyang-page .development-chart figcaption strong { color: var(--ink); }
+.pyongyang-page #regional-photo-heading { margin-top: 32px; margin-bottom: 16px; font-size: 1.7rem; }
+.pyongyang-page .regional-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.pyongyang-page .regional-photos img { width: 100%; height: auto; }
+.pyongyang-page .regional-photos figcaption strong { display: block; color: var(--ink); margin-bottom: 4px; }
+.pyongyang-page .regional-photo-note { margin-top: 16px; }
+.pyongyang-page .province-bars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(7, auto); grid-auto-flow: column; gap: 12px 40px; list-style: none; padding: 0; margin: 0 0 24px; }
+.pyongyang-page .province-row { display: grid; grid-template-columns: 9.75rem minmax(0, 1fr) 1.5rem; gap: 12px; align-items: center; font-size: .95rem; line-height: 1.3; }
+.pyongyang-page .province-track { display: flex; align-items: center; min-height: 28px; border-bottom: 1px solid var(--rule); }
+.pyongyang-page .province-series { display: flex; align-items: center; justify-content: center; width: calc(var(--locations) * 20%); min-height: 28px; color: var(--paper); font-size: .9rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pyongyang-page .province-series.year-2024 { background: var(--ink); }
+.pyongyang-page .province-series.year-2025 { background: var(--red); }
+.pyongyang-page .province-total { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 1000px) {
+ .pyongyang-page .cohort-chart { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; }
+ .pyongyang-page .cohort-cells { max-width: 110px; }
+ .pyongyang-page .province-bars { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+}
 @media (max-width: 700px) {
  .page-content { padding: 24px 0 44px; }
  .breadcrumb { margin-bottom: 22px; }
@@ -102,6 +136,12 @@ html:has(body.pyongyang-page) { scroll-behavior: auto; }
  .contact-links { flex-direction: column; align-items: flex-start; }
  .pyongyang-page .page-jump { gap: 0 18px; margin-bottom: 22px; }
  .pyongyang-page .development-milestones { grid-template-columns: 1fr; gap: 24px; }
+ .pyongyang-page .development-chart { margin-top: 24px; padding: 20px 0; }
+ .pyongyang-page .cohort-chart { gap: 20px 10px; }
+ .pyongyang-page .cohort-year { font-size: .9rem; }
+ .pyongyang-page .cohort-cells { gap: 2px; }
+ .pyongyang-page .regional-photos { grid-template-columns: 1fr; }
+ .pyongyang-page .province-row { grid-template-columns: 8.5rem minmax(0, 1fr) 1.25rem; gap: 8px; }
 }
 @media print {
  .site-header, .breadcrumb, .next-page, .site-footer, .skip-link { display: none; }

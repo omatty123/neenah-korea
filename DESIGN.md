@@ -116,6 +116,8 @@ Supporting pages use readable text sections, image pairs, facts, and disclosures
 
 The expanded Pyongyang page uses visible Russia, 20×10 and consumer-life sections, with direct section links. These links jump immediately on this longer reading page. Four ruled fact rows explain Russia's benefits. Three regional-development milestones appear in columns and stack at 700px. A lazy-loaded Reuters video uses a responsive 16:9 frame, capped at 880px, with a direct viewing link. Original student videos remain external links with creator, upload date and language labels.
 
+The 20×10 section adds a square chart of ten annual 20-location cohorts, a province comparison with two labeled bar segments, and three documentary photographs. Completed, construction and future-target cohorts use filled, red outline and dashed outline squares with explicit text labels. Cohorts wrap into two rows at 1000px. The province chart changes from two reading columns to one at that width; photographs stack at 700px and preserve their natural proportions and full KCTV montages. Native HTML labels expose chart data without a chart library or JavaScript. Photo links open the original images.
+
 Print rules hide navigation, use 11pt body text and 32pt page titles, and request visible disclosure content. Print behavior is CSS-defined; the recorded review covered screen layouts.
 
 ## Elevation & Depth

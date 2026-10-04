@@ -61,3 +61,11 @@ The Reuters original report, May 12, 2026, is embedded from YouTube with a direc
 - Amusement park: https://www.bilibili.com/video/BV1kJr4BUE7W/ — same creator; uploaded January 14, 2026; 3:08; title identifies a park near the Arch of Triumph.
 
 These are upload dates, with capture dates unverified. Bilibili can require login after a preview. The creator self-identifies as a Chinese exchange student; the creator is not identified as Yu Youlin. His separate December 28, 2025 audio interview is labeled as a firsthand account, rather than a video.
+
+## 20×10 charts and photographs
+
+The regional-development section contains two native HTML/CSS charts. The first shows ten annual 20-location cohorts: two reported opened, the 2026 round under construction, and seven future policy targets. The 200 total is a ten-year target, not a completion count. The September 22, 2026 [KCNA update carried by OANA](https://oananews.org/node/713135) still describes construction of the 2026 factories.
+
+The province comparison reproduces the numbers in 38 North's January 15, 2026 [published dataset](https://datawrapper.dwcdn.net/z8CJA/1/dataset.csv). An audited transcription is retained in `tools/20x10-locations-by-province.tsv`: 13 province-level units, 20 locations per cohort, 40 in total. Bars show locations rather than factory counts. Rason's zero remains visible. Chart labels and values remain readable without JavaScript or an external chart service.
+
+Three credited KCTV images show Kujang food production, Ryonggang County Hospital and Jongphyong Service Center. `images/20x10/README.md` records their sources, dates, original dimensions and reuse status. Original JPEGs and complete published montages remain uncropped; WebP copies total about 335 KB. Photographs link to their complete originals.
