@@ -15,8 +15,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/site.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/presentation.css">
+  <script src="js/presentation.js" defer></script>
 </head>
-<body>
+<body class="talk-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="site-brand" href="index.html">Korea, ahead.</a>
@@ -27,21 +29,21 @@
   </header>
   <main id="main" class="container page-content">
     <a class="breadcrumb" href="index.html">← Back to the talk</a>
-    <h1 class="page-title">30% more space. 13 times the people.</h1>
-    <p class="page-lead">The Korean peninsula is roughly 30% larger than Wisconsin, with about thirteen times the population. Start with a place you know.</p>
-
-    <div class="photo-pair map-pair">
-      <figure>
-        <picture><source srcset="images/truesize-southkorea-display.webp" type="image/webp"><img src="images/truesize-southkorea.png" alt="The outline of South Korea overlaid on Wisconsin to compare their areas" width="434" height="406"></picture>
-        <figcaption>South Korea over Wisconsin. Existing comparison from <a href="https://www.thetruesize.com/">The True Size</a>.</figcaption>
+    <section class="talk-frame" id="wisconsin-scale" aria-labelledby="size-title">
+      <h1 class="page-title frame-title" id="size-title">30% more space. 13 times the people.</h1>
+      <div class="frame-gallery">
+        <figure class="talk-figure ">
+        <a href="images/truesize-southkorea.png"><picture><source srcset="images/truesize-southkorea-display.webp" type="image/webp"><img src="images/truesize-southkorea.png" alt="The outline of South Korea overlaid on Wisconsin to compare their areas" width="434" height="406"></picture></a>
+        <figcaption><strong>South Korea over Wisconsin</strong><span>The True Size comparison</span></figcaption>
       </figure>
-      <figure>
-        <picture><source srcset="images/truesize-northkorea-display.webp" type="image/webp"><img src="images/truesize-northkorea.png" alt="The outline of North Korea overlaid on Wisconsin to compare their areas" width="438" height="378"></picture>
-        <figcaption>North Korea over Wisconsin. Together, the two countries are a little larger than this state.</figcaption>
+        <figure class="talk-figure ">
+        <a href="images/truesize-northkorea.png"><picture><source srcset="images/truesize-northkorea-display.webp" type="image/webp"><img src="images/truesize-northkorea.png" alt="The outline of North Korea overlaid on Wisconsin to compare their areas" width="438" height="378"></picture></a>
+        <figcaption><strong>North Korea over Wisconsin</strong><span>The True Size comparison</span></figcaption>
       </figure>
-    </div>
-
-    <section class="page-section" aria-labelledby="scale-heading">
+      </div>
+      <details class="preparation frame-details">
+        <summary>Area, population and the Wisconsin comparison</summary>
+        <div class="details-content">    <p class="page-lead">The Korean peninsula is roughly 30% larger than Wisconsin, with about thirteen times the population. Start with a place you know.</p><p>Existing comparison images from <a href="https://www.thetruesize.com/">The True Size</a>; together the two countries are a little larger than Wisconsin.</p>    <section class="page-section" aria-labelledby="scale-heading">
       <h2 id="scale-heading">Two countries. One peninsula.</h2>
       <div class="table-scroll">
         <table class="data-table">
@@ -57,26 +59,87 @@
       </div>
       <p class="page-note">Sources: <a href="https://unstats.un.org/UNSDWebsite/publications/pocketbook/world-stats-pocketbook-2025.pdf">UN World Statistics Pocketbook 2025</a>, <a href="https://www.census.gov/quickfacts/WI">Census Wisconsin population estimate</a>, and <a href="https://www.census.gov/geographies/reference-files/2010/geo/state-area.html">Census total-area figures</a>. Population is rounded; Wisconsin's area includes water. These figures establish scale rather than a precise land-area density comparison.</p>
       <p>Madison is near 43° north; Pyongyang is near 39° north. Both have distinct seasons, although their weather systems and landscapes differ.</p>
-    </section>
-
-    <details class="preparation">
-      <summary>Wisconsin and Korea: water, seasons, and shared meals</summary>
-      <div class="details-content">
+    </section><h3>Wisconsin and Korea: water, seasons, and shared meals</h3>
         <h3>Water and four seasons</h3>
         <p>Wisconsin's lakes, fishing, ice shanties, and cabins make water and weather part of its calendar. Korea's mountains, watersheds, and coastlines also shape food, holidays, and everyday life. The similarity is a useful starting point; their histories and environments remain distinct.</p>
         <h3>Gemütlichkeit and jeong (정)</h3>
         <p><em>Gemütlichkeit</em> is a German-heritage word for warm, comfortable sociability. A supper club, fish boil, or Packers tailgate offers a Wisconsin example. The tavern is also a social institution.</p>
         <p><em>Jeong</em> is a Korean word for emotional bonds developed through shared time. Family meals and evenings with coworkers provide examples. Soju and the toast <span lang="ko">건배</span>—literally, “dry the glass”—belong to that social world. These words are a comparison, not exact translations of each other.</p>
-      </div>
-    </details>
-    <details class="preparation">
-      <summary>Why the earlier GDP chart needs care</summary>
-      <div class="details-content">
+      <h3>Why the earlier GDP chart needs care</h3>
         <p>The original preparation compared Wisconsin's economy with estimates for both Koreas. Those numbers did not share a clearly established year or measurement basis. A state's output, a country's nominal GDP, and an estimate for North Korea cannot be combined into a reliable ranking without that information.</p>
         <p>The area and population comparison remains useful. Economic capacity receives a separate treatment in <a href="southkorea.html">South Korea</a> and <a href="pyongyang.html">North Korea</a>.</p>
+
+        </div>
+      </details>
+    </section>
+
+    <section class="talk-frame" id="wisconsin-trade" aria-labelledby="trade-heading">
+      <h2 class="frame-title" id="trade-heading">Wisconsin already trades with Korea.</h2>
+      <dl class="frame-numbers">
+        <div><dt><strong>$724M</strong></dt><dd>Wisconsin → South Korea</dd></div>
+        <div><dt><strong>$472M</strong></dt><dd>South Korea → Wisconsin</dd></div>
+      </dl>
+      <p class="frame-line">$1.195 billion in reported goods flows · 2025</p>
+      <details class="preparation frame-details">
+        <summary>Exact figures, trade mix and Census definitions</summary>
+        <div class="details-content"><p>In 2025, Wisconsin recorded $723,657,401 in goods exports to South Korea and $471,804,303 in goods imports from South Korea: $1,195,461,704 in combined reported goods flows. South Korea was Wisconsin’s ninth-largest export destination and sixteenth-largest import source.</p>
+          <div class="table-scroll"><table class="data-table"><caption>2025 full-year report, with its revised 2024 comparison.</caption><thead><tr><th scope="col">Goods flow</th><th scope="col">2024</th><th scope="col">2025</th><th scope="col">Change</th></tr></thead><tbody><tr><th scope="row">Wisconsin → South Korea</th><td>$700,133,595</td><td>$723,657,401</td><td>+3.36%</td></tr><tr><th scope="row">South Korea → Wisconsin</th><td>$435,159,980</td><td>$471,804,303</td><td>+8.42%</td></tr></tbody></table></div>
+          <p><a href="https://wedc.org/wp-content/uploads/2026/03/2025-Full-Year-Trade-Report-Final.pdf">WEDC’s 2025 full-year trade report</a>, export table p. 4 and import table p. 10; report published under March 2026, checked October 4, 2026. WEDC uses U.S. Census data through WISERTrade. The large display values are rounded.</p>
+          <p>The figures cover goods, not services. Exports use <strong>origin of movement</strong>: the state where the export journey begins. Imports use <strong>state of destination</strong>, as recorded when customs entry documents are filed. These measures do not establish where all goods were produced or ultimately consumed. Census discourages calculating a state trade balance from them. <a href="https://www.census.gov/foreign-trade/guide/sec2.html">Census definitions and limitations</a>.</p>
+          <p>South Korea’s 2025 export mix from Wisconsin includes medical/scientific instruments (32%), industrial machinery (11%), miscellaneous food products (6%), electrical machinery (6%), meat (6%), dairy (5%), organic chemicals (5%) and other products (29%): rounded shares in <a href="https://wedc.org/market-intelligence/regions/asia/">WEDC’s South Korea chart</a>. Medical/scientific exports to South Korea increased 40.6% in 2025, according to the full-year report.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="talk-frame" id="kimberly-clark" aria-labelledby="kimberly-heading">
+      <h2 class="frame-title" id="kimberly-heading">Kimberly-Clark × Yuhan-Kimberly</h2>
+      <figure class="talk-figure ">
+        <a href="images/wi-korea-gallery/huggies-little-fighters-diapers.jpg"><picture><source srcset="images/wi-korea-gallery/huggies-little-fighters-diapers-display.webp" type="image/webp"><img src="images/wi-korea-gallery/huggies-little-fighters-diapers.jpg" alt="Huggies Little Fighters preemie diaper packaging over a photograph of a baby in a NICU, in a US company product image" width="864" height="1080" loading="lazy"></picture></a>
+        <figcaption><strong>Huggies · a Kimberly-Clark brand</strong><span>US product image · September 2026</span></figcaption>
+      </figure>
+      <p class="frame-line">A joint venture formed in 1970 connects a familiar Wisconsin company with Korea.</p>
+      <details class="preparation frame-details">
+        <summary>The joint venture and image source</summary>
+        <div class="details-content"><p>Yuhan-Kimberly’s joint venture with Kimberly-Clark began in 1970. <a href="https://www.yuhan-kimberly.co.kr/pdf/report/yk_2023_en.pdf">Yuhan-Kimberly’s company history</a>.</p><p>The photograph shows a US Huggies product and is used here to identify the Kimberly-Clark brand; it is not a photograph of Korean product packaging. <a href="https://www.investor.kimberly-clark.com/news-releases/news-release-details/huggiesr-rallies-communities-recognize-fighting-spirit-nicu">Kimberly-Clark’s September 3, 2026 Huggies release</a>.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="talk-frame" id="bobcat" aria-labelledby="bobcat-heading">
+      <h2 class="frame-title" id="bobcat-heading">Bobcat: built in Wisconsin.</h2>
+      <figure class="talk-figure ">
+        <a href="images/wi-korea-gallery/bobcat-mower.jpg"><picture><source srcset="images/wi-korea-gallery/bobcat-mower-display.webp" type="image/webp"><img src="images/wi-korea-gallery/bobcat-mower.jpg" alt="A Bobcat ZT7000 zero-turn mower cutting grass in an official Bobcat product photograph" width="1800" height="1200" loading="lazy"></picture></a>
+        <figcaption><strong>Bobcat ZT7000</strong><span>An official product photograph</span></figcaption>
+      </figure>
+      <p class="frame-line">South Korean ownership. Wisconsin manufacturing.</p>
+      <details class="preparation frame-details">
+        <summary>Johnson Creek, ownership and photo source</summary>
+        <div class="details-content"><p>Bobcat’s June 15, 2023 <a href="https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-company-celebrates-renovation-completion-johnson-creek-wisconsin-facility">Johnson Creek facility announcement</a> describes Wisconsin production and its place within the South Korean Doosan group. <a href="https://www.doosanbobcat.com/en/about/global.html">Doosan Bobcat’s current location directory</a> lists its Korean headquarters and Johnson Creek manufacturing operation.</p><p>The photograph comes from <a href="https://www.bobcat.com/na/en/equipment/mowers">Bobcat’s mower catalogue</a>. Its capture date and location are not identified; the image does not establish that this pictured mower or mowing scene is in Wisconsin.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="talk-frame" id="promega-rockwell" aria-labelledby="promega-rockwell-heading">
+      <h2 class="frame-title" id="promega-rockwell-heading">Promega + Rockwell Automation</h2>
+      <div class="frame-gallery">
+        <figure class="talk-figure ">
+        <a href="images/wi-korea-gallery/promega-maxwell-rsc.jpg"><picture><source srcset="images/wi-korea-gallery/promega-maxwell-rsc-display.webp" type="image/webp"><img src="images/wi-korea-gallery/promega-maxwell-rsc.jpg" alt="A Promega Maxwell RSC laboratory instrument with its product and company names visible" width="1280" height="810" loading="lazy"></picture></a>
+        <figcaption><strong>Promega Maxwell RSC</strong><span>Laboratory automation</span></figcaption>
+      </figure>
+        <figure class="talk-figure ">
+        <a href="images/wi-korea-gallery/rockwell-seoul-cec.jpg"><picture><source srcset="images/wi-korea-gallery/rockwell-seoul-cec-display.webp" type="image/webp"><img src="images/wi-korea-gallery/rockwell-seoul-cec.jpg" alt="Rockwell Automation’s Customer Experience Center in Seoul, with a visible company logo" width="1800" height="1013" loading="lazy"></picture></a>
+        <figcaption><strong>Rockwell Automation · Seoul</strong><span>Customer Experience Center</span></figcaption>
+      </figure>
       </div>
-    </details>
-    <nav class="next-page" aria-label="Next topic"><span>Continue the talk</span><a href="memorial.html">Wisconsin and the Korean War →</a></nav>
+      <p class="frame-line">Future opportunities: medical instruments and factory automation.</p>
+      <details class="preparation frame-details">
+        <summary>Wisconsin–Korea company connections and image sources</summary>
+        <div class="details-content"><p><a href="https://se.promega.com/support/contact-promega/">Promega’s company directory</a> identifies its Madison headquarters and Seoul operation, which manufactures Maxwell instruments. The <a href="https://www.promega.com/products/lab-automation/automated-dna-rna-extraction-purification-maxwell/maxwell-rsc-instrument/">Maxwell RSC instrument page</a> supplies the product photograph; it does not identify the manufacturing location of the pictured unit.</p><p><a href="https://www.rockwellautomation.com/ko-kr/company/news/press-releases/rockwell-automation-korea-new-country-director.html">Rockwell’s August 13, 2026 Korea announcement</a> identifies its Milwaukee headquarters and Korean operations. The photograph shows its <a href="https://www.rockwellautomation.com/ko-kr/capabilities/digital-transformation/customer-experience-center.html">Seoul Customer Experience Center</a>.</p>
+          <p>WEDC reports that medical/scientific instruments were 32% of Wisconsin’s goods exports to South Korea in 2025, with 40.6% growth. That provides a concrete market base for further opportunities. <a href="https://wedc.org/market-intelligence/regions/asia/">WEDC’s South Korea profile</a>. <a href="https://www.trade.gov/country-commercial-guides/south-korea-manufacturing-technology-smart-factory">The U.S. Commercial Service’s manufacturing guide</a> describes Korean demand for factory automation. These are potential markets, not new orders secured by the pictured companies.</p>
+        </div>
+      </details>
+    </section>
+        <nav class="next-page" aria-label="Next topic"><span>Continue the talk</span><a href="memorial.html">Wisconsin and the Korean War →</a></nav>
   </main>
   <footer class="site-footer">
     <div>

@@ -15,8 +15,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/site.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/presentation.css">
+  <script src="js/presentation.js" defer></script>
 </head>
-<body>
+<body class="talk-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="site-brand" href="index.html">Korea, ahead.</a>
@@ -27,20 +29,19 @@
   </header>
   <main id="main" class="container page-content">
     <a class="breadcrumb" href="index.html">← Back to the talk</a>
-    <div class="bio-intro">
-      <picture><source srcset="images/headshot-display.webp" type="image/webp"><img class="bio-photo" src="images/headshot.jpg" alt="Matty Wegehaupt" width="621" height="907"></picture>
-      <div>
-        <h1 class="page-title">Matty Wegehaupt</h1>
-        <p class="bio-korean"><span lang="ko">오상진</span> (Oh Sangjin)</p>
-        <p class="bio-role">Instructor, East Asian Studies<br>Lawrence University · Appleton, WI</p>
-        <div class="bio-copy">
+    <section class="talk-frame" id="the-speaker" aria-labelledby="speaker-title">
+      <h1 class="page-title frame-title" id="speaker-title">Matty Wegehaupt</h1>
+      <figure class="talk-figure talk-portrait">
+        <a href="images/headshot.jpg"><picture><source srcset="images/headshot-display.webp" type="image/webp"><img src="images/headshot.jpg" alt="Matty Wegehaupt" width="621" height="907"></picture></a>
+        <figcaption><strong><span lang="ko">오상진</span> · Oh Sangjin</strong><span>Instructor, East Asian Studies · Lawrence University</span></figcaption>
+      </figure>
+      <p class="frame-line">Translator, teacher and Fulbright Fellow · Appleton, Wisconsin</p>
+      <details class="preparation frame-details">
+        <summary>Biography, translations and contact</summary>
+        <div class="details-content">        <div class="bio-copy">
           <p>Matty Wegehaupt has spent over two decades working inside Korean language and culture — not observing from the outside, but translating Buddhist masters, editing academic journals, and teaching the next generation about East Asia.</p>
           <p>A former U.S. Air Force Academy cadet turned Fulbright Fellow in South Korea, he has taught East Asian Studies at Lawrence University since 2007, covering courses from Chinese cinema to Korean history in literature and film.</p>
-        </div>
-      </div>
-    </div>
-
-    <section class="page-section" aria-labelledby="translations-heading">
+        </div>    <section class="page-section" aria-labelledby="translations-heading">
       <h2 id="translations-heading">Selected translations</h2>
       <ul class="translation-list">
         <li>Beopjeong Sunim. <a href="https://books.google.com/books/about/Pure_and_Fragrant.html?id=qQ_qEAAAQBAJ"><em>Pure and Fragrant.</em></a> Seoul: Jogye Order of Korean Buddhism, 2021.</li>
@@ -49,36 +50,29 @@
         <li>Korean Massive Open Online Courses (2022–2025): Buddhism and Business, Buddhism and Literature, Buddhism and Ethics, and more.</li>
       </ul>
     </section>
-
-    <details class="preparation">
-      <summary>Education</summary>
-      <div class="details-content">
+<h3>Education</h3>
         <ul>
           <li>MA, Asian Studies — University of Michigan, Ann Arbor</li>
           <li>MA, Asian Studies — University of California, Berkeley <em>(with honors)</em></li>
           <li>BA, Political Science — University of Wisconsin, Madison <em>(with honors)</em></li>
           <li>United States Air Force Academy (1989–1991)</li>
         </ul>
-      </div>
-    </details>
-    <details class="preparation">
-      <summary>Selected service</summary>
-      <div class="details-content">
+      <h3>Selected service</h3>
         <ul>
           <li>Managing Editor, <em>Journal of Korean Religion</em> (2008–2018)</li>
           <li>Managing Editor, <em>Seoul Journal of Korean Studies</em> (2007–2008)</li>
           <li>United States Fulbright Fellow, South Korea (2006–2007)</li>
         </ul>
-      </div>
-    </details>
-
-    <section class="page-section" aria-labelledby="contact-heading">
+          <section class="page-section" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact</h2>
       <div class="contact-links">
         <a href="mailto:wegehaum@lawrence.edu">wegehaum@lawrence.edu</a>
         <a href="mailto:omatty@gmail.com">omatty@gmail.com</a>
         <a href="https://banglangdang.vercel.app">banglangdang.vercel.app</a>
       </div>
+    </section>
+        </div>
+      </details>
     </section>
   </main>
   <footer class="site-footer">

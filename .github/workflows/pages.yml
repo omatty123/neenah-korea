@@ -25,6 +25,7 @@ jobs:
         run: |
           python tools/check_site.py
           node --check js/regional-development-map.js
+          node --check js/presentation.js
       - name: Package public files
         run: python tools/package_site.py
       - name: Check deployment package

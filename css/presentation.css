@@ -1,0 +1,95 @@
+/* Projected talk: photographs, titles, and optional preparation notes. */
+html:has(body.talk-page){scroll-behavior:auto;scroll-padding-top:0}
+.talk-page{padding-bottom:72px}
+.talk-page .site-header{min-height:64px}
+.talk-page .page-content{padding-top:0}
+.talk-page .breadcrumb{display:none}
+.talk-frame{min-height:calc(100svh - 64px);padding:28px 0 32px;display:flex;flex-direction:column;gap:20px;border-bottom:1px solid var(--rule);scroll-margin-top:0}
+.talk-frame:first-of-type{min-height:calc(100svh - 128px)}
+.talk-frame .frame-title{font-size:clamp(2.2rem,4.15vw,4.4rem);line-height:1.03;letter-spacing:-.035em;max-width:none;margin:0;text-wrap:balance}
+.talk-frame .frame-line{font-size:clamp(1.1rem,2vw,1.65rem);line-height:1.35;max-width:none;margin:0}
+.frame-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
+.frame-gallery.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.talk-figure{margin:0;border:1px solid var(--rule);background:#eeeee7;min-width:0;display:flex;flex-direction:column}
+.talk-figure>a{display:block;min-width:0;text-decoration:none}
+.talk-figure picture{display:flex;height:min(48svh,calc(100svh - 445px),520px);align-items:center;justify-content:center;padding:8px}
+.talk-frame:first-of-type .talk-figure picture{height:min(43svh,calc(100svh - 500px),430px)}
+.talk-figure img{width:100%;height:100%;object-fit:contain}
+.talk-figure figcaption{margin-top:0;padding:12px 18px;background:var(--paper);border-top:1px solid var(--rule);font-size:clamp(1rem,1.55vw,1.4rem);line-height:1.35;color:var(--muted)}
+.talk-figure figcaption strong{display:block;font-family:var(--font-display);font-size:clamp(1.6rem,2.15vw,2.2rem);line-height:1.1;letter-spacing:-.02em;color:var(--ink)}
+.talk-figure figcaption span{display:block;margin-top:5px}
+.talk-figure figcaption [lang=ko]{display:inline}
+.frame-gallery.three .talk-figure picture{height:min(48svh,480px)}
+.talk-frame>.frame-details{margin:0;border-bottom:0}
+.talk-frame>.frame-details>summary{padding:12px 32px 12px 0;font-size:1rem;min-height:44px}
+.talk-frame>.frame-details>summary::after{top:13px}
+.frame-details .details-content{padding:12px 0 20px;max-width:78ch;font-size:17px;line-height:1.65}
+.frame-details .details-content.wide{max-width:none}
+.frame-details h2,.frame-details h3{font-size:1.6rem;margin:20px 0 12px}
+.frame-details .page-section{padding:0;border:0}
+.frame-details .talk-figure picture{height:auto}
+.frame-numbers{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:16px 0;flex:1;align-items:center}
+.frame-numbers>div{padding:36px;border:1px solid var(--rule)}
+.frame-numbers dt{font-family:var(--font-display);font-size:clamp(4rem,8vw,8rem);letter-spacing:-.04em;line-height:1;color:var(--red)}
+.frame-numbers dd{font-size:clamp(1.25rem,2.4vw,2rem);line-height:1.3;margin:16px 0 0}
+.frame-map{position:relative}
+.frame-map .frame-title{padding-right:410px}
+.frame-map .regional-map{margin:0}
+.talk-page .frame-map .map-controls:not([hidden]){position:absolute;top:28px;right:0;margin:0}
+.frame-map .map-controls{margin:0 0 12px}
+.frame-map .regional-map img{height:calc(100svh - 330px);max-height:720px;width:100%;object-fit:contain}
+.frame-map .regional-map figcaption{font-size:1rem;line-height:1.4;margin-top:8px}
+.frame-map .map-status{display:inline}
+.frame-map .regional-map picture{display:block;background:var(--paper)}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.talk-controller{position:fixed;bottom:0;left:0;right:0;z-index:9;display:flex;align-items:center;justify-content:center;gap:20px;padding:8px 24px;background:var(--ink);color:var(--paper);box-shadow:0 -1px 0 rgba(255,255,255,.15)}
+.talk-controller button{border:1px solid #819098;border-radius:0;background:transparent;color:var(--paper);padding:9px 16px;min-height:44px;font:700 15px var(--font-body);cursor:pointer}
+.talk-controller button:hover{background:#2d424f}
+.talk-controller button:disabled{opacity:.35;cursor:default}
+.talk-controller .frame-position{font-size:15px;font-variant-numeric:tabular-nums;min-width:60px;text-align:center}
+.talk-controller .fullscreen-toggle{margin-left:24px}
+.talk-page .next-page{padding:28px 0}
+.talk-home main{width:min(1248px,calc(100% - 80px));margin-inline:auto}
+.talk-home .opening{display:block;width:100%;margin:0;padding:24px 0 28px;min-height:calc(100svh - 128px)}
+.talk-home .opening h1{font-size:clamp(2.8rem,4.8vw,4.8rem);line-height:1.02;max-width:23ch;margin:0 0 18px;letter-spacing:-.035em}
+.talk-home .opening h1 span{display:inline}
+.talk-home .opening h1 .headline-korea{color:var(--red)}
+.talk-home .opening-images{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:24px;margin:0}
+.talk-home .opening-photo{border:1px solid var(--rule);display:block}
+.talk-home .opening-photo picture{position:static;min-height:0;aspect-ratio:auto}
+.talk-home .opening-photo img{position:static;inset:auto;height:38svh;max-height:400px;min-height:210px;width:100%;object-fit:cover}
+.talk-home .opening-photo figcaption{padding:12px 18px;background:var(--paper);display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--rule)}
+.talk-home .opening-photo figcaption a{font-family:var(--font-display);font-size:2rem;line-height:1.15}
+.talk-home .opening-photo figcaption span{font-size:1rem;color:var(--muted)}
+.talk-home .opening .talk-byline{margin:18px 0 0;display:flex;justify-content:space-between;gap:12px;font-size:1rem}
+.talk-home .opening .talk-byline p{margin:0}
+.frame-links{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;font-size:1.15rem;font-weight:700}
+.frame-links a{padding:8px 0;min-height:44px}
+.video-poster{position:relative}
+.video-poster .play-label{position:absolute;bottom:24px;left:24px;background:var(--ink);color:var(--paper);padding:12px 20px;font-weight:700;font-size:1.2rem;border:1px solid var(--paper)}
+@media(max-width:1000px){.talk-frame .frame-title{font-size:clamp(2.2rem,4.8vw,3.4rem)}.talk-home .opening h1{font-size:clamp(2.8rem,5.4vw,4rem)}.frame-map .frame-title{padding-right:0}.talk-page .frame-map .map-controls:not([hidden]){position:static;margin:0 0 12px}.frame-map .regional-map img{height:calc(100svh - 405px)}}
+@media(max-width:700px){
+ .talk-page{padding-bottom:68px}.talk-page .site-header{min-height:64px}
+ .talk-home main{width:calc(100% - 40px)}
+ .talk-frame,.talk-frame:first-of-type{min-height:0;padding:26px 0 32px;gap:18px}
+ .talk-frame .frame-title{font-size:clamp(2rem,8.5vw,3rem);line-height:1.06}
+ .talk-frame .frame-line{font-size:1.2rem}
+ .frame-gallery,.frame-gallery.three{grid-template-columns:1fr;gap:20px}
+ .talk-figure picture,.frame-gallery.three .talk-figure picture,.talk-frame:first-of-type .talk-figure picture{height:auto;min-height:200px;max-height:none;padding:6px}
+ .talk-figure img{height:auto;max-height:65svh;object-fit:contain}
+ .talk-figure figcaption{padding:12px 14px;font-size:1.05rem}
+ .talk-figure figcaption strong{font-size:1.65rem}
+ .talk-home .opening h1{font-size:2.65rem;max-width:none;margin-bottom:22px}
+ .talk-home .opening-images{grid-template-columns:1fr;gap:20px}
+ .talk-home .opening-photo img{height:auto;min-height:0}
+ .talk-home .opening-photo figcaption{padding:12px 14px}
+ .talk-home .opening-photo figcaption a{font-size:1.7rem}
+ .talk-home .opening-photo figcaption span{font-size:.9rem}
+ .talk-home .opening .talk-byline{display:block}.talk-home .opening .talk-byline p{margin-bottom:8px}
+ .frame-numbers{grid-template-columns:1fr;margin:0;gap:16px}.frame-numbers>div{padding:26px}.frame-numbers dt{font-size:4.4rem}.frame-numbers dd{font-size:1.4rem}
+ .frame-map .regional-map img{height:auto;max-height:none}
+ .talk-controller{gap:12px;padding:8px 12px}.talk-controller button{padding:9px 12px}.talk-controller .fullscreen-toggle{margin-left:0;font-size:13px}.talk-controller .frame-position{min-width:48px;font-size:13px}
+ .frame-details .details-content{font-size:16px}.frame-details summary{font-size:1rem}
+}
+@media(max-width:370px){.talk-controller .fullscreen-toggle{display:none}}
+@media print{.talk-controller{display:none}.talk-page{padding:0}.talk-frame{min-height:0;break-after:page}.talk-figure picture{height:340px}.talk-frame .frame-title{font-size:30pt}}

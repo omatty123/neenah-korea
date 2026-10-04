@@ -1,6 +1,6 @@
 ---
 name: Korea, ahead.
-description: Bold headlines and readable, dated evidence for the Neenah Korea talk.
+description: Large documentary images, bold titles and optional source notes for the projected Neenah Korea talk.
 colors:
   ink: "#152632"
   paper: "#f7f5ef"
@@ -69,9 +69,9 @@ components:
 
 ## Overview
 
-**Creative North Star: "Bold headline, readable evidence"**
+**Creative North Star: "Bold title, visible evidence"**
 
-The implemented system pairs large, tightly spaced headlines with a light paper surface, dark ink, one red accent, and documentary photographs. Compact navigation and ruled content rows support reading. The user’s exact headline, “When you follow Korea, you're ahead of the world”, is a durable identity commitment.
+The user confirmed that these pages will be displayed during the talk. The implemented system uses large, tightly spaced titles, a light paper surface, dark ink, one red accent, and documentary photographs. Each projected frame has a title and large framed images, with short captions. Sources and longer preparation remain in native disclosures. The user’s exact headline, “When you follow Korea, you're ahead of the world”, is a durable identity commitment.
 
 **Key Characteristics:**
 
@@ -80,6 +80,16 @@ The implemented system pairs large, tightly spaced headlines with a light paper 
 - Documentary images with visible captions.
 - Native disclosures for deeper preparation.
 - Dated sources next to the claims they support.
+
+## Projected frames — October 4, 2026
+
+`css/presentation.css` extends the retained identity across all six public pages. It supplies viewport-scale `.talk-frame` sections, large `.frame-title` headings, paired `.frame-gallery` photographs, and bordered `.talk-figure` images with named captions. Brand photographs use `object-fit: contain` to preserve complete packaging, logos and labels. The opening uses two city photographs side by side. Phone layouts stack full-width images and allow ordinary scrolling.
+
+`js/presentation.js` adds Previous, Next, a frame counter, and Full screen where supported. Left/Right arrows and Page Up/Page Down advance frames when focus is outside interactive controls. All frames and native source disclosures remain accessible without JavaScript. There is no autoplay. Sources and complete prior preparation remain expandable; existing page addresses, maps and the archived preparation remain available.
+
+Four new paired DPRK brand frames show footwear, cosmetics, foods and beer. Six preferred company and technology photographs show Huggies, Bobcat, Promega, Rockwell Automation, Samsung and SK hynix. Image provenance and date limits are in the gallery README files and the corresponding source disclosures. The redundant ten-year square chart remains removed.
+
+The article layout and its earlier review recorded below describe the retained base system. Projection uses the new stylesheet’s heading scale, photograph heights and captions. New projection verification is recorded separately in the implementation handover.
 
 Recorded from the completed October 4, 2026 implementation. Visual sources are `css/site.css` (shared tokens and controls), `css/home.css` (home), and `css/pages.css` (five supporting pages). Current HTML sources are `index.html`, `size.html`, `memorial.html`, `southkorea.html`, `pyongyang.html`, and `bio.html`. The final reviewer returned **Ship**, with no material findings across these six pages and twelve desktop/mobile screenshots. Captures and measured styles are local review evidence in `.impeccable/review/`; publication is tracked separately.
 
