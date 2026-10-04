@@ -64,7 +64,7 @@ These are upload dates, with capture dates unverified. Bilibili can require logi
 
 ## 20×10 charts and photographs
 
-The regional-development section contains two native HTML/CSS charts. The first shows ten annual 20-location cohorts: two reported opened, the 2026 round under construction, and seven future policy targets. The 200 total is a ten-year target, not a completion count. The September 22, 2026 [KCNA update carried by OANA](https://oananews.org/node/713135) still describes construction of the 2026 factories.
+The regional-development section leads with a geographic map and documentary photographs. The user requested removal of the annual square chart on October 4, 2026 because it repeated the policy explanation. That chart remains recoverable in Git history at commit `b79a2d0`.
 
 The province comparison reproduces the numbers in 38 North's January 15, 2026 [published dataset](https://datawrapper.dwcdn.net/z8CJA/1/dataset.csv). An audited transcription is retained in `tools/20x10-locations-by-province.tsv`: 13 province-level units, 20 locations per cohort, 40 in total. Bars show locations rather than factory counts. Rason's zero remains visible. Chart labels and values remain readable without JavaScript or an external chart service.
 
