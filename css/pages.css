@@ -67,6 +67,22 @@
 .translation-list li + li { margin-top: 18px; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 12px 26px; }
 .archive-link { display: block; margin-top: 12px; font-size: .9rem; }
+html:has(body.pyongyang-page) { scroll-behavior: auto; }
+.pyongyang-page .page-jump { display: flex; flex-wrap: wrap; gap: 4px 24px; margin: -12px 0 26px; }
+.pyongyang-page .page-jump a { display: inline-flex; align-items: center; min-height: 44px; font-size: .95rem; font-weight: 700; }
+.pyongyang-page .page-section { scroll-margin-top: 24px; }
+.pyongyang-page .source-language { color: var(--muted); font-size: .9rem; }
+.pyongyang-page .section-conclusion { margin-top: 24px; }
+.pyongyang-page .development-milestones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 26px; }
+.pyongyang-page .development-milestones > div { padding-top: 18px; border-top: 2px solid var(--ink); }
+.pyongyang-page .development-milestones h3 { margin: 0 0 12px; }
+.pyongyang-page .development-milestones a { font-size: .95rem; }
+.pyongyang-page .consumer-video { max-width: 880px; margin-top: 24px; }
+.pyongyang-page .consumer-video iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; background: var(--ink); }
+.pyongyang-page .consumer-stories { margin: 24px 0; }
+.pyongyang-page .consumer-stories > div { padding-top: 18px; border-top: 1px solid var(--rule); }
+.pyongyang-page .consumer-stories .page-note { margin-top: 10px; }
+.pyongyang-page .consumer-audio { max-width: 74ch; }
 @media (max-width: 700px) {
  .page-content { padding: 24px 0 44px; }
  .breadcrumb { margin-bottom: 22px; }
@@ -84,6 +100,8 @@
  .next-page { align-items: flex-start; flex-direction: column; gap: 8px; }
  .bio-photo { width: min(100%, 280px) !important; }
  .contact-links { flex-direction: column; align-items: flex-start; }
+ .pyongyang-page .page-jump { gap: 0 18px; margin-bottom: 22px; }
+ .pyongyang-page .development-milestones { grid-template-columns: 1fr; gap: 24px; }
 }
 @media print {
  .site-header, .breadcrumb, .next-page, .site-footer, .skip-link { display: none; }

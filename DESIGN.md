@@ -114,6 +114,8 @@ The home opening is a text/photo grid (1.65fr / 1fr, 54px gap), followed by a da
 
 Supporting pages use readable text sections, image pairs, facts, and disclosures. At 700px, feature splits, paired stories, biography columns, photo pairs, and three-image comparisons stack. The two-column construction gallery remains two columns, with a smaller gap. Tables retain their columns in a horizontal overflow wrapper. Geography comparison images keep their full aspect ratio; ordinary gallery photographs use 4:3 crops. The biography uses a 3:4 portrait, limited to 280px wide on mobile.
 
+The expanded Pyongyang page uses visible Russia, 20×10 and consumer-life sections, with direct section links. These links jump immediately on this longer reading page. Four ruled fact rows explain Russia's benefits. Three regional-development milestones appear in columns and stack at 700px. A lazy-loaded Reuters video uses a responsive 16:9 frame, capped at 880px, with a direct viewing link. Original student videos remain external links with creator, upload date and language labels.
+
 Print rules hide navigation, use 11pt body text and 32pt page titles, and request visible disclosure content. Print behavior is CSS-defined; the recorded review covered screen layouts.
 
 ## Elevation & Depth

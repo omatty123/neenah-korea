@@ -22,6 +22,8 @@ The existing website lists October 19, 2026, as the talk date. GitHub Pages serv
 
 Preserve the prepared Wisconsin comparison, Korean War memorial material, South Korean industry, North Korean state-capacity analysis, and speaker biography. Keep existing page addresses working. Preserve original photographs and the prior preparation. Source and date newly emphasized statistics. No separate build system is needed.
 
+North Korea's current account includes Russia's strategic partnership and practical benefits, the Regional Development 20×10 Policy, and videos documenting consumer and traffic changes. Distinguish documented transfers, construction milestones and selected views of daily life.
+
 ## Brand Commitments
 
 The user's exact headline is: “When you follow Korea, you're ahead of the world”. The user requested a bold headline approach and a simpler website. Seoul and Pyongyang must both appear in the front-page opening, with visible city and country labels.

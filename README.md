@@ -46,3 +46,18 @@ Current claims link to their sources beside the text:
 - Wisconsin memorial figures, the Dickman identification dates, and the 2021 Oshkosh–Hanwha collaboration: memorial, DPAA, company, and Army sources.
 
 Plans, state announcements, output estimates, and historical inscriptions are identified as such. The original unverified rankings remain accessible in the archive.
+
+## North Korea expansion, October 4, 2026
+
+The Pyongyang page now gives three current subjects their own visible sections: Russia's Comprehensive Strategic Partnership, Regional Development 20×10 Policy, and consumer life/traffic. The home page links to this expanded argument. Earlier preparation and image galleries remain intact.
+
+Russia sources distinguish observed fuel/payment channels, government-reported military transfers and treaty commitments. The September 7, 2026 bridge opening is attributed to Russia's Transport Ministry; cargo operations and unfinished passenger facilities are distinct. The UN panel veto did not repeal sanctions.
+
+20×10 means facilities in 20 cities and counties annually for ten years. 38 North's dated reviews describe the first two construction rounds, the 2026 start, Jongphyong's leisure/services, and operating constraints. Construction is not treated as a measurement of nationwide living standards.
+
+The Reuters original report, May 12, 2026, is embedded from YouTube with a direct viewing link. Its 2:20 runtime, publisher and traffic footage were inspected in the browser. The two Bilibili originals are linked without downloading or reposting their media:
+
+- Shopping: https://www.bilibili.com/video/BV1EbaYzsEqT/ — creator 偷吃一口口面包; uploaded September 5, 2025; 1:44. Browser inspection verified the original title, upload date, author profile and shopping preview.
+- Amusement park: https://www.bilibili.com/video/BV1kJr4BUE7W/ — same creator; uploaded January 14, 2026; 3:08; title identifies a park near the Arch of Triumph.
+
+These are upload dates, with capture dates unverified. Bilibili can require login after a preview. The creator self-identifies as a Chinese exchange student; the creator is not identified as Yu Youlin. His separate December 28, 2025 audio interview is labeled as a firsthand account, rather than a video.
