@@ -119,4 +119,3 @@ Image: https://d18r0a86za96sg.cloudfront.net/wp-content/uploads/2026/05/27132311
 
 Connection evidence:
 - https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/
-

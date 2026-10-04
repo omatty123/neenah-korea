@@ -108,4 +108,3 @@ No open reuse license was identified for these state-publication or Choson Sinbo
 - Date: Publication date; national foodstuff exhibition took place 31 March–7 April 2025. Exact photograph date not given.
 - Credit: Ryu Kwang Hyok / The Pyongyang Times
 - Identification: The Pyongyang Times, page 7; native embedded JPEG object 79. Factory name 장자산종합식료공장 is legible on the poster.
-
