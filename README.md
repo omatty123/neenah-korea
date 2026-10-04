@@ -12,7 +12,9 @@ Plain HTML and CSS; no package installation or JavaScript is required for the cu
 
 The October 4, 2026 redesign preserves the earlier public pages in `archive/2026-10-04/`. The archive adds a dated notice and corrects asset paths; its original source is retained at Git commit `2004ccf`. Archived figures are historical preparation, not current verified claims. Private Desktop research PDFs are outside this repository.
 
-Original images remain in `images/`. The `*-display.webp` files are smaller display copies, encoded with cwebp at quality 84 and a maximum width of 1,400 pixels (1,000 for the home photograph). HTML picture elements keep the originals as fallbacks. Font files are self-hosted; their SIL Open Font Licenses are in `fonts/`.
+Original images remain in `images/`. The `*-display.webp` files are smaller display copies, encoded with cwebp at quality 84 and a maximum width of 1,400 pixels (1,000 for the Seoul opening photograph). HTML picture elements keep the originals as fallbacks. Font files are self-hosted; their SIL Open Font Licenses are in `fonts/`.
+
+The home opening and Pyongyang page feature `images/hwasong-saebyeol.jpg`, the Saebyeol Street aerial already added to the preparation in commit `33ad068`. [Korea Times/Yonhap, March 14, 2026](https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260314/n-korea-promotes-new-street-for-families-of-soldiers-killed-in-russia-ukraine-war) identifies the view as Saeppyol Street and credits it to a KCNA image carried on February 16, 2026. This is the image’s release date; its exact capture date is not stated. The original file and its KCNA mark remain intact. The earlier ceremony photograph and Hwasong aerial remain in the preparation gallery and archive.
 
 ## Preview and checks
 
