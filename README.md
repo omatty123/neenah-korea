@@ -95,3 +95,11 @@ The company frames distinguish Neenah operations and Kimberly-Clark's Korean joi
 The six current pages contain 26 presentation frames. One desktop/phone inspection and one confirmation after combined fixes checked the 1440 × 900 projected layout and the 390 × 844 phone layout. Both opening city labels are visible; the four paired DPRK brand frames and company frames retain complete source photographs. Inspected routes have no horizontal overflow, correct counters and loaded visible images. Previous/Next and Right-arrow advancement update the frame hash and counter. The fullscreen control changes to Exit full screen and returns. The map loads the selected 2024 or 2025 SVG, updates its status and opens native policy/source notes. The ten-year square chart remains removed.
 
 The source and deployment-package checker passes for all twelve current/archive pages. Both presentation and map scripts pass Node syntax checks; Git diff whitespace checks pass. Review screenshots and measured layout data are LOCAL, ignored evidence under `.impeccable/review/`. GitHub Actions performs these source/package checks before deployment.
+
+## Requested Facebook reel, October 6, 2026
+
+`southkorea.html#korea-rise-video` adds the user-selected [Facebook share link](https://www.facebook.com/share/r/1N22tfigsv/), which resolves to [reel 1044200785330482](https://www.facebook.com/reel/1044200785330482/). The public viewer identifies Jean K. Min; its player reports 37.87 seconds. The Korean caption discusses per-capita purchasing power relative to France. The creator’s chart is not presented as independently verified economic data; no upload date was visible.
+
+Facebook’s More options → Embed dialog supplied the exact player-only iframe, 339 × 476, with `show_text=false` and `t=0`. The new projected frame uses that player with a visible original-link fallback, source notes, and manual playback. The Facebook video is not downloaded or reposted. The South Korea page now has four frames; the website has 27 in total.
+
+Local verification confirmed manual playback, the native player’s full-screen entry and exit, and Previous/Next advancement with the four-frame counter. The 390 × 844 and 320 × 740 layouts retain the complete player and visible original link without horizontal overflow. Source and packaged-site checks pass for all twelve current/archive pages.
