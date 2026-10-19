@@ -1,0 +1,28 @@
+/* The photographs and company marks carry the connection. */
+#neenah .partner-panel{gap:20px;}
+#neenah .partner-identification{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex:none;}
+#neenah .partner-identification h3{font-size:28px;font-weight:600;line-height:1.2;}
+#neenah .partner-identification .caption{font-size:20px;white-space:nowrap;}
+#neenah .partner-history .photo figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:21px;line-height:1.2;}
+#neenah .partner-history .company-logo{height:42px;width:225px;max-width:100%;margin:0;flex:none;object-fit:contain;object-position:left center;background:transparent;}
+#neenah .partner-date{font-size:21px;font-weight:500;}
+#neenah .brand-line{font-size:21px;font-weight:400;color:var(--muted);line-height:1.2;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #neenah .partner-panel{gap:15px;}
+ #neenah .partner-identification h3{font-size:25px;}
+ #neenah .partner-identification .caption{font-size:18px;}
+ #neenah .partner-history .company-logo{height:35px;width:195px;}
+ #neenah .partner-history .photo figcaption{gap:8px;}
+ #neenah .partner-date,#neenah .brand-line{font-size:19px;}
+}
+@media(max-width:760px){
+ #neenah .partner-panel{gap:20px;}
+ #neenah .partner-identification{gap:10px;flex-wrap:wrap;}
+ #neenah .partner-identification h3{font-size:26px;}
+ #neenah .partner-identification .caption{font-size:18px;}
+ #neenah .partner-history .photo{height:280px;}
+ #neenah .partner-history .company-logo{height:32px;width:100%;}
+ #neenah .partner-history .photo figcaption{gap:8px;}
+ #neenah .partner-date{font-size:18px;}
+ #neenah .brand-line{font-size:20px;}
+}

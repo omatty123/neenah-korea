@@ -1,0 +1,62 @@
+{
+  "assets": [
+    {
+      "file": "parasite.jpg",
+      "title": "Parasite",
+      "production_year": 2019,
+      "description": "The Kim family gathered around food in their apartment; original film still from the official distributor gallery.",
+      "source_page": "https://www.neonrated.com/film/parasite",
+      "asset_url": "https://www.datocms-assets.com/148598/1740335004-parasite2.jpg",
+      "credit": "NEON / CJ Entertainment",
+      "source_date": null,
+      "retrieved": "2026-10-19",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7d547caa46dfee98d58ec4f931b1a55115b312cf398c10833f7b6406065b84e4",
+      "modifications": "None. Downloaded original official-site image bytes.",
+      "rights_note": "Copyright remains with rights holders; retrieved from official promotional/editorial site for local presentation review. No open license or additional publication clearance asserted.",
+      "visual_inspection": "Opened actual image and confirmed subject, landscape composition and readable central figures."
+    },
+    {
+      "file": "squid-game.jpg",
+      "title": "Squid Game",
+      "production_year": 2021,
+      "description": "Lee Jung-jae as Seong Gi-hun in the green 456 tracksuit during the Red Light, Green Light game in season 1.",
+      "source_page": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer",
+      "asset_url": "https://dnm.nflximg.net/api/v6/a01MIaQTUgSJoLaS_OCn68Eg3hU/AAAAQYgvSNU3q1rv4MiZKXOQEM7gO09-0wOZD4XN6hUOLraLVNcH9gaFcdZ1LjyKVEZhW0CMT19pkTlWKoXB2ChZbRdOfLG82F_9FnSYt0DU3X12yBJ89VMPNRe2SaXFEaNgMHWvL8bUBJVjgylwFYB3gWND.jpg?r=e34",
+      "credit": "Netflix",
+      "source_date": "2024-12-26",
+      "retrieved": "2026-10-19",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "sha256": "b470eda74b177164b3042e602dec82abc57319fede2ec4384acf40b5d3c3d6cd",
+      "modifications": "None. Downloaded original official-site image bytes.",
+      "rights_note": "Copyright remains with rights holders; retrieved from official promotional/editorial site for local presentation review. No open license or additional publication clearance asserted.",
+      "visual_inspection": "Opened actual image and confirmed subject, landscape composition and readable central figures.",
+      "source_modified": "2025-06-04"
+    },
+    {
+      "file": "bts.jpg",
+      "title": "BTS",
+      "description": "Official seven-member BTS group photograph used on BIGHIT MUSIC\u2019s profile page, with all seven members standing in dark outfits against a blue metallic background.",
+      "source_page": "https://bts.ibighit.com/eng/profile/",
+      "asset_url": "https://bts.ibighit.com/images/profile/proof/member/bts-pc.jpg",
+      "credit": "BIGHIT MUSIC",
+      "source_date": null,
+      "photo_date": null,
+      "retrieved": "2026-10-19",
+      "dimensions": [
+        1112,
+        736
+      ],
+      "sha256": "26a76fd4e4505bbe85692fe520f4f0d402d54901c788f1c092e9cdad4a14a787",
+      "modifications": "None. Original official-site JPEG saved unchanged.",
+      "rights_note": "Copyright remains with BIGHIT MUSIC or respective rights holders; retrieved from official promotional profile for local presentation review. No open license or additional publication clearance asserted.",
+      "visual_inspection": "Opened actual image. All seven members are present and unobstructed. Landscape 1112\u00d7736; a centered 16:9 container retains every face."
+    }
+  ]
+}

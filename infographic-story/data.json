@@ -1,0 +1,118 @@
+[
+  {
+    "id": "inyeon",
+    "title": "We are already connected.",
+    "kicker": "Korea–Wisconsin inyeon",
+    "source": "Kimberly-Clark archive / Yuhan company history",
+    "notes": "Our story begins here in Neenah. This is a connection slide, not a proposed title page. The mill photograph’s date is unknown; 1872 is the opening date. Continue to familiar geographic scale.",
+    "links": [
+      "../title-page-real/sources.json"
+    ]
+  },
+  {
+    "id": "land",
+    "title": "A familiar scale.",
+    "kicker": "Land area · squares drawn to the same scale",
+    "source": "World Bank 2024 / U.S. Census 2020 land area",
+    "notes": "Each square represents land area, not shape. Wisconsin includes no Great Lakes water in this comparison. South Korea has about 70% of Wisconsin’s land; North Korea about 86%. This is different from total-area comparisons. Next: locate Korea on the world, not just a peninsula map.",
+    "links": [
+      "https://www.census.gov/quickfacts/WI",
+      "https://data.worldbank.org/indicator/AG.LND.TOTL.K2"
+    ]
+  },
+  {
+    "id": "latitude",
+    "title": "Seoul is near San Francisco’s latitude.",
+    "kicker": "Global latitude · Madison sits farther north",
+    "source": "Natural Earth 1:110m / GeoNames · equirectangular projection",
+    "notes": "The full world gives the comparison its context. Seoul and San Francisco are near 38°N; Madison is near 43°N. Latitude is not climate: oceans, circulation, elevation and continental position matter. This map is not an area comparison. Next: same order of land area, very different number of people.",
+    "links": [
+      "https://www.naturalearthdata.com/",
+      "https://www.geonames.org/"
+    ]
+  },
+  {
+    "id": "population",
+    "title": "Far more people.",
+    "kicker": "Population · 2024 · millions",
+    "source": "World Bank / U.S. Census via FRED",
+    "notes": "Wisconsin: 5,957,168. South Korea: 51,751,065. North Korea: 26,498,823, an estimate. Both Koreas together have about 13 times Wisconsin’s population. Next: show what those people mean per unit of land.",
+    "links": [
+      "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "https://fred.stlouisfed.org/series/WIPOP"
+    ]
+  },
+  {
+    "id": "density",
+    "title": "12½ times Wisconsin’s density.",
+    "kicker": "People per km² of land · 2024 · one dot ≈ one person",
+    "source": "World Bank / U.S. Census · Wisconsin density calculated",
+    "notes": "Equal squares each represent one square kilometre, not actual settlement patterns. Wisconsin 42.46, South Korea 530.24, North Korea 220.07, rounded to whole people. Wisconsin uses 2020 census land area and 2024 population. Korea uses World Bank 2024 data. National averages conceal city and rural differences. Next: density helps explain why network comparisons need denominators.",
+    "links": [
+      "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "https://www.census.gov/quickfacts/WI",
+      "https://data.worldbank.org/indicator/EN.POP.DNST"
+    ]
+  },
+  {
+    "id": "roads",
+    "title": "More motorway per square kilometre.",
+    "kicker": "Motorways · comparable 2017–19 benchmark",
+    "source": "OECD/ITF 2021, Table 1 / World Bank 2018 land area",
+    "notes": "Motorway length is the 2017–19 average: Korea 4,750 km, USA 77,879 km. Calculated density divides these lengths by 2018 land area (97,520 and 9,147,420 km²). These are historical comparable figures, not current totals or a measure of road quality. The two panels have different units. Next: another network where the expected comparison reverses.",
+    "links": [
+      "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/motorway-safety-in-korea_cad2102f/70965eba-en.pdf",
+      "https://data.worldbank.org/indicator/AG.LND.TOTL.K2"
+    ]
+  },
+  {
+    "id": "rail",
+    "title": "More high-speed line than the U.S.",
+    "kicker": "High-speed lines in operation · km · end of 2024",
+    "source": "UIC High-Speed Atlas · UIC classification",
+    "notes": "UIC counts 874 km in Korea and 735 km in the United States at 31 December 2024. This is classified high-speed infrastructure, not all routes served by high-speed trains, not uniform speed standards, and not passenger totals. Source extract updated May 2026. Next: infrastructure is one part of capability; innovation is another.",
+    "links": [
+      "https://uic.org/media-files/spip/documents/2025_extract_uic_hs_atlas_hsl_pdf.pdf"
+    ]
+  },
+  {
+    "id": "innovation",
+    "title": "Already a global innovator.",
+    "kicker": "Global Innovation Index · 2026",
+    "source": "WIPO · world ranking",
+    "notes": "Korea ranks fourth in WIPO’s 2026 Global Innovation Index. This is a composite innovation ranking, not a comprehensive geopolitical ranking. Positions are ordinal: spacing does not represent score differences. Next: geopolitical influence is measured differently.",
+    "links": [
+      "https://www.wipo.int/web-publications/global-innovation-index-2026/en/gii-2026-at-a-glance.html"
+    ]
+  },
+  {
+    "id": "power",
+    "title": "Influence beyond its size.",
+    "kicker": "Influence in Asia · Lowy 2025 composite score · 0–100",
+    "source": "Lowy Asia Power Index · top seven",
+    "notes": "Korea ranks seventh in this regional index, with 31.5 points. Lowy measures multiple dimensions of influence in Asia; this is not a world ranking or a prediction of war outcomes. North Korea ranks 17th at 12.8. Next: a direct, global measure of influence is the delivery of major arms.",
+    "links": [
+      "https://power.lowyinstitute.org/downloads/lowy-institute-2025-asia-power-index-key-findings-report.pdf"
+    ]
+  },
+  {
+    "id": "arms",
+    "title": "A global arms supplier.",
+    "kicker": "Major-arms exports · 2021–25 · share of transfer volume",
+    "source": "SIPRI 2026 · global top ten",
+    "notes": "South Korea ranks ninth for 2021–25. SIPRI’s trend-indicator values measure major-arms transfer volume, not dollar sales, revenues or announced contracts. Five-year periods reduce the distortion from uneven delivery schedules. Next: follow these exports to a consequential European customer.",
+    "links": [
+      "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf"
+    ]
+  },
+  {
+    "id": "poland",
+    "title": "Korea helps arm Poland.",
+    "kicker": "Poland’s major-arms imports · supplier share · 2021–25",
+    "source": "SIPRI 2026 · transfer volume, not dollars",
+    "notes": "South Korea supplied 47% of Poland’s major-arms imports and the United States 44%. Others are the remaining 9%. This is a concrete European security connection, not an assertion that Korea dominates global arms markets. Return from this global connection to Oshkosh–Hanwha and Wisconsin’s own industrial relationships in the full talk.",
+    "links": [
+      "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf"
+    ]
+  }
+]

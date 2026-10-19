@@ -1,0 +1,113 @@
+{
+  "assets": [
+    {
+      "file": "images/company-logos-2026-10-19/korean/sk-square.svg",
+      "company": "SK Square",
+      "source_page": "https://www.sksquare.com/",
+      "asset_url": "https://www.sksquare.com/assets/images/common/logo_lg.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml",
+      "bytes": 7100
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/sk-hynix.png",
+      "company": "SK hynix",
+      "source_page": "https://www.sksquare.com/",
+      "asset_url": "https://www.sksquare.com/assets/images/modal/sk-hynix-logo.png",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/png",
+      "bytes": 42293,
+      "dimensions": [
+        715,
+        183
+      ],
+      "alpha_bounds": [
+        0,
+        6,
+        339,
+        183
+      ],
+      "display_note": "Original includes transparent blank space on right; use a 339:183 overflow-hidden CSS viewport and image width 210.914% to show original artwork at readable size without changing the file."
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/lg.svg",
+      "company": "LG Electronics",
+      "source_page": "https://www.lg.com/global",
+      "asset_url": "https://www.lg.com/content/dam/lge/common/logo/logo-lg-100-44.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml",
+      "bytes": 2301
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/lg-energy-solution.svg",
+      "company": "LG Energy Solution",
+      "source_page": "https://www.lgensol.com/en",
+      "asset_url": "https://www.lgensol.com/inc/images/symbol/ci_en.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml",
+      "bytes": 5769
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/samsung-electro-mechanics.svg",
+      "company": "Samsung Electro-Mechanics",
+      "source_page": "https://www.samsungsem.com/global/index.do",
+      "asset_url": "https://www.samsungsem.com/resources/images/global/common/logo_oval.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml",
+      "bytes": 10873
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/samsung-biologics.svg",
+      "company": "Samsung Biologics",
+      "source_page": "https://samsungbiologics.com/",
+      "asset_url": "https://samsungbiologics.com/resources/front/en/images/logo.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml;charset=utf-8",
+      "bytes": 7659
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/hyundai-motor.png",
+      "company": "Hyundai Motor",
+      "source_page": "https://www.hyundai.com/worldwide/en",
+      "asset_url": "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/png",
+      "bytes": 2821
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/hanwha.svg",
+      "company": "Hanwha Group",
+      "source_page": "https://www.hanwha.com/",
+      "asset_url": "https://www.hanwha.com/assets/img/common/logo_black.svg",
+      "retrieved": "2026-10-19",
+      "type": "official corporate website asset",
+      "modifications": "none",
+      "content_type": "image/svg+xml;charset=UTF-8",
+      "bytes": 4872
+    },
+    {
+      "file": "images/company-logos-2026-10-19/korean/samsung-electronics.svg",
+      "company": "Samsung Electronics",
+      "source_page": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+      "asset_url": "https://www.samsung.com/us/about-us/brand-identity/logo/#inline-header-logo",
+      "retrieved": "2026-10-19",
+      "type": "official inline SVG",
+      "modifications": "Extracted original inline SVG element, added XML namespace, normalized viewBox attribute case for standalone XML use. Paths, color, viewport coordinates and proportions unchanged."
+    }
+  ],
+  "inspection": "Rendered all nine assets on a white background in Chrome. No missing images. All authentic official artwork. SK hynix includes transparent right-hand space; use the documented CSS viewport."
+}

@@ -1,0 +1,142 @@
+/* Two visual reveals keep every Wisconsin relationship without crowding the products. */
+#wisconsin-work .trade-products-step,
+#wisconsin-work .trade-connection-step {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
+}
+#wisconsin-work .trade-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  flex: 1;
+  min-height: 0;
+}
+#wisconsin-work .trade-product {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+}
+#wisconsin-work .trade-product-identity {
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  flex: none;
+}
+#wisconsin-work .trade-product-identity .company-logo {
+  width: 285px;
+  height: 55px;
+}
+#wisconsin-work .trade-product-identity span { font-size: 19px; }
+#wisconsin-work .trade-product figure {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+}
+#wisconsin-work .trade-product figure img {
+  width: 100%;
+  height: 0;
+  min-height: 0;
+  flex: 1;
+  object-fit: contain;
+  background: #fff;
+}
+#wisconsin-work .trade-product figure .trade-mower { object-fit: cover; }
+#wisconsin-work .trade-controller-picture { flex: 1; min-height: 0; overflow: hidden; display: flex; background: #fff; }
+#wisconsin-work .trade-product .trade-controller-picture img { height: 100%; flex: none; object-fit: cover; transform: scale(1.15); }
+#wisconsin-work .trade-product figcaption { font-size: 24px; line-height: 1.2; }
+#wisconsin-work .trade-product figcaption small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 17px;
+}
+#wisconsin-work .trade-product-value { font-size: clamp(36px,3.3vw,53px); font-weight: 650; line-height: 1.1; color: var(--teal); letter-spacing: -.035em; }
+#wisconsin-work .trade-product-scope { font-size: 18px; line-height: 1.2; color: var(--muted); }
+#wisconsin-work .trade-step-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex: none; }
+#wisconsin-work .trade-step-footer .step-advance { margin-left: auto; }
+#wisconsin-work .trade-step-qualifier { font-size: 16px; color: var(--muted); line-height: 1.3; }
+#wisconsin-work .trade-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 36px;
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+}
+#wisconsin-work .trade-link { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+#wisconsin-work .trade-link-marks { display: flex; align-items: center; gap: 16px; height: 140px; }
+#wisconsin-work .trade-link-marks .company-logo { width: 100%; height: 110px; }
+#wisconsin-work .trade-link-marks .on-dark { background: var(--ink); padding: 16px; }
+#wisconsin-work .trade-link-marks.partner-pair .company-logo { width: calc(50% - 8px); height: 100px; }
+#wisconsin-work .trade-link-place { font-size: 32px; font-weight: 550; line-height: 1.2; }
+#wisconsin-work .trade-link-detail { font-size: 23px; line-height: 1.3; color: var(--muted); }
+#wisconsin-work .trade-link-detail + .trade-link-detail { margin-top: -10px; }
+#wisconsin-work .trade-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  flex: none;
+}
+#wisconsin-work .trade-total-label { font-size: 21px; }
+#wisconsin-work .trade-total-flow { font-size: 23px; }
+#wisconsin-work .trade-total-flow strong { color: var(--teal); font-weight: 650; font-size: 37px; }
+@media (min-width:761px) and (max-width:1440px), (min-width:761px) and (max-height:740px) {
+  #wisconsin-work .trade-product-grid { gap: 26px; }
+  #wisconsin-work .trade-product { gap: 10px; }
+  #wisconsin-work .trade-product-identity { height: 68px; }
+  #wisconsin-work .trade-product-identity .company-logo { width: 250px; height: 42px; }
+  #wisconsin-work .trade-product-identity span { font-size: 17px; }
+  #wisconsin-work .trade-product figcaption { font-size: 22px; }
+  #wisconsin-work .trade-product figcaption small { font-size: 16px; margin-top: 4px; }
+  #wisconsin-work .trade-product-scope { font-size: 17px; }
+  #wisconsin-work .trade-link-grid { gap: 28px; }
+  #wisconsin-work .trade-link { gap: 18px; }
+  #wisconsin-work .trade-link-marks { height: 120px; }
+  #wisconsin-work .trade-link-marks .company-logo { height: 100px; }
+  #wisconsin-work .trade-link-marks.partner-pair .company-logo { height: 88px; }
+  #wisconsin-work .trade-link-place { font-size: 29px; }
+  #wisconsin-work .trade-link-detail { font-size: 21px; }
+  #wisconsin-work .trade-total { gap: 22px; padding-top: 20px; }
+  #wisconsin-work .trade-total-label { font-size: 19px; }
+  #wisconsin-work .trade-total-flow { font-size: 21px; }
+  #wisconsin-work .trade-total-flow strong { font-size: 33px; }
+}
+@media (max-width:1000px) and (min-width:761px) {
+  #wisconsin-work .trade-product-grid { gap: 20px; }
+  #wisconsin-work .trade-product-identity .company-logo { width: 210px; }
+  #wisconsin-work .trade-product figcaption { font-size: 19px; }
+  #wisconsin-work .trade-product-value { font-size: 32px; }
+  #wisconsin-work .trade-product-scope { font-size: 15px; }
+  #wisconsin-work .trade-link-place { font-size: 25px; }
+  #wisconsin-work .trade-link-detail { font-size: 18px; }
+  #wisconsin-work .trade-total { flex-wrap: wrap; }
+}
+@media (max-width:760px) {
+  #wisconsin-work .trade-products-step, #wisconsin-work .trade-connection-step { flex: none; }
+  #wisconsin-work .trade-product-grid, #wisconsin-work .trade-link-grid { display: flex; flex-direction: column; gap: 36px; flex: none; align-items: stretch; }
+  #wisconsin-work .trade-product-identity { height: auto; min-height: 70px; }
+  #wisconsin-work .trade-product figure { height: 350px; flex: none; }
+  #wisconsin-work .trade-product-value { font-size: 42px; }
+  #wisconsin-work .trade-product-scope { font-size: 18px; }
+  #wisconsin-work .trade-step-footer { align-items: flex-start; flex-direction: column; gap: 18px; }
+  #wisconsin-work .trade-step-footer .step-advance { margin-left: 0; }
+  #wisconsin-work .trade-link-marks { height: 100px; }
+  #wisconsin-work .trade-link-marks .company-logo { width: 300px; height: 90px; }
+  #wisconsin-work .trade-link-marks.partner-pair .company-logo { width: 145px; height: 85px; }
+  #wisconsin-work .trade-link-place { font-size: 29px; }
+  #wisconsin-work .trade-link-detail { font-size: 22px; }
+  #wisconsin-work .trade-total { flex-direction: column; align-items: flex-start; gap: 20px; }
+}

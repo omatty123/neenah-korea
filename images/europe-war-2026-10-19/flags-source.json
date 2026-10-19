@@ -1,0 +1,32 @@
+{
+  "provider": "Flagcdn / Flagpedia",
+  "provider_page": "https://flagcdn.com/",
+  "flags": [
+    {
+      "country": "South Korea",
+      "source": "https://flagcdn.com/kr.svg",
+      "path": "flag-kr.svg"
+    },
+    {
+      "country": "Poland",
+      "source": "https://flagcdn.com/pl.svg",
+      "path": "flag-pl.svg"
+    },
+    {
+      "country": "Ukraine",
+      "source": "https://flagcdn.com/ua.svg",
+      "path": "flag-ua.svg"
+    },
+    {
+      "country": "North Korea",
+      "source": "https://flagcdn.com/kp.svg",
+      "path": "flag-kp.svg"
+    },
+    {
+      "country": "Russia",
+      "source": "https://flagcdn.com/ru.svg",
+      "path": "flag-ru.svg"
+    }
+  ],
+  "retrieved": "2026-10-19"
+}

@@ -6,7 +6,7 @@ import re
 import sys
 
 root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
-current = ("index.html", "size.html", "memorial.html", "southkorea.html", "pyongyang.html", "bio.html")
+current = ("index.html", "talk.html", "talk-rebuilt.html", "size.html", "memorial.html", "southkorea.html", "pyongyang.html", "bio.html")
 errors = []
 
 class Page(HTMLParser):

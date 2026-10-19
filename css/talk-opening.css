@@ -1,0 +1,38 @@
+/* User-directed city title and generation reveals, 19 October 2026. */
+#opening.city-title{gap:22px;padding:27px 34px 23px;background:#142d3b}
+#opening.city-title h1{font-size:clamp(35px,3.15vw,50px);font-weight:620;line-height:1.15;letter-spacing:-.035em}
+.city-title .canvas{gap:18px;justify-content:center}
+.city-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;flex:1;min-height:0}
+.city-pair figure{display:flex;flex-direction:column;gap:13px;min-height:0;min-width:0}
+.city-pair img{display:block;width:100%;height:auto;max-height:calc(100svh - 255px);object-fit:contain;min-height:0}
+.city-pair figcaption{font-size:28px;font-weight:500;color:#edf1ec}
+.city-title .title-byline{font-size:18px;color:#b7ccd2;flex:none}
+.generations .canvas{position:relative}
+.generation-prompt{display:flex;align-items:center;flex:1;padding:0 1vw}
+.generation-prompt p{font-size:clamp(38px,4vw,60px);font-weight:500;letter-spacing:-.025em}
+.generation-stage{display:flex;flex-direction:column;gap:16px;flex:1;min-height:0}
+.generation-label{font-size:23px;color:var(--muted);flex:none}
+.generation-war,.generation-culture{display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1;min-height:0}
+.generation-culture{grid-template-columns:1.55fr 1fr}
+.generation-brands{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:22px 36px;min-height:0;flex:1}
+.generation-stage .photo{gap:10px;min-height:0}
+.photo-window{position:relative;display:flex;flex:1;min-height:0;overflow:hidden;justify-content:center;align-items:center}
+.generation-stage .photo-window>img{display:block;width:100%;height:100%;flex:none;object-fit:contain;background:transparent}
+.generation-stage .photo figcaption{font-size:30px;font-weight:550;line-height:1.15}
+.generation-brands .photo{display:grid;grid-template-columns:1fr 155px;gap:22px;align-items:center}
+.generation-brands .photo-window{height:100%;min-height:0}
+.generation-brands .photo figcaption{font-size:28px}
+.generation-brands .lg-product .photo-window{background:white}
+.generation-brands .lg-product img{transform:scale(1.55)}
+.generation-brands .samsung-product .photo-window{background:#b7d3ea}
+.culture-names{display:flex;flex-direction:column;justify-content:center;gap:28px}
+.culture-names p{font-size:clamp(32px,3.5vw,55px);font-weight:550;line-height:1.15;letter-spacing:-.025em}
+.generation-controls{display:flex;justify-content:flex-end;flex:none}
+.step-advance{font-size:17px;padding:9px 15px;border:1px solid #a8b5b9;border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}
+.step-advance:hover{background:#dfe8e4}
+.electronics-photo .electronics-images{display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1;min-height:0;overflow:hidden}
+.electronics-photo .electronics-images>img{height:100%;width:100%;object-fit:contain;background:#b7d3ea}
+.lg-support-window{overflow:hidden;min-height:0;background:white;display:flex;align-items:center}
+.lg-support-window img{height:100%;width:100%;object-fit:contain;background:white;transform:scale(1.55)}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){#opening.city-title{padding:20px 28px 17px;gap:15px}#opening.city-title h1{font-size:38px}.city-pair{gap:18px}.city-pair img{max-height:calc(100svh - 235px)}.city-pair figcaption{font-size:24px}.city-title .title-byline{font-size:16px}.generation-stage{gap:12px}.generation-label{font-size:21px}.generation-brands{gap:17px 28px}.generation-brands .photo{grid-template-columns:1fr 120px;gap:16px}.generation-brands .photo figcaption{font-size:24px}.generation-stage .photo figcaption{font-size:25px}.culture-names{gap:25px}.culture-names p{font-size:43px}.step-advance{font-size:15px;padding:7px 13px}}
+@media(max-width:760px){#opening.city-title{padding:22px 18px 128px;gap:22px}#opening.city-title h1{font-size:32px}.city-title .canvas{gap:28px}.city-pair{display:flex;flex-direction:column;gap:28px;align-items:stretch;flex:none}.city-pair img{max-height:none;width:100%;height:auto}.city-pair figcaption{font-size:24px}.city-title .title-byline{font-size:16px;line-height:1.4}.generation-prompt{min-height:280px;padding:0}.generation-prompt p{font-size:37px}.generation-label{font-size:21px}.generation-stage{gap:20px;flex:none}.generation-war,.generation-culture{display:flex;flex-direction:column;gap:30px}.generation-stage .photo{height:280px;flex:none}.generation-stage .photo-window{height:0;flex:1}.generation-stage .photo figcaption{font-size:25px}.generation-brands{display:flex;flex-direction:column;gap:28px}.generation-brands .photo{display:flex;gap:12px;height:260px;align-items:stretch}.generation-brands .photo-window{height:0;min-height:0;flex:1}.generation-brands .photo figcaption{font-size:25px}.culture-names{gap:19px}.culture-names p{font-size:34px}.generation-controls{justify-content:flex-start}.step-advance{font-size:16px}.electronics-photo .electronics-images{min-height:230px}}

@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-10-14",
+  "status": "LOCAL editorial review; no open reuse licence confirmed; originals not retouched",
+  "images": [
+    {
+      "file": "missile-2022.jpg",
+      "credit": "KCNA via BBC",
+      "event": "First public appearance, November 18, 2022; photographs released November 19",
+      "source": "https://www.bbc.co.uk/news/world-asia-63685497",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/13A05/production/_127698308_bb74e2d2-92a7-4bf3-9c30-bc1cd585b8d1.jpg"
+    },
+    {
+      "file": "beijing-2025.jpg",
+      "credit": "KCNA via Chosun / Nate",
+      "event": "Beijing arrival, September 2, 2025; reproduced in September 25 article",
+      "source": "https://news.nate.com/view/20250925n10631",
+      "image_url": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/ch/2025/09/25/ch_1758763265073_226030_0.jpg"
+    }
+  ]
+}

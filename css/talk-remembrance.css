@@ -1,0 +1,43 @@
+/* Photographs and three clearly scoped Wisconsin figures. */
+#wisconsin-remembers .war-figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;flex:none;text-align:center}
+#wisconsin-remembers .war-figures strong{display:block;color:var(--teal);font-size:clamp(54px,5vw,78px);font-weight:650;letter-spacing:-.045em;line-height:1}
+#wisconsin-remembers .war-figures span{display:block;font-size:22px;line-height:1.25;margin-top:8px}
+#wisconsin-remembers .war-photographs{display:grid;grid-template-columns:2fr .8fr 1fr 1fr;gap:22px;flex:1;min-height:0}
+#wisconsin-remembers .war-photographs .photo{gap:12px;text-align:center}
+#wisconsin-remembers .war-photographs img{object-fit:contain;background:transparent}
+#wisconsin-remembers .war-photographs .isle-of-honor img{object-position:center}
+#wisconsin-remembers .war-photographs figcaption{font-size:23px;line-height:1.2;min-height:88px}
+#wisconsin-remembers .war-photographs figcaption small{font-size:18px;line-height:1.25;margin-top:6px}
+#wisconsin-remembers .war-paper-line{display:block;font-size:18px;font-weight:500;color:var(--teal);margin-top:7px}
+#wisconsin-remembers .war-first{display:flex;align-items:center;gap:25px;border-top:1px solid var(--line);padding-top:14px;flex:none}
+#wisconsin-remembers .war-first-year{font-size:50px;line-height:1;font-weight:650;letter-spacing:-.035em;color:var(--coral)}
+#wisconsin-remembers .war-first p{font-size:25px;line-height:1.2}
+#wisconsin-remembers .war-first small{display:block;font-size:18px;color:var(--muted);margin-top:6px}
+#wisconsin-remembers .source{flex:none}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #wisconsin-remembers .war-figures strong{font-size:54px}
+ #wisconsin-remembers .war-figures span{font-size:19px;margin-top:6px}
+ #wisconsin-remembers .war-photographs{gap:18px}
+ #wisconsin-remembers .war-photographs .photo{gap:9px}
+ #wisconsin-remembers .war-photographs figcaption{font-size:20px;min-height:76px}
+ #wisconsin-remembers .war-photographs figcaption small,#wisconsin-remembers .war-paper-line{font-size:16px;margin-top:5px}
+ #wisconsin-remembers .war-first{padding-top:11px;gap:20px}
+ #wisconsin-remembers .war-first-year{font-size:42px}
+ #wisconsin-remembers .war-first p{font-size:22px}
+ #wisconsin-remembers .war-first small{font-size:16px;margin-top:4px}
+}
+@media(max-width:760px){
+ #wisconsin-remembers .war-figures{gap:16px 8px}
+ #wisconsin-remembers .war-figures strong{font-size:clamp(32px,7.5vw,49px)}
+ #wisconsin-remembers .war-figures span{font-size:14px;line-height:1.35;margin-top:7px}
+ #wisconsin-remembers .war-photographs{display:flex;flex-direction:column;gap:26px;flex:none}
+ #wisconsin-remembers .war-photographs .photo{height:auto;flex:none;gap:12px}
+ #wisconsin-remembers .war-photographs img{height:360px;flex:none;max-width:100%}
+ #wisconsin-remembers .war-photographs .isle-of-honor img{height:auto;width:100%}
+ #wisconsin-remembers .war-photographs figcaption{font-size:22px;min-height:0}
+ #wisconsin-remembers .war-photographs figcaption small,#wisconsin-remembers .war-paper-line{font-size:17px}
+ #wisconsin-remembers .war-first{gap:18px;align-items:flex-start;padding-top:23px}
+ #wisconsin-remembers .war-first-year{font-size:38px}
+ #wisconsin-remembers .war-first p{font-size:22px}
+ #wisconsin-remembers .war-first small{font-size:16px;line-height:1.35}
+}

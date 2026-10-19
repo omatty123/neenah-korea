@@ -1,0 +1,35 @@
+/* Introduce shared traits without another slide or reveal. */
+#familiar-lives .familiar-foods figcaption { min-height: 57px; }
+#familiar-lives .familiar-foods figcaption small {
+  display: block;
+  margin: 5px 0 0;
+  font-size: 17px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+#familiar-lives .familiar-common-cues {
+  display: grid;
+  grid-template-columns: .8fr 1fr 1.35fr;
+  gap: 30px;
+  flex: none;
+  padding-top: 8px;
+}
+#familiar-lives .familiar-common-cues p {
+  font-size: clamp(24px,2.15vw,34px);
+  line-height: 1.2;
+  font-weight: 550;
+  color: var(--teal);
+  margin: 0;
+}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px) {
+  #familiar-lives .familiar-common-cues { gap: 24px; padding-top: 6px; }
+  #familiar-lives .familiar-common-cues p { font-size: 26px; }
+  #familiar-lives .familiar-foods figcaption { min-height: 52px; }
+  #familiar-lives .familiar-foods figcaption small { font-size: 16px; }
+}
+@media(max-width:760px) {
+  #familiar-lives .familiar-common-cues { grid-template-columns: 1fr; gap: 18px; padding-top: 12px; }
+  #familiar-lives .familiar-common-cues p { font-size: 28px; }
+  #familiar-lives .familiar-foods figcaption { min-height: 0; }
+  #familiar-lives .familiar-foods figcaption small { font-size: 18px; }
+}

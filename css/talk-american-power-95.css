@@ -1,0 +1,74 @@
+/* Three additions within the existing ten-slide argument. */
+#wisconsin-remembers .american-power-step:not([hidden]) { display:flex; flex-direction:column; flex:1; min-height:0; gap:18px; }
+#wisconsin-remembers .intelligence-line { display:grid; grid-template-columns:1.25fr 1fr .7fr; gap:24px; margin:0; padding:0; list-style:none; }
+#wisconsin-remembers .intelligence-line li { border-top:2px solid var(--teal); padding-top:10px; font-size:22px; line-height:1.2; }
+#wisconsin-remembers .intelligence-line strong { display:block; font-size:31px; color:var(--teal); margin-bottom:6px; }
+#wisconsin-remembers .intelligence-line small { display:block; font-size:17px; margin-top:4px; color:var(--muted); }
+#wisconsin-remembers .power-evidence { display:grid; grid-template-columns:1.15fr 1fr; gap:36px; flex:1; min-height:0; }
+#wisconsin-remembers .chosin-photo { display:flex; flex-direction:column; min-height:0; gap:10px; margin:0; }
+#wisconsin-remembers .chosin-photo img { width:100%; height:0; flex:1; min-height:0; object-fit:cover; object-position:center 65%; }
+#wisconsin-remembers .chosin-photo figcaption { font-size:19px; line-height:1.3; }
+#wisconsin-remembers .defense-expansion { display:flex; flex-direction:column; justify-content:center; gap:20px; min-height:0; }
+#wisconsin-remembers .cold-war-line { font-size:clamp(25px,2.25vw,34px); font-weight:600; line-height:1.15; margin:0; }
+#wisconsin-remembers .defense-unit { font-size:18px; color:var(--muted); margin:0; }
+#wisconsin-remembers .defense-bars { display:grid; gap:17px; }
+#wisconsin-remembers .defense-row { display:grid; grid-template-columns:85px 1fr 70px; gap:14px; align-items:center; font-size:22px; }
+#wisconsin-remembers .defense-row b { font-size:29px; text-align:right; font-variant-numeric:tabular-nums; }
+#wisconsin-remembers .defense-track { height:34px; border-left:1px solid #87969b; }
+#wisconsin-remembers .defense-track span { display:block; height:100%; background:var(--teal); }
+#wisconsin-remembers .national-security-line { font-size:22px; font-weight:550; line-height:1.3; margin:0; }
+#wisconsin-remembers .power-source { margin:0; font-size:14px; }
+#wisconsin-remembers .canvas > .step-advance { align-self:flex-start; flex:none; margin:0; }
+#korea-and-europe .arms-layout { display:grid; grid-template-columns:1.05fr 1fr; gap:42px; min-height:0; flex:1; }
+#korea-and-europe .arms-chart { display:flex; flex-direction:column; gap:14px; min-height:0; }
+#korea-and-europe .arms-unit { font-size:20px; line-height:1.3; color:var(--muted); margin:0; }
+#korea-and-europe .arms-bars { list-style:none; padding:0; margin:0; display:grid; grid-template-rows:repeat(10,1fr); gap:6px; min-height:0; flex:1; }
+#korea-and-europe .arms-row { display:grid; grid-template-columns:130px minmax(0,1fr) 62px; gap:16px; align-items:center; font-size:20px; line-height:1.15; }
+#korea-and-europe .arms-track { height:24px; border-left:1px solid #87969b; }
+#korea-and-europe .arms-bar { display:block; height:100%; background:#8b999f; }
+#korea-and-europe .arms-row strong { text-align:right; font-size:23px; font-weight:550; font-variant-numeric:tabular-nums; }
+#korea-and-europe .arms-korea { color:#007586; font-weight:750; }
+#korea-and-europe .arms-korea .arms-bar { background:#008394; }
+#korea-and-europe .arms-korea strong { font-weight:750; }
+#korea-and-europe .arms-photo { display:flex; flex-direction:column; gap:14px; margin:0; min-height:0; }
+#korea-and-europe .arms-photo img { width:100%; height:0; min-height:0; flex:1; object-fit:cover; object-position:60% center; }
+#korea-and-europe .arms-photo figcaption { font-size:22px; font-weight:550; line-height:1.3; }
+#korea-and-europe .arms-photo small { font-size:16px; font-weight:450; color:var(--muted); }
+#familiar-lives .scale-step:not([hidden]) { display:flex; flex-direction:column; gap:12px; flex:1; min-height:0; }
+#familiar-lives .scale-step .map-with-stats { display:grid; grid-template-columns:minmax(0,1fr) 230px; gap:24px; flex:1; min-height:0; }
+#familiar-lives .scale-step .map-picture { display:flex; min-height:0; }
+#familiar-lives .scale-step .map-img { width:100%; height:100%; min-height:0; object-fit:contain; }
+#familiar-lives .scale-step .stack { justify-content:space-evenly; gap:24px; }
+#familiar-lives .scale-step .number { font-size:66px; line-height:1; }
+#familiar-lives .scale-step .stat p { font-size:23px; line-height:1.25; }
+#familiar-lives .scale-step .stat small { font-size:16px; }
+#familiar-lives .scale-step .latitude-note { font-size:19px; margin:0; }
+#familiar-lives .scale-step .source { font-size:14px; margin:0; }
+#familiar-lives .canvas > .step-advance { align-self:flex-start; flex:none; margin:0; }
+@media(max-width:760px) {
+ #wisconsin-remembers .american-power-step:not([hidden]) { flex:none; gap:26px; }
+ #wisconsin-remembers .intelligence-line { grid-template-columns:1fr; gap:18px; }
+ #wisconsin-remembers .intelligence-line li { font-size:24px; }
+ #wisconsin-remembers .intelligence-line strong { display:inline; margin-right:18px; }
+ #wisconsin-remembers .intelligence-line small { font-size:18px; }
+ #wisconsin-remembers .power-evidence { display:flex; flex-direction:column; gap:28px; flex:none; }
+ #wisconsin-remembers .chosin-photo img { flex:none; height:auto; }
+ #wisconsin-remembers .defense-expansion { gap:20px; }
+ #wisconsin-remembers .cold-war-line { font-size:29px; }
+ #wisconsin-remembers .defense-row { grid-template-columns:74px 1fr 65px; gap:10px; font-size:20px; }
+ #wisconsin-remembers .power-source { font-size:15px; }
+ #korea-and-europe .arms-layout { display:flex; flex-direction:column; gap:28px; flex:none; }
+ #korea-and-europe .arms-chart { gap:20px; }
+ #korea-and-europe .arms-bars { grid-template-rows:repeat(10,32px); gap:12px; }
+ #korea-and-europe .arms-row { grid-template-columns:114px minmax(0,1fr) 52px; gap:10px; font-size:18px; }
+ #korea-and-europe .arms-row strong { font-size:20px; }
+ #korea-and-europe .arms-photo img { height:auto; flex:none; }
+ #familiar-lives .scale-step:not([hidden]) { flex:none; gap:22px; }
+ #familiar-lives .scale-step .map-with-stats { display:flex; flex-direction:column; flex:none; gap:24px; }
+ #familiar-lives .scale-step .map-img { height:auto; }
+ #familiar-lives .scale-step .stack { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+ #familiar-lives .scale-step .number { font-size:54px; }
+ #familiar-lives .scale-step .stat p { font-size:20px; }
+ #familiar-lives .scale-step .stat small { font-size:15px; }
+ #familiar-lives .scale-step .latitude-note { font-size:18px; }
+}

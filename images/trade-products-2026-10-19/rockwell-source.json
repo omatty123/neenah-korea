@@ -1,0 +1,32 @@
+{
+  "source_page": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756controllogix5580.html.html",
+  "accessed": "2026-10-19",
+  "source_owner": "Rockwell Automation",
+  "products": "Allen-Bradley ControlLogix 5580 controllers; single image is 1756-L85EP process controller",
+  "source_type": "Official product imagery; appearance is a studio product rendering, not a documentary location photograph",
+  "rights": "Copyright Rockwell Automation. Public reuse license not verified. Local review asset only.",
+  "usage_limit": "Identifies Rockwell/Allen-Bradley industrial automation products. Does not establish the pictured unit’s manufacturing location, export origin or destination, or any company sales amount.",
+  "processing": "Original files retained. Browser copies convert format to WebP only; no crop or product edits.",
+  "visual_review": "Both opened and inspected. Whole products visible on white backgrounds. Single module gives larger individual detail; group image shows five variants.",
+  "recommended_display": "images/trade-products-2026-10-19/rockwell-controllogix-l85ep.webp",
+  "assets": [
+    {
+      "original": "images/trade-products-2026-10-19/rockwell-controllogix-5580-original.jpg",
+      "display": "images/trade-products-2026-10-19/rockwell-controllogix-5580.webp",
+      "asset_url": "https://rockwellautomation.scene7.com/is/image/rockwellautomation/1756-l8-group-1600x1600.1600.jpg",
+      "width": 1600,
+      "height": 1600,
+      "original_sha256": "10d7d08b98bffdd59f44f73b669a141e42923a0af3f0fad9966ca64fc7289d7f",
+      "display_sha256": "29db4697cf605b68a256bf2019803f1febc0b242145f9811a99691da35347c7c"
+    },
+    {
+      "original": "images/trade-products-2026-10-19/rockwell-controllogix-l85ep-original.png",
+      "display": "images/trade-products-2026-10-19/rockwell-controllogix-l85ep.webp",
+      "asset_url": "https://rockwellautomation.scene7.com/is/image/rockwellautomation/L85EP-right-r3.2048.png",
+      "width": 2048,
+      "height": 1536,
+      "original_sha256": "505fe757f71219f230f8c3a815b72e33749192b6e9cf5dfe69fee686dbd26963",
+      "display_sha256": "2707876a0dcafd589476a6f3135a8aadeb214c39680900d1112ef64801ffdcd4"
+    }
+  ]
+}

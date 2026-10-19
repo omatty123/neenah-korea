@@ -1,0 +1,57 @@
+[
+  {
+    "id": "size",
+    "title": "Start with Wisconsin.",
+    "notes": "Each square represents land area, not shape. Wisconsin includes no Great Lakes water in this comparison. South Korea has about 70% of Wisconsin’s land; North Korea about 86%. This is different from total-area comparisons. Next: locate Korea on the world, not just a peninsula map. Maps are separate spherical Lambert azimuthal equal-area projections centered on Wisconsin and Korea, with the same pixels per kilometre. Natural Earth generalized boundaries; displayed official land values are not calculated from the generalized polygons.",
+    "links": [
+      "https://www.census.gov/quickfacts/WI",
+      "https://data.worldbank.org/indicator/AG.LND.TOTL.K2"
+    ]
+  },
+  {
+    "id": "latitude",
+    "title": "Farther south than we imagine.",
+    "notes": "The full world gives the comparison its context. Seoul and San Francisco are near 38°N; Madison is near 43°N. Latitude is not climate: oceans, circulation, elevation and continental position matter. This map is not an area comparison. Next: same order of land area, very different number of people.",
+    "links": [
+      "https://www.naturalearthdata.com/",
+      "https://www.geonames.org/",
+      "https://commons.wikimedia.org/wiki/File:Blue_Marble_2002.jpg"
+    ]
+  },
+  {
+    "id": "density",
+    "title": "A familiar scale. A different intensity.",
+    "notes": "Equal squares each represent one square kilometre, not actual settlement patterns. Wisconsin 42.46, South Korea 530.24, North Korea 220.07, rounded to whole people. Wisconsin uses 2020 census land area and 2024 population. Korea uses World Bank 2024 data. National averages conceal city and rural differences. Next: density helps explain why network comparisons need denominators. The Seoul city photograph illustrates an urban landscape, not a map of national population distribution. Population and density figures are nationwide. South Korea’s population is 8.7 times Wisconsin; its density is 12.5 times.",
+    "links": [
+      "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "https://www.census.gov/quickfacts/WI",
+      "https://data.worldbank.org/indicator/EN.POP.DNST"
+    ]
+  },
+  {
+    "id": "rail",
+    "title": "This is already Korea.",
+    "notes": "UIC counts 874 km in Korea and 735 km in the United States at 31 December 2024. This is classified high-speed infrastructure, not all routes served by high-speed trains, not uniform speed standards, and not passenger totals. Source extract updated May 2026. Next: infrastructure is one part of capability; innovation is another.",
+    "links": [
+      "https://uic.org/media-files/spip/documents/2025_extract_uic_hs_atlas_hsl_pdf.pdf",
+      "https://commons.wikimedia.org/wiki/File:KTX-Cheongryong.jpg"
+    ]
+  },
+  {
+    "id": "exports",
+    "title": "The world’s No. 9 arms exporter.",
+    "notes": "South Korea ranks ninth for 2021–25. SIPRI’s trend-indicator values measure major-arms transfer volume, not dollar sales, revenues or announced contracts. Five-year periods reduce the distortion from uneven delivery schedules. Next: follow these exports to a consequential European customer. Poland received 58% of South Korean export volume, Philippines 18%, UAE 9.5%; other destinations 14.5%. These are shares of Korea’s exports, unlike the next slide’s share of Poland’s imports. Connectors are schematic, not transport routes.",
+    "links": [
+      "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf",
+      "https://commons.wikimedia.org/wiki/File:Blue_Marble_2002.jpg"
+    ]
+  },
+  {
+    "id": "poland",
+    "title": "Built in Korea. Serving in Poland.",
+    "notes": "South Korea supplied 47% of Poland’s major-arms imports and the United States 44%. Others are the remaining 9%. This is a concrete European security connection, not an assertion that Korea dominates global arms markets. Return from this global connection to Oshkosh–Hanwha and Wisconsin’s own industrial relationships in the full talk.",
+    "links": [
+      "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf"
+    ]
+  }
+]

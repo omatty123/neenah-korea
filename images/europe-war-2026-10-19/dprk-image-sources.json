@@ -1,0 +1,45 @@
+{
+  "checked": "2026-10-19",
+  "assets": [
+    {
+      "file": "dprk-russia-training-2025.jpg",
+      "recommended": true,
+      "description": "North Korean troops in Russian uniforms listen to a Russian instructor during military training in Russia. Still from Russian Ministry of Defense footage distributed by TASS.",
+      "release_date": "2025-04-28",
+      "recording_date": "Not disclosed",
+      "place": "Russia; exact training ground not disclosed",
+      "credit": "Russian Defense Ministry / TASS; still published by Kyiv Independent",
+      "caption_short": "North Korean troops training in Russia · released April 2025",
+      "asset_url": "https://assets.kyivindependent.com/content/images/2025/04/IMG_4118-1.jpg",
+      "source_page": "https://kyivindependent.com/russian-media-publishes-first-video-of-north-korean-troops/",
+      "primary_release_page": "https://tass.ru/armiya-i-opk/23801007",
+      "corroboration": "https://www.themoscowtimes.com/2025/04/28/defense-ministry-shows-north-korean-soldiers-undergoing-training-in-russia-a88893",
+      "limits": "Officially released footage, not independent documentation of when/where this exercise took place. Do not label this frame as battlefield combat or a precisely geolocated Kursk scene. TASS original returned HTTP 403 to direct retrieval; provenance corroborated by independent outlets.",
+      "dimensions": [
+        1170,
+        643
+      ],
+      "sha256": "114c73186b11ac46824091a9ef145b317816ee4e3310acbf343966362f99f9bd",
+      "rights": "No open reuse license located. Retain source attribution; LOCAL educational presentation candidate only. Not represented as public-domain or cleared for public repository publication."
+    },
+    {
+      "file": "dprk-russia-soldiers-kursk-2025.jpg",
+      "recommended": false,
+      "description": "North Korean and Russian soldier wave together amid a damaged building. Still from TASS footage described as Suzhansky district of Kursk.",
+      "release_date": "2025-04-29 as reported by article published 2025-04-30",
+      "recording_date": "Not disclosed",
+      "place": "Kursk region, per TASS footage and Korea JoongAng Daily caption; not independently geolocated here",
+      "credit": "TASS / screen capture, Korea JoongAng Daily",
+      "caption_short": "North Korean and Russian troops · Kursk, 2025",
+      "asset_url": "https://image.koreajoongangdaily.com/11980368.webp?format=jpg&height=494&imageId=11980368&width=960",
+      "source_page": "https://www.koreajoongangdaily.com/korea/russia-releases-combat-footage-showing-north-korean-soldiers-in-kursk/11979338",
+      "limits": "Lower resolution. Official war footage can be staged or selectively edited. Captions identify soldiers as North Korean/Russian; no additional unit/location inference.",
+      "dimensions": [
+        960,
+        494
+      ],
+      "sha256": "4ed65e517e7cede23999c178c3655b07251ada89dce9756af5e0c7756fbfc5a3",
+      "rights": "No open reuse license located. Retain source attribution; LOCAL educational presentation candidate only. Not represented as public-domain or cleared for public repository publication."
+    }
+  ]
+}

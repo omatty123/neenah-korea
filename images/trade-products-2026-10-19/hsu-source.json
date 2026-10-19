@@ -1,0 +1,32 @@
+{
+  "title": "Hsu's 4-year-old Korean Red Ginseng, 4 oz",
+  "product_page": "https://www.hsuginseng.com/product/hsus-korean-red-ginseng-extra-large-4-ounces/01tV5000006MZqKIAW",
+  "asset_url": "https://pimly-prod-assets.pimlyapp.com/05925056-ad80-4343-bcfc-c80e60fd965f/00DKb000000NpO9MAK/0432_1_1000.jpg",
+  "downloaded_at": "2026-10-19",
+  "attribution": "Product photograph: Hsu's Ginseng Enterprises, Inc.",
+  "rights": "Copyright holder believed to be Hsu’s Ginseng Enterprises or its supplier. No open license found. Downloaded for this authorized LOCAL educational presentation; public redistribution permission not established.",
+  "provenance": "Hsu’s product page identifies its Korean Red Ginseng product. Current Hsu’s images use this Pimly product-asset host/account; this matching SKU 0432 asset was retrieved directly from that public CDN. Old official catalog image search also identified product SKU 0432 as Korean red ginseng extra large.",
+  "visual_verification": "Inspected original: actual packaged roots with Hsu’s logo, English text 4-Year-Old Korean Red Ginseng, Chinese 高麗紅參 and net weight 4 oz. White background. No substituted/generic ginseng photograph.",
+  "claim_limit": "Product page says Hsu’s cultivates Korean ginseng seeds in Wisconsin. Photo alone establishes the marketed Korean-red-ginseng product, not origin of these particular roots or Korean export sales.",
+  "transformations": "Proportional resize and WEBP encoding only; complete image and packaging retained.",
+  "files": [
+    {
+      "path": "images/trade-products-2026-10-19/hsu-korean-red-ginseng-original.jpg",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "bytes": 1696275,
+      "sha256": "900f2c36f3225617ad6e7be573a5db592f618be0c4dda2da97ed8f4d37fce56c"
+    },
+    {
+      "path": "images/trade-products-2026-10-19/hsu-korean-red-ginseng.webp",
+      "dimensions": [
+        1400,
+        1400
+      ],
+      "bytes": 184206,
+      "sha256": "f4aba03bbf0fbd5198a9f436ca507b57c556f9652323cd77a0c0789acce3e928"
+    }
+  ]
+}

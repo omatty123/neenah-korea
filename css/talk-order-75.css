@@ -1,0 +1,56 @@
+/* The requested Korean-language opening and ten-slide sequence. */
+#opening[data-opening-view="language"]{background:#fff0df;color:#213248;}
+#opening[data-opening-view="language"] h1{color:#213248;font-size:clamp(34px,3vw,48px);}
+#opening[data-opening-view="language"] .opening-scene{background:transparent;}
+#opening[data-opening-view="language"] .opening-language{opacity:1;visibility:visible;transition:opacity .6s ease;}
+#opening .opening-language{display:grid;grid-template-columns:.65fr 1.8fr;grid-template-rows:auto minmax(0,1fr);gap:25px 40px;align-items:center;padding:20px 30px;}
+#opening .lesson-hello{grid-column:1/-1;display:flex;align-items:baseline;gap:30px;padding-bottom:20px;border-bottom:1px solid #d7bca7;}
+#opening .lesson-hello b{font-size:clamp(39px,4vw,64px);color:#b93e32;font-weight:650;}
+#opening .lesson-hello span{font-size:24px;color:#685849;}
+#opening .lesson-sound{display:flex;flex-direction:column;align-items:center;gap:4px;}
+#opening .lesson-sound strong{font-size:clamp(170px,20vw,300px);line-height:1;color:#b93e32;font-weight:650;}
+#opening .lesson-sound span{font-size:25px;color:#685849;}
+#opening .lesson-words{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+#opening .lesson-words>div{display:flex;flex-direction:column;gap:15px;}
+#opening .lesson-korean{font-size:clamp(88px,8.6vw,138px);font-weight:650;line-height:1.15;color:#294db7;}
+#opening .lesson-words>div:last-child .lesson-korean{color:#b93e32;}
+#opening .lesson-gloss{font-size:30px;line-height:1.3;display:flex;flex-direction:column;gap:11px;}
+#opening .lesson-gloss span{font-size:35px;font-weight:550;}
+#opening .opening-language [lang="ko"]{font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}
+#opening[data-opening-view="language"] .title-byline{visibility:hidden;}
+#opening[data-opening-view="language"] .opening-advance{color:#213248;border-color:#bda995;}
+#opening[data-opening-view="language"] .opening-advance:hover{background:#f3dcc5;}
+#neenah .inyeon-definition{font-size:20px;color:var(--muted);flex:none;}
+#wisconsin-remembers .war-memory-step{display:flex;flex-direction:column;flex:1;min-height:0;gap:inherit;}
+#familiar-lives [lang="ko"],#closing .future-inyeon [lang="ko"]{font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}
+#closing .future-inyeon{font-size:24px;color:var(--teal);flex:none;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #opening .opening-language{padding:6px 20px;gap:15px 30px;}
+ #opening .lesson-hello{padding-bottom:12px;}
+ #opening .lesson-hello b{font-size:45px;}
+ #opening .lesson-sound strong{font-size:190px;}
+ #opening .lesson-korean{font-size:100px;}
+ #opening .lesson-gloss{font-size:26px;gap:7px;}
+ #opening .lesson-gloss span{font-size:30px;}
+ #neenah .inyeon-definition{font-size:17px;}
+ #closing .future-inyeon{font-size:21px;}
+}
+@media(max-width:760px){
+ #opening[data-opening-view="language"] .opening-scene{height:470px;}
+ #opening .opening-language{grid-template-columns:75px minmax(0,1fr);grid-template-rows:auto 1fr;gap:25px 25px;padding:0;}
+ #opening .lesson-hello{display:block;padding-bottom:20px;}
+ #opening .lesson-hello b{display:block;font-size:43px;margin-bottom:6px;}
+ #opening .lesson-hello span{font-size:19px;}
+ #opening .lesson-sound strong{font-size:82px;}
+ #opening .lesson-sound span{font-size:19px;}
+ #opening .lesson-words{display:flex;flex-direction:column;gap:25px;align-items:flex-start;}
+ #opening .lesson-words>div{gap:6px;}
+ #opening .lesson-korean{font-size:72px;}
+ #opening .lesson-gloss{font-size:23px;gap:3px;}
+ #opening .lesson-gloss span{font-size:25px;}
+ #opening[data-opening-view="language"] .title-byline{display:none;}
+ #opening[data-opening-view="language"] .opening-bar{justify-content:flex-end;}
+ #wisconsin-remembers .war-memory-step{flex:none;}
+ #neenah .inyeon-definition{font-size:18px;}
+ #closing .future-inyeon{font-size:22px;}
+}

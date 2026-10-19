@@ -1,0 +1,31 @@
+/* The speaker's argument stays next to the evidence it interprets. */
+#alliance-autonomy .ally-takeaway { font-size: clamp(25px, 2.3vw, 35px); line-height: 1.2; color: var(--teal); font-weight: 550; flex: none; }
+#north-endurance .endurance-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.45fr); gap: 20px; }
+#north-endurance .endurance-grid h3 { font-size: clamp(23px, 2.1vw, 32px); }
+#north-endurance .ju-ae-figure img { object-position: 88% 50%; }
+#north-endurance .ju-ae-figure figcaption strong { display: block; font-size: 20px; color: #edf1ec; font-weight: 550; line-height: 1.2; }
+#north-endurance .ju-ae-figure figcaption small { font-size: 14px; margin-top: 8px; }
+#north-endurance .endurance-summary { justify-content: space-between; gap: 32px; align-items: center; }
+#north-endurance .endurance-summary > p { font-size: 20px; }
+#north-endurance .north-forecast { border-left: 1px solid #607c87; padding-left: 30px; }
+#north-endurance .north-forecast small { display: block; font-size: 15px; color: #c7d5d9; margin-bottom: 5px; }
+#north-endurance .north-forecast p { font-size: clamp(25px, 2.45vw, 38px); font-weight: 550; line-height: 1.2; color: #76d3cf; letter-spacing: -.025em; }
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+  #north-endurance .endurance-grid { gap: 16px; }
+  #north-endurance .endurance-grid > div { gap: 15px; }
+  #north-endurance .endurance-summary > p { font-size: 17px; }
+  #north-endurance .ju-ae-figure figcaption strong { font-size: 18px; }
+  #north-endurance .north-forecast { padding-left: 24px; }
+  #north-endurance .north-forecast p { font-size: 28px; }
+}
+@media (max-width: 760px) {
+  #alliance-autonomy .ally-takeaway { font-size: 27px; }
+  #north-endurance .endurance-grid { grid-template-columns: 1fr 1fr; gap: 25px 15px; }
+  #north-endurance .endurance-grid .ju-ae-panel { grid-column: 1 / -1; }
+  #north-endurance .ju-ae-figure { height: auto; }
+  #north-endurance .ju-ae-figure img { width: 100%; height: auto; flex: none; object-fit: contain; }
+  #north-endurance .ju-ae-figure figcaption strong { font-size: 22px; }
+  #north-endurance .endurance-summary { align-items: stretch; gap: 22px; }
+  #north-endurance .north-forecast { border-left: 0; border-top: 1px solid #607c87; padding: 20px 0 0; }
+  #north-endurance .north-forecast p { font-size: 29px; }
+}

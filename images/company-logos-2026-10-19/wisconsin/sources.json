@@ -1,0 +1,140 @@
+[
+  {
+    "company": "Yuhan-Kimberly",
+    "file": "yuhan-kimberly.png",
+    "source_page": "https://www.yuhan-kimberly.co.kr/mobile/main",
+    "direct_url": "https://www.yuhan-kimberly.co.kr/Areas/Mobile/images/renewal2022/footer/ft-logo.png",
+    "retrieved": "2026-10-19",
+    "bytes": 2216,
+    "sha256": "4329d263c16ca8938fefdd2d0407b94b820fec96215d394a2c02156742c2d8d1",
+    "notes": "Official footer logo; blue Korean wordmark.",
+    "dimensions": [
+      248,
+      60
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Doosan Group",
+    "file": "doosan-group.png",
+    "source_page": "https://www.doosanbobcat.com/en/about/ci",
+    "direct_url": "https://www.doosanbobcat.com/images/intro/brand/CI_new.png",
+    "retrieved": "2026-10-19",
+    "bytes": 5853,
+    "sha256": "0f971f43383eb285ec6802033c2167f421c8e809afa05e4fd2b2cb32b684f505",
+    "notes": "Official Doosan Group CI hosted on the Doosan Bobcat CI page. Use together with Bobcat identification, not as a standalone Doosan Bobcat logo.",
+    "dimensions": [
+      502,
+      68
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Bobcat",
+    "file": "bobcat.png",
+    "source_page": "https://www.doosanbobcat.com/en/",
+    "direct_url": "https://www.doosanbobcat.com/images/common/bobcat_logo_color.png",
+    "retrieved": "2026-10-19",
+    "bytes": 5032,
+    "sha256": "050bb5a69cf6874f1f52c816dfcdeef2e195592ba984571ea19835fb040720ff",
+    "notes": "Official Bobcat logo used by Doosan Bobcat website.",
+    "dimensions": [
+      185,
+      33
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Promega",
+    "file": "promega.svg",
+    "source_page": "https://www.promega.com/",
+    "direct_url": "https://www.promega.com/assets/images/logos/promega-logo-wide.svg",
+    "retrieved": "2026-10-19",
+    "bytes": 3021,
+    "sha256": "26ee168cc1aaf51a36abfdf70ba630126c0105f68f79fdef5d85e229e2da1df8",
+    "notes": "Official yellow logo panel.",
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Hsu’s Ginseng",
+    "file": "hsus-ginseng.png",
+    "source_page": "https://www.hsuginseng.com/",
+    "direct_url": "https://www.hsuginseng.com/sfsites/c/cms/delivery/media/MC4LCWHWXSRVAXBDS2NNZDV2BGSQ",
+    "retrieved": "2026-10-19",
+    "bytes": 176363,
+    "sha256": "dff1c917b109459b09cdf2b16982804f7e39e288c29cfc619ad91b7cf796688c",
+    "notes": "Official site logo referenced by site-logo-url CSS variable. Wisconsin Hsu’s Ginseng, not unrelated Ohio Hsu & Co.",
+    "dimensions": [
+      2406,
+      563
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Oshkosh Defense",
+    "file": "oshkosh-defense-white.svg",
+    "source_page": "https://oshkoshdefense.com/media/",
+    "direct_url": "https://oshkoshdefense.com/wp-content/uploads/2024/02/Oshkosh-Defense-Logo-White-Horizontal.svg",
+    "retrieved": "2026-10-19",
+    "bytes": 27832,
+    "sha256": "f970ca189d29c0b7b5aba62cedbdc17dfe944998d0dc29881696c25afb9ef36f",
+    "notes": "Official white logo; display on dark background.",
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Rockwell Automation",
+    "file": "rockwell-automation.svg",
+    "source_page": "https://companieslogo.com/rockwell-automation/logo/",
+    "direct_url": "https://companieslogo.com/img/orig/ROK_BIG-7cd9c46e.svg?download=true&t=1720244493",
+    "retrieved": "2026-10-19",
+    "bytes": 4835,
+    "sha256": "7e6f55111693ffc48d784493b5113f8bf55bfbedcc7751d4dd71e21f934f582a",
+    "notes": "Transparent color wordmark mirrored by CompaniesLogo. Official media resource corroborates design; direct official SVG returned 403. Official page: https://www.rockwellautomation.com/pt-br/company/news/media-resources.html",
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Kimberly-Clark",
+    "file": "kimberly-clark.jpg",
+    "source_page": "https://www.investor.kimberly-clark.com/news-releases/news-release-details/kimberly-clark-announce-second-quarter-2026-results-august-4",
+    "direct_url": "https://mma.prnewswire.com/media/648588/Kimberly_Clark_v1_Logo.jpg",
+    "retrieved": "2026-10-19",
+    "bytes": 19737,
+    "sha256": "7922c0cb5366f344a8a2b7f99d72b07b28392792ce96295dfa5b1fa676a208ed",
+    "notes": "Official logo supplied with Kimberly-Clark 2026 investor press release, hosted by PR Newswire. Original file, no edits.",
+    "dimensions": [
+      400,
+      52
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Bobcat",
+    "file": "bobcat-brand.png",
+    "source_page": "https://www.doosanbobcat.com/en/about/brand",
+    "direct_url": "https://www.doosanbobcat.com/images/sub/sub02/sub0205_logo01.png",
+    "retrieved": "2026-10-19",
+    "bytes": 6127,
+    "sha256": "73f1d282ead73afb4df9c5376b415b2c20d37f428cc148f5a4c952365a997f0b",
+    "notes": "Official Bobcat standalone wordmark from Doosan Bobcat brand page.",
+    "dimensions": [
+      214,
+      58
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  },
+  {
+    "company": "Doosan Bobcat",
+    "file": "doosan-bobcat-en.png",
+    "source_page": "https://www.doosanbobcat.com/en/about/brand",
+    "direct_url": "https://www.doosanbobcat.com/images/en/common/bobcat_logo_color.png",
+    "retrieved": "2026-10-19",
+    "bytes": 6531,
+    "sha256": "372eae5a807d69ece972ac25147d0c8df6acee8d3a42a8201e1eecfe8683e7e8",
+    "notes": "Official English-site logo lockup from Doosan Bobcat site CSS.",
+    "dimensions": [
+      258,
+      36
+    ],
+    "visual_inspection": "Viewed rendered logo artwork on 2026-10-19; original colors and geometry retained."
+  }
+]

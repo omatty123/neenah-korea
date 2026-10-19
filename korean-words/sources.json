@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hello",
+    "title": "안녕하세요",
+    "notes": "Placement: immediately after the title, before Neenah. Annyeonghaseyo is a polite everyday hello. The base annyeong concerns being well or at peace; the greeting is not a literal English word-for-word formula. Pronunciation guides are approximate American-English aids, not phonetic transcriptions. Let the speaker model the sound; do not claim these written approximations reproduce Korean exactly.",
+    "links": [
+      "https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=303915"
+    ]
+  },
+  {
+    "id": "connection",
+    "title": "우리 · 인연",
+    "notes": "Placement: with the Neenah / Yuhan-Kimberly connection. Uri can mean we or our; it also occurs where English speakers would often say my, for example uri eomma, my mother. Do not infer a single national personality from this usage. Inyeon means a relationship, tie or connection, often with a sense of how people came to meet. Buddhist and fateful associations exist, but it does not always assert predestination or reincarnation. The 1970 groundbreaking photograph gives the relationship actual people and history. Suggested spoken connection: We are already part of each other’s story. Korea and Wisconsin already have inyeon.",
+    "links": [
+      "https://krdict.korean.go.kr/m/eng/searchResultView?ParaWordNo=17182&nation=eng",
+      "https://cdn.talktomeinkorean.com/wp-content/uploads/2023/10/13195639/Our-Beloved-Korean-Words_109.pdf",
+      "https://www.yuhan.co.kr/Introduce/History/index.asp"
+    ]
+  },
+  {
+    "id": "names",
+    "title": "한국 · 조선 · 미국",
+    "notes": "Placement: with the first peninsula map. Hanguk is the usual South Korean name for Korea and often specifically South Korea. Joseon, romanized Chosŏn in McCune–Reischauer, is the usual North Korean name for Korea and is also the historical name of the Joseon kingdom, 1392–1897; the same ruling house continued under the Korean Empire, 1897–1910. These are not simply the Korean words for south and north. Miguk means United States. Guk is the Sino-Korean element for country or state. Do not confuse Hanguk (Korea) with Hangeul (the alphabet). Map labels identify contemporary usage, not two separate origins of Korean civilization. NASA Blue Marble2002 geography; city-level political boundaries not shown.",
+    "links": [
+      "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EB%AF%B8%EA%B5%AD&nation=eng",
+      "https://46-8.dc.icann.org/reports/2011/hanguk-report-07jan2011.html",
+      "https://en.wikipedia.org/wiki/Names_of_Korea",
+      "https://commons.wikimedia.org/wiki/File:Blue_Marble_2002.jpg",
+      "https://www.museum.go.kr/ENG/contents/E0201040600.do?schM=list&showHallId=759&showroomCode=DM0041"
+    ]
+  },
+  {
+    "id": "history",
+    "title": "Language and American history",
+    "notes": "Placement: near American history and the Korean War, separate from the greeting practice. The quoted English word is a racial slur, included to examine American history, not as vocabulary to use about people. Roediger documents pre-Korean-War usage; the1935 citation is a documented example, NOT a claim that1935 was its first use. The exact origin remains uncertain. The familiar account that U.S. soldiers invented it from hearing miguk during the Korean War cannot explain those earlier uses. Do not teach the folk etymology as fact, or treat Korean guk itself as a slur. Keep the focus on how language can dehumanize people, alongside the talk’s specific and respectful treatment of Wisconsin veterans.",
+    "links": [
+      "https://davidroediger.org/articles/gook-the-short-history-of-americanism.php",
+      "https://www.collinsdictionary.com/us/dictionary/english/gook"
+    ]
+  }
+]

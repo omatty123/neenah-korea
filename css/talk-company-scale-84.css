@@ -1,0 +1,109 @@
+/* Logos lead the ranking; the compact bar scale retains exact proportions. */
+#alliance-autonomy .market-cap-step {
+  --market-logo-width: 320px;
+  --market-logo-height: 76px;
+}
+#alliance-autonomy .market-cap-step .market-ranking li {
+  grid-template-columns: 32px minmax(0, 1fr) 260px 150px;
+  gap: 24px;
+}
+#alliance-autonomy .market-cap-step .market-company {
+  display: grid;
+  grid-template-columns: var(--market-logo-width) minmax(0, 1fr);
+  gap: 24px;
+}
+#alliance-autonomy .market-cap-step .market-company > .company-logo,
+#alliance-autonomy .market-cap-step .market-company .logo-window {
+  width: var(--market-logo-width);
+  height: var(--market-logo-height);
+}
+#alliance-autonomy .market-cap-step .market-company .logo-window img {
+  width: auto;
+  height: var(--market-logo-height);
+  max-width: none;
+  object-fit: contain;
+}
+#alliance-autonomy .market-cap-step .market-company > span:not(.logo-window) {
+  font-size: 21px;
+  line-height: 1.2;
+}
+#alliance-autonomy .market-cap-step .market-scale {
+  height: 46px;
+}
+@media (max-height: 740px) and (min-width: 761px),
+       (max-width: 1400px) and (min-width: 761px) {
+  #alliance-autonomy .market-cap-step {
+    --market-logo-width: 280px;
+    --market-logo-height: 58px;
+  }
+  #alliance-autonomy .market-cap-step .market-ranking li {
+    grid-template-columns: 32px minmax(0, 1fr) 230px 130px;
+    gap: 18px;
+  }
+  #alliance-autonomy .market-cap-step .market-company {
+    gap: 20px;
+  }
+  #alliance-autonomy .market-cap-step .market-company > span:not(.logo-window) {
+    font-size: 20px;
+  }
+  #alliance-autonomy .market-cap-step .market-scale {
+    height: 40px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  #alliance-autonomy .market-cap-step {
+    --market-logo-width: 200px;
+    --market-logo-height: 56px;
+  }
+  #alliance-autonomy .market-cap-step .market-ranking li {
+    grid-template-columns: 24px minmax(0, 1fr) 150px 112px;
+    gap: 14px;
+  }
+  #alliance-autonomy .market-cap-step .market-company {
+    gap: 12px;
+  }
+  #alliance-autonomy .market-cap-step .market-company > span:not(.logo-window) {
+    font-size: 17px;
+  }
+  #alliance-autonomy .market-cap-step .market-scale {
+    height: 36px;
+  }
+}
+@media (max-width: 760px) {
+  #alliance-autonomy .market-cap-step {
+    --market-logo-width: 280px;
+    --market-logo-height: 68px;
+  }
+  #alliance-autonomy .market-cap-step .market-ranking li {
+    grid-template-columns: 22px minmax(0, 1fr) 112px;
+    grid-template-rows: auto auto;
+    gap: 14px 12px;
+    padding: 20px 0;
+  }
+  #alliance-autonomy .market-cap-step .market-company {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  #alliance-autonomy .market-cap-step .market-company > span:not(.logo-window) {
+    font-size: 20px;
+  }
+  #alliance-autonomy .market-cap-step .market-scale {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    max-width: 180px;
+    height: 32px;
+  }
+  #alliance-autonomy .market-cap-step .market-value {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 30px;
+  }
+  #alliance-autonomy .market-cap-step .market-company .logo-window {
+    max-width: 100%;
+  }
+}

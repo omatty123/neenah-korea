@@ -1,0 +1,20 @@
+/* A standalone language composition: large Hangul, romanization and meaning. */
+#korean-words.language-slide{background:#fff0df;color:#213248;gap:20px;padding:28px 42px 34px}
+#korean-words h2{font-size:clamp(30px,2.5vw,39px);font-weight:570;letter-spacing:-.025em}
+#korean-words .canvas{justify-content:center;gap:0}
+.language-greeting{display:grid;grid-template-columns:1.45fr 1fr;align-items:center;gap:45px;flex:1.04;min-height:0;border-bottom:1px solid #d7bca7}
+.language-pair{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;flex:1;min-height:0}
+.language-term{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;min-width:0}
+.language-hangul{font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:clamp(100px,10.2vw,160px);font-weight:700;line-height:1.25;letter-spacing:-.04em;white-space:nowrap}
+.language-greeting .language-hangul{font-size:clamp(90px,9.5vw,150px);color:#b93e32}
+.language-uri .language-hangul{color:#294db7}
+.language-inyeon .language-hangul{color:#006f68}
+.language-copy{display:flex;flex-direction:column;gap:16px;min-width:0}
+.language-roman{font-size:clamp(25px,2.2vw,34px);line-height:1.2;font-weight:450;letter-spacing:-.015em;color:#685849}
+.language-meaning{font-size:clamp(29px,2.7vw,42px);line-height:1.23;font-weight:550;letter-spacing:-.025em}
+.language-greeting .language-meaning{font-size:clamp(46px,5vw,77px);color:#b93e32}
+.language-uri .language-meaning{color:#294db7}
+.language-inyeon .language-meaning{color:#006f68}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){#korean-words.language-slide{padding:22px 32px 26px;gap:12px}.language-pair{gap:45px}.language-term{gap:25px}.language-hangul{font-size:112px}.language-greeting .language-hangul{font-size:112px}.language-roman{font-size:27px}.language-meaning{font-size:32px}.language-greeting .language-meaning{font-size:59px}.language-copy{gap:13px}}
+@media(max-width:1000px) and (min-width:761px){.language-hangul{font-size:85px}.language-greeting .language-hangul{font-size:84px}.language-term{gap:20px}.language-pair{gap:26px}.language-meaning{font-size:27px}.language-roman{font-size:23px}}
+@media(max-width:760px){#korean-words.language-slide{padding:25px 22px 140px;gap:26px;min-height:calc(100svh - 106px)}#korean-words h2{font-size:29px}#korean-words .canvas{gap:30px;flex:none}.language-greeting{display:block;flex:none;padding-bottom:29px}.language-greeting .language-hangul{font-size:clamp(54px,13vw,91px);margin-bottom:12px}.language-greeting .language-copy{gap:9px}.language-greeting .language-meaning{font-size:38px}.language-pair{display:flex;flex-direction:column;align-items:stretch;gap:30px;flex:none}.language-term{grid-template-columns:116px 1fr;gap:22px}.language-hangul{font-size:69px;letter-spacing:-.045em}.language-copy{gap:8px}.language-roman{font-size:23px}.language-meaning{font-size:26px}}

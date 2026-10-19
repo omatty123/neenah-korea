@@ -1,0 +1,21 @@
+/* The audience questions are the main visual on this reveal. */
+#first-thoughts .generation-prompt {
+  gap: 36px;
+  padding-top: 24px;
+}
+#first-thoughts .generation-prompt p {
+  font-size: clamp(64px, 5.6vw, 88px);
+  font-weight: 550;
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+@media (max-width:760px) {
+  #first-thoughts .generation-prompt {
+    gap: 34px;
+    padding-top: 16px;
+  }
+  #first-thoughts .generation-prompt p {
+    font-size: clamp(42px, 8.45vw, 64px);
+  }
+}

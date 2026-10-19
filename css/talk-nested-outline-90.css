@@ -1,0 +1,49 @@
+/* The title's three parts contain the Korean-language sequence. */
+.slide[data-kind="main"] .outline-part { font-weight: 650; }
+.slide[data-kind="main"] .outline-language { font-weight: 450; }
+#opening[data-opening-view="outline"] { background: #f6f3eb; color: var(--ink); }
+#opening[data-opening-view="outline"] h1 { color: var(--ink); }
+#opening[data-opening-view="outline"] .opening-scene { background: transparent; }
+#opening[data-opening-view="outline"] .opening-outline { opacity: 1; visibility: visible; transition: opacity .6s ease; }
+#opening :is(.opening-language,.opening-outline)[aria-hidden="true"] { opacity: 0; visibility: hidden; transition: none; }
+#opening .opening-outline { display: flex; flex-direction: column; gap: 18px; }
+#opening .outline-row { display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center; flex: 1; min-height: 0; padding: 12px 0; }
+#opening .outline-row + .outline-row { border-top: 1px solid var(--line); }
+#opening .outline-row h2 { font-size: clamp(31px,3.1vw,48px); font-weight: 600; line-height: 1.15; letter-spacing: -.025em; }
+#opening .outline-topics { display: flex; flex-direction: column; gap: 8px; }
+#opening .outline-topics p { font-size: 25px; line-height: 1.25; color: var(--muted); }
+#opening .outline-topics [lang="ko"] { font-family: 'Apple SD Gothic Neo','Noto Sans KR',sans-serif; }
+#opening .outline-topics .outline-inyeon { color: var(--teal); font-size: 35px; font-weight: 550; }
+#opening .outline-topics .outline-world-thesis { color: var(--ink); font-weight: 550; }
+#opening[data-opening-view="outline"] .title-byline { visibility: hidden; }
+#opening[data-opening-view="outline"] .opening-advance { color: var(--ink); border-color: var(--line); }
+#opening[data-opening-view="outline"] .opening-advance:hover { background: #e6eeeb; }
+
+/* The forecast is now the final view; the separate paper-connection screen is gone. */
+#closing .forecast-paper-proposal { font-size: 20px; line-height: 1.3; color: var(--teal); max-width: 48%; }
+#closing .future-forecast .theme { font-size: clamp(25px,2.2vw,34px); padding-top: 0; flex: none; }
+#closing .future-forecast .closing-farewell { gap: 22px; }
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px) {
+  #opening .opening-outline { gap: 12px; }
+  #opening .outline-row { gap: 30px; padding: 9px 0; }
+  #opening .outline-row h2 { font-size: 36px; }
+  #opening .outline-topics p { font-size: 23px; }
+  #opening .outline-topics .outline-inyeon { font-size: 31px; }
+  #closing .future-forecast { gap: 11px; }
+  #closing .forecast-panorama { padding: 20px 24px; }
+  #closing .forecast-paper-proposal { font-size: 18px; }
+  #closing .future-forecast .theme { font-size: 26px; }
+}
+@media(max-width:760px) {
+  .slide[data-kind="main"] .outline-label { line-height: 1.35; }
+  #opening[data-opening-view="outline"] .opening-scene { height: auto; }
+  #opening[data-opening-view="outline"] .opening-outline { position: relative; gap: 26px; }
+  #opening .outline-row { display: block; padding: 20px 0 0; }
+  #opening .outline-row h2 { font-size: 31px; margin-bottom: 16px; }
+  #opening .outline-topics p { font-size: 24px; }
+  #opening .outline-topics .outline-inyeon { font-size: 34px; }
+  #opening[data-opening-view="outline"] .title-byline { display: none; }
+  #opening[data-opening-view="outline"] .opening-bar { justify-content: flex-end; }
+  #closing .forecast-paper-proposal { font-size: 22px; max-width: none; }
+  #closing .future-forecast .theme { font-size: 28px; }
+}

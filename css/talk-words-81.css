@@ -1,0 +1,18 @@
+/* One connected prompt; the two audience questions have equal visual weight. */
+#first-thoughts-title strong{font-weight:650;color:var(--teal);}
+#first-thoughts:has(.generation-prompt:not([hidden])) .outline-heading{gap:22px;}
+#first-thoughts:has(.generation-prompt:not([hidden])) h2{font-size:clamp(48px,4.7vw,72px);line-height:1.12;font-weight:550;letter-spacing:-.035em;text-wrap:wrap;}
+#first-thoughts .generation-prompt{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:20px;padding:14px 0 0;min-height:0;}
+#first-thoughts .generation-prompt p{font-size:clamp(38px,3.5vw,54px);line-height:1.2;font-weight:450;letter-spacing:-.025em;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #first-thoughts:has(.generation-prompt:not([hidden])) .outline-heading{gap:18px;}
+ #first-thoughts:has(.generation-prompt:not([hidden])) h2{font-size:56px;}
+ #first-thoughts .generation-prompt{padding-top:12px;gap:18px;}
+ #first-thoughts .generation-prompt p{font-size:44px;}
+}
+@media(max-width:760px){
+ #first-thoughts:has(.generation-prompt:not([hidden])) .outline-heading{gap:20px;}
+ #first-thoughts:has(.generation-prompt:not([hidden])) h2{font-size:clamp(32px,5.2vw,40px);line-height:1.15;}
+ #first-thoughts .generation-prompt{padding-top:0;gap:18px;flex:1;}
+ #first-thoughts .generation-prompt p{font-size:clamp(28px,4.2vw,34px);line-height:1.25;}
+}

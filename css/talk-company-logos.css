@@ -1,0 +1,100 @@
+/* Official marks stay legible beside the first visible company names. */
+img.company-logo{display:block;object-fit:contain;object-position:left center;background:transparent;flex:none;min-height:0;max-width:100%;}
+#first-thoughts .brand-caption{display:flex;flex-direction:column;gap:16px;align-items:flex-start;font-size:22px;font-weight:500;}
+#first-thoughts .brand-caption .company-logo{width:155px;height:58px;flex:none;background:transparent;}
+#first-thoughts .lg-product .brand-caption .company-logo{width:106px;transform:none;}
+#neenah .partner-logo{width:245px;height:52px;margin-bottom:10px;}
+#neenah .heritage-logo{width:195px;height:40px;margin-bottom:9px;flex:none;}
+#wisconsin-work .sales-logo{width:240px;height:43px;flex:none;background:transparent;}
+#wisconsin-work .company-sales h3{font-size:24px;}
+#wisconsin-work .other-connections p{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1;}
+#wisconsin-work .connection-logo{width:106px;height:34px;}
+#wisconsin-work .trade-engineering{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+#wisconsin-work .engineering-logos{display:flex;align-items:center;gap:12px;flex:none;}
+#wisconsin-work .engineering-logos .company-logo{width:110px;height:34px;}
+#wisconsin-work .engineering-logos .on-dark{background:var(--ink);padding:5px 8px;}
+#alliance-autonomy .market-cap-step,#alliance-autonomy .capability-step{display:flex;flex-direction:column;gap:14px;flex:1;min-height:0;}
+#alliance-autonomy .market-heading{display:flex;justify-content:space-between;gap:24px;align-items:baseline;flex:none;}
+#alliance-autonomy .market-heading h3{font-size:28px;font-weight:600;}
+#alliance-autonomy .market-heading .caption{font-size:19px;}
+#alliance-autonomy .market-ranking{list-style:none;margin:0;padding:0;display:grid;grid-template-rows:repeat(6,minmax(0,1fr));flex:1;min-height:0;}
+#alliance-autonomy .market-ranking li{display:grid;grid-template-columns:42px 330px minmax(60px,1fr) 120px;align-items:center;gap:24px;border-top:1px solid var(--line);min-height:0;}
+#alliance-autonomy .market-rank{font-size:20px;color:var(--muted);font-variant-numeric:tabular-nums;}
+#alliance-autonomy .market-company{display:flex;align-items:center;gap:18px;min-width:0;}
+#alliance-autonomy .market-company .company-logo{width:140px;height:45px;}
+#alliance-autonomy .market-company span{font-size:20px;line-height:1.2;}
+#alliance-autonomy .market-scale{height:34px;border-left:1px solid #91aaa9;}
+#alliance-autonomy .market-scale>span{display:block;height:100%;background:var(--teal);}
+#alliance-autonomy .market-value{font-size:36px;letter-spacing:-.04em;font-weight:600;font-variant-numeric:tabular-nums;text-align:right;}
+#alliance-autonomy .company-reveal-controls{display:flex;justify-content:flex-end;flex:none;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #first-thoughts .brand-caption{gap:10px;font-size:20px;}
+ #first-thoughts .brand-caption .company-logo{height:42px;width:120px;}
+ #neenah .partner-logo{height:39px;width:210px;margin-bottom:7px;}
+ #neenah .heritage-logo{height:31px;width:170px;margin-bottom:7px;}
+ #wisconsin-work .sales-logo{height:34px;width:205px;}
+ #wisconsin-work .company-sales h3{font-size:22px;}
+ #wisconsin-work .connection-logo{height:28px;width:85px;}
+ #wisconsin-work .engineering-logos .company-logo{height:27px;width:85px;}
+ #alliance-autonomy .market-cap-step,#alliance-autonomy .capability-step{gap:10px;}
+ #alliance-autonomy .market-heading h3{font-size:25px;}
+ #alliance-autonomy .market-heading .caption{font-size:17px;}
+ #alliance-autonomy .market-ranking li{grid-template-columns:34px 310px minmax(60px,1fr) 110px;gap:18px;}
+ #alliance-autonomy .market-company .company-logo{width:125px;height:35px;}
+ #alliance-autonomy .market-company span{font-size:18px;}
+ #alliance-autonomy .market-scale{height:25px;}
+ #alliance-autonomy .market-value{font-size:31px;}
+ #alliance-autonomy .capability-step .pie-photo img{height:150px;}
+}
+@media(max-width:1000px) and (min-width:761px){
+ #alliance-autonomy .market-heading{display:block;}
+ #alliance-autonomy .market-heading .caption{margin-top:8px;}
+ #alliance-autonomy .market-ranking li{grid-template-columns:24px 260px minmax(40px,1fr) 95px;gap:14px;}
+ #alliance-autonomy .market-company{gap:12px;}
+ #alliance-autonomy .market-company .company-logo{width:110px;}
+ #alliance-autonomy .market-company span{font-size:17px;}
+ #alliance-autonomy .market-value{font-size:29px;}
+}
+@media(max-width:760px){
+ #first-thoughts .brand-caption{flex-direction:row;align-items:center;gap:20px;font-size:21px;}
+ #first-thoughts .brand-caption .company-logo{width:140px;height:39px;}
+ #first-thoughts .lg-product .brand-caption .company-logo{width:90px;}
+ #neenah .partner-logo{width:235px;height:49px;}
+ #neenah .heritage-logo{width:100%;height:30px;}
+ #wisconsin-work .sales-logo{height:48px;width:255px;}
+ #wisconsin-work .company-sales h3{font-size:25px;}
+ #wisconsin-work .other-connections p{display:block;}
+ #wisconsin-work .connection-logo{width:130px;height:40px;margin-bottom:10px;}
+ #wisconsin-work .trade-engineering{display:block;}
+ #wisconsin-work .engineering-logos{margin-bottom:12px;}
+ #wisconsin-work .engineering-logos .company-logo{width:135px;height:43px;}
+ #alliance-autonomy .market-cap-step,#alliance-autonomy .capability-step{flex:none;gap:20px;}
+ #alliance-autonomy .market-heading{display:block;}
+ #alliance-autonomy .market-heading h3{font-size:26px;}
+ #alliance-autonomy .market-heading .caption{font-size:18px;margin-top:8px;}
+ #alliance-autonomy .market-ranking{display:flex;flex-direction:column;flex:none;}
+ #alliance-autonomy .market-ranking li{grid-template-columns:24px minmax(0,1fr) 90px;grid-template-rows:auto auto;gap:12px;padding:18px 0;}
+ #alliance-autonomy .market-rank{grid-column:1;grid-row:1;font-size:17px;}
+ #alliance-autonomy .market-company{grid-column:2;grid-row:1;flex-direction:column;align-items:flex-start;gap:8px;}
+ #alliance-autonomy .market-company .company-logo{width:150px;height:41px;}
+ #alliance-autonomy .market-company span{font-size:17px;}
+ #alliance-autonomy .market-value{grid-column:3;grid-row:1;font-size:29px;}
+ #alliance-autonomy .market-scale{grid-column:2/4;grid-row:2;height:15px;}
+ #alliance-autonomy .company-reveal-controls{justify-content:flex-start;}
+}
+/* The official hynix PNG has transparent space to its right; crop only in CSS. */
+#alliance-autonomy .market-company .logo-window{display:block;flex:none;width:140px;height:45px;overflow:hidden;}
+#alliance-autonomy .market-company .logo-window img{width:175.82px;height:45px;max-width:none;object-fit:fill;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ #alliance-autonomy .market-company .logo-window{width:125px;height:35px;}
+ #alliance-autonomy .market-company .logo-window img{width:136.75px;height:35px;}
+}
+@media(max-width:760px){
+ #alliance-autonomy .market-company .logo-window{width:150px;height:41px;}
+ #alliance-autonomy .market-company .logo-window img{width:160.19px;height:41px;}
+}
+/* Reserve enough width for the four-digit leading value at every viewport. */
+#alliance-autonomy .market-ranking li{grid-template-columns:42px 330px minmax(60px,1fr) 148px;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){#alliance-autonomy .market-ranking li{grid-template-columns:34px 310px minmax(60px,1fr) 130px;}}
+@media(max-width:1000px) and (min-width:761px){#alliance-autonomy .market-ranking li{grid-template-columns:24px 260px minmax(40px,1fr) 120px;}}
+@media(max-width:760px){#alliance-autonomy .market-ranking li{grid-template-columns:24px minmax(0,1fr) 112px;}#alliance-autonomy .market-value{font-size:28px;}}

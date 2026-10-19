@@ -1,0 +1,15 @@
+/* Outline labels stay with their subject through every visual reveal. */
+.slide[data-kind="main"] .outline-heading{display:flex;flex-direction:column;gap:6px;flex:none;min-width:0;}
+.slide[data-kind="main"] .outline-label{font-family:var(--sans);font-size:21px;line-height:1.2;font-weight:550;color:var(--teal);letter-spacing:0;}
+.slide[data-kind="main"].dark .outline-label{color:#91d7d3;}
+#opening .outline-label{display:none;}
+#opening[data-opening-view="language"] .outline-label{display:block;color:#b93e32;}
+#opening[data-opening-view="language"] h1{text-wrap:wrap;}
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+ .slide[data-kind="main"] .outline-heading{gap:5px;}
+ .slide[data-kind="main"] .outline-label{font-size:18px;}
+}
+@media(max-width:760px){
+ .slide[data-kind="main"] .outline-label{font-size:19px;}
+ .slide[data-kind="main"] .outline-heading{gap:8px;}
+}

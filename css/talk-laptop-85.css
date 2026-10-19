@@ -1,0 +1,48 @@
+/* Laptop presentation: keep the landscape composition and give images more room. */
+@media screen and (min-width:761px) and (max-width:1440px) and (max-height:850px) {
+  .slide {
+    height: calc(100svh - 48px);
+    min-height: 0;
+    padding: 16px 24px 12px;
+    gap: 12px;
+  }
+  .curated .canvas { gap: 12px; }
+  footer {
+    height: 48px;
+    padding: 6px 16px;
+    gap: 8px;
+  }
+  footer button, footer select {
+    height: 34px;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  footer select { min-width: 0; }
+  #notes-panel { bottom: 48px; }
+  .slide .step-advance, #opening .opening-advance {
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 6px 12px;
+  }
+}
+/* Short laptop windows: put each company name beside its logo, not below it. */
+@media screen and (min-width:1100px) and (max-width:1440px) and (max-height:700px) {
+  #wisconsin-work .company-sales {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr);
+    grid-template-rows: 48px auto minmax(0, 1fr) auto auto;
+    gap: 7px 12px;
+  }
+  #wisconsin-work .company-sales .sales-logo { width: 160px; height: 34px; align-self: center; }
+  #wisconsin-work .company-sales h3 { font-size: 20px; align-self: center; }
+  #wisconsin-work .company-sales > :is(p, figure) { grid-column: 1 / -1; }
+  #wisconsin-work .company-connection { min-height: 32px; font-size: 16px; }
+  #wisconsin-work .other-connections p { display: block; font-size: 15px; }
+  #wisconsin-work .other-connections .connection-logo {
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}

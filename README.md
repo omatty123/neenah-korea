@@ -103,3 +103,8 @@ The source and deployment-package checker passes for all twelve current/archive 
 Facebook’s More options → Embed dialog supplied the exact player-only iframe, 339 × 476, with `show_text=false` and `t=0`. The new projected frame uses that player with a visible original-link fallback, source notes, and manual playback. The Facebook video is not downloaded or reposted. The South Korea page now has four frames; the website has 27 in total.
 
 Local verification confirmed manual playback, the native player’s full-screen entry and exit, and Previous/Next advancement with the four-frame counter. The 390 × 844 and 320 × 740 layouts retain the complete player and visible original link without horizontal overflow. Source and packaged-site checks pass for all twelve current/archive pages.
+
+
+## Current presentation — October 19, 2026
+
+Start the ten-slide presentation at https://omatty123.github.io/neenah-korea/talk-rebuilt.html. The original talk and preparation remain available as supporting material. Private editorial reviews are excluded from Git and deployment.

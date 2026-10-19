@@ -1,0 +1,13 @@
+#closing .future-imagined-image { flex-direction:column; align-items:center; gap:8px; }
+#closing .future-imagined-image img { height:0; flex:1; }
+#closing .future-scene-caption { flex:none; font-size:20px; color:var(--muted); }
+#closing:has(.simple-ending:not([hidden])) { background:#12343d; color:#fff8e9; }
+#closing:has(.simple-ending:not([hidden])) .outline-label { color:#9ddcda; }
+#closing:has(.simple-ending:not([hidden])) h2 { color:#ffd275; }
+#closing .simple-ending:not([hidden]) { display:flex; flex-direction:column; justify-content:space-between; gap:24px; flex:1; min-height:0; }
+#closing .final-three { display:flex; flex-direction:column; justify-content:center; gap:38px; flex:1; }
+#closing .final-three p { font-size:clamp(32px,3.6vw,58px); font-weight:600; line-height:1.16; letter-spacing:-.025em; margin:0; color:#fff8e9; }
+#closing .simple-chingu { text-align:right; color:#ffd275; font-size:clamp(34px,3.7vw,56px); font-weight:650; margin:0; }
+#closing .simple-chingu span { font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin-right:15px; }
+#closing .simple-chingu .friend-meaning { font-family:inherit; font-size:.62em; color:#fff8e9; font-weight:450; margin-right:20px; }
+#neenah .inyeon-definition { font-size:clamp(23px,2.15vw,32px); font-weight:550; line-height:1.2; }

@@ -1,0 +1,44 @@
+{
+  "asset": "images/europe-war-2026-10-19/rok-krab-ukraine-2023.jpg",
+  "sha256": "719b39c89b0ec9eab7a94320ed5771c661e7415651c0a4622d53dd1c21485d87",
+  "dimensions": [
+    1024,
+    683
+  ],
+  "subject": "Polish AHS Krab self-propelled howitzer serving with an unnamed Ukrainian artillery brigade",
+  "date": "2023-11-03",
+  "date_scope": "Publication date; Commons lists this date for the photograph. Exact capture date not independently specified.",
+  "place": "Ukraine; exact location not disclosed. ArmyInform report describes the brigade in eastern Ukraine and service in Donetsk, Luhansk, Kharkiv and Kherson regions.",
+  "credit": "ArmyInform / Ukrainian Ministry of Defence; article credits photographs and video to the author and brigade press service.",
+  "author_reporter": "Ігор Березинський (Ihor Berezynskyi)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "primary_photo_story": "https://armyinform.com.ua/2023/11/03/arta-zavzhdy-na-krok-poperedu-u-znyshhenni-voroga/",
+  "commons_file_page": "https://commons.wikimedia.org/wiki/File:UA_AHS_Krab_05.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/UA_AHS_Krab_05.jpg",
+  "asset_edits": "None; original JPEG downloaded. If display crops with object-fit, attribution should state cropped for display.",
+  "recommended_visible_caption": "Polish Krab in Ukraine · South Korean K9 chassis",
+  "recommended_alt": "Front view of a Polish AHS Krab howitzer serving with Ukrainian artillery, using a chassis derived from South Korea’s K9.",
+  "lineage_sources": [
+    {
+      "url": "https://www.hanwhaaerospace.com/eng/media/newsroom/view.do?seq=292",
+      "publisher": "Hanwha Aerospace",
+      "finding": "Manufacturer confirms Hanwha supplied the K9 chassis for Poland’s AHS Krab development and manufacture."
+    },
+    {
+      "url": "https://www.gov.pl/web/obrona-narodowa/wiceminister-kownacki-na-adex-2017-2",
+      "publisher": "Polish Ministry of National Defence",
+      "date": "2017-10-18",
+      "finding": "Official Polish report: Krab chassis bought from Hanwha in 2014; initial chassis imported, later chassis to be made by HSW in Poland; technology-transfer agreement signed at ADEX 2017."
+    },
+    {
+      "url": "https://www.hanwha.com/newsroom/news/press-releases/hanwha-to-showcase-multi-layered-air-defense-solutions-and-unmanned-systems-at-mspo-2026.do",
+      "publisher": "Hanwha",
+      "date": "2026-09",
+      "finding": "Manufacturer reiterates 2014 selection of K9 chassis for the Polish Krab."
+    }
+  ],
+  "speaker_note": "South Korean arms technology is already part of Ukraine’s defense: Poland’s Krab howitzer uses a chassis based on the South Korean K9. This photograph shows the Polish weapon in Ukrainian service. It does not depict a direct South Korean government delivery, or a wholly Korean-made howitzer.",
+  "flags_recommendation": "ROK → Poland → Ukraine, or ROK and Ukrainian flags with the explicit caption identifying the Polish Krab intermediary.",
+  "verified_at": "2026-10-19"
+}

@@ -1,0 +1,6 @@
+/* Keep the complete captured flag beside the diplomatic and war photographs. */
+#wisconsin-remembers .america-history-photos { grid-template-columns:.8fr 1.25fr 1fr 1.25fr; gap:22px; }
+#wisconsin-remembers .america-history-photos .sujagi-photo img { object-fit:contain; background:#e8e6df; }
+@media(max-width:760px) {
+ #wisconsin-remembers .america-history-photos { grid-template-columns:1fr; }
+}

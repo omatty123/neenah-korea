@@ -1,0 +1,57 @@
+/* Forecast above a photographic Neenah–Jeonju paper connection. */
+#closing .future-details, #closing .future-imagination { display: flex; flex-direction: column; flex: 1; min-height: 0; gap: inherit; }
+#closing .future-imagined-image { display: flex; flex: 1; min-height: 0; margin: 0; justify-content: center; }
+#closing .future-imagined-image img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+#closing .future-advance { align-self: flex-end; flex: none; font: inherit; font-size: 17px; padding: 9px 15px; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 3px; cursor: pointer; }
+#closing .future-advance:hover { background: #e6eeeb; }
+#closing .future-advance:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+#closing .future-ending { display: flex; flex-direction: column; gap: 28px; flex: 1; min-height: 0; }
+#closing .future-ending h3 { font-size: clamp(24px, 2.1vw, 32px); font-weight: 550; }
+#closing .future-likely { display: grid; grid-template-columns: .9fr 1.3fr 1fr; align-items: center; gap: 26px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+#closing .strong-koreas { font-size: clamp(34px, 3.5vw, 54px); line-height: 1.1; letter-spacing: -.045em; font-weight: 650; color: var(--teal); }
+#closing .future-eventually { font-size: clamp(25px, 2.4vw, 37px); line-height: 1.2; }
+#closing .future-eventually span { display: block; font-size: .6em; margin-bottom: 7px; color: var(--muted); }
+#closing .future-possible { display: grid; grid-template-columns: .9fr 2.3fr; grid-template-rows: auto minmax(0, 1fr) auto; min-width: 0; min-height: 0; gap: 18px 26px; flex: 1; }
+#closing .future-possible h3 { grid-column: 1; grid-row: 1; }
+#closing .sister-city { grid-column: 2; grid-row: 1; font-size: clamp(23px, 2.1vw, 32px); font-weight: 550; letter-spacing: -.025em; color: var(--teal); }
+#closing .future-paper-pair { grid-column: 1 / -1; grid-row: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; min-height: 0; }
+#closing .future-paper-pair .photo img { object-fit: cover; }
+#closing .mill-crop { flex: 1; min-height: 0; overflow: hidden; }
+#closing .mill-crop img { width: 100%; height: 200%; object-fit: cover; object-position: 50% 0; flex: none; }
+#closing .future-paper-pair figcaption { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; font-size: clamp(24px, 2.1vw, 32px); font-weight: 650; }
+#closing .future-paper-pair figcaption small { font-size: 17px; font-weight: 400; margin: 0; }
+#closing .future-credit { grid-column: 1 / -1; grid-row: 3; font-size: 12px; color: var(--muted); text-align: right; }
+#closing.curated .theme { font-size: clamp(25px, 2.45vw, 38px); padding-top: 17px; }
+#closing .closing-action { font-size: 20px; color: var(--muted); }
+@media (max-height:740px) and (min-width:761px), screen and (min-width:761px) and (max-width:1440px) and (max-height:850px){
+  #closing .future-ending { gap: 18px; }
+  #closing .future-likely { padding-bottom: 17px; }
+  #closing .future-possible { gap: 13px 26px; }
+  #closing .future-paper-pair figcaption small { font-size: 15px; }
+  #closing.curated .theme { padding-top: 12px; font-size: 30px; }
+  #closing .closing-action { font-size: 18px; }
+}
+@media (max-width: 760px) {
+  #closing .future-details, #closing .future-imagination { flex: none; }
+  #closing .future-imagined-image { flex: none; }
+  #closing .future-imagined-image img { height: auto; }
+  #closing .canvas:has(.future-imagination:not([hidden])) { min-height: 0; }
+  #closing .future-ending { gap: 30px; flex: none; }
+  #closing .future-likely { display: flex; flex-direction: column; align-items: flex-start; padding-bottom: 28px; gap: 16px; }
+  #closing .future-eventually { margin-top: 8px; font-size: 29px; }
+  #closing .future-eventually span { margin-bottom: 5px; }
+  #closing .strong-koreas { font-size: 43px; }
+  #closing .future-possible { display: flex; flex-direction: column; gap: 20px; }
+  #closing .future-possible h3 { order: 0; }
+  #closing .sister-city { order: 1; font-size: 26px; }
+  #closing .future-paper-pair { order: 2; gap: 16px; }
+  #closing .future-paper-pair .photo { height: 270px; }
+  #closing .future-paper-pair figcaption { display: block; font-size: 25px; }
+  #closing .future-paper-pair figcaption small { font-size: 14px; line-height: 1.3; margin-top: 5px; }
+  #closing .future-credit { order: 3; text-align: left; }
+  #closing.curated .theme { font-size: 28px; }
+}
+@media (max-width: 440px) {
+  #closing .future-paper-pair { grid-template-columns: 1fr; gap: 23px; }
+  #closing .future-paper-pair .photo { height: 285px; }
+}
